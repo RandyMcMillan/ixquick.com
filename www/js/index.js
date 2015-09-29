@@ -46,10 +46,6 @@ var app = {
 
         console.log('Received Event: ' + id);
         
-        //window.location = "http://www.google.com/"
-
-        window.location("ixquick.com/index.html");
-
         
     }
 };
