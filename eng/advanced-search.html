@@ -1,0 +1,745 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Ixquick Search Engine</title>
+        <meta http-equiv="Pragma" content="no-cache"> <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Language" content="en">
+        <meta name="Keywords" content="search engine, metasearch, private search, proxy search, image search, video search, news search, international phone search, search engine privacy, ixquick, ixquick.com">
+        <meta name="Description" content="Ixquick search engine provides search results from over ten best search engines in full privacy. Search anonymously with Ixquick Search Engine!">
+        <meta name="viewport" content="maximum-scale=1">
+        
+<link rel="icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../graphics/favicon/ix-apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../graphics/favicon/ix-apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../graphics/favicon/ix-apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../graphics/favicon/ix-apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../graphics/favicon/ix-apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../graphics/favicon/ix-apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../graphics/favicon/ix-apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../graphics/favicon/ix-apple-touch-icon-152x152.png">
+<link rel="icon" sizes="196x196" href="../graphics/favicon/ix-favicon-196x196.png" type="images/png">
+<link rel="icon" sizes="160x160" href="../graphics/favicon/ix-favicon-160x160.png" type="images/png">
+<link rel="icon" sizes="96x96" href="../graphics/favicon/ix-favicon-96x96.png" type="images/png">
+<link rel="icon" sizes="16x16" href="../graphics/favicon/ix-favicon-16x16.png" type="images/png">
+<link rel="icon" sizes="32x32" href="../graphics/favicon/ix-favicon-32x32.png" type="images/png">
+<link href="../graphics/favicon/ix-favicon-16x16.png" type="images/png" rel="shortcut icon">
+<meta name="msapplication-TileColor" content="#6589c7">
+<meta name="msapplication-TileColor" content="/graphics/favicon/ix-mstile-144x144.png">
+
+        <!--
+        <link href="/css/retina_advanced_search.css?v=2" rel='stylesheet'>
+        <script type="text/javascript" language="javascript" src="/js/retina_advanced_search.js?v=2"></script> 
+        -->
+        <link href="../css/retina_advanced_search-v=f490fcbfb6923dbc11bf21ac901b99e7.css" type="text/css" rel="StyleSheet" />
+
+        <script language="javascript" type="text/javascript" src="../js/retina_advanced_search-v=dcc1484d6f8afc6c9cf3e74df3c9203e.js"></script>
+
+        <script language="javascript" type="text/javascript">
+            function do_action () { 
+                if ((document.forms['advanced_search_form'].elements['atleast_one'].value == '') && (document.forms['advanced_search_form'].elements['all_words'].value == '') && 
+                    (document.forms['advanced_search_form'].elements['exact_phrase'].value == '') && (document.forms['advanced_search_form'].elements['without_word'].value == '')) { 
+                    if (typeof document.forms['advanced_search_form'].elements['with_text'] != undefined) { 
+                        if ((document.forms['advanced_search_form'].elements['with_text'].value == '') && (document.forms['advanced_search_form'].elements['with_domain'].value == '') && 
+                            (document.forms['advanced_search_form'].elements['with_link'].value == '') && (document.forms['advanced_search_form'].elements['domain_type'].value == '')) { 
+                            return false; 
+                        } else { 
+                            document.advanced_search_form.submit(); 
+                            return false; 
+                        } 
+                    } else { 
+                        return false; 
+                    } 
+                } else { 
+                    document.advanced_search_form.submit(); 
+                    return false; 
+                }
+            }
+            
+
+            function setCategoryOnload() {
+               var window_location = window.location.href;
+               var queryOffset = window_location.indexOf("query=");
+               if (queryOffset != -1) {
+                  var query = window_location.substring(queryOffset + 6);
+                  var queryLastPos = query.indexOf("&");
+                  if (queryLastPos == -1) {
+                     query = query.substring(0);
+                  } else {
+                     query = query.substring(0, queryLastPos);
+                  }
+                  /*Starts here*/ 
+                  var str = unescape(query);
+
+     
+                  document.getElementById("atleast_one_word").value = "";                               
+                  document.getElementById("all_words").value = "";                               
+                  document.getElementById("exact_phrase_in").value = "";                               
+                  document.getElementById("without_words").value = "";                               
+                  document.getElementById("with_text_in").value = "";                               
+                  document.getElementById("with_domain_at").value = "";                               
+                  document.getElementById("with_link_to").value = "";                               
+                  document.getElementById("domain_select").value = "";                               
+                  document.getElementById("text_url").value = document.getElementById('text_url').getElementsByTagName('option')[0].value;
+     
+                  var str1 = new Array();                                                                                                                   	
+                  str1[0] = str.match(/title:"(.*?)"/g);                                                                      	
+                  if(str1[0]) {  	
+                  	document.getElementById("with_text_in").value = trim(RegExp.$1);                                                         	
+                  	document.getElementById("text_url").value = document.getElementById('text_url').getElementsByTagName('option')[0].value;
+                  	str = str.replace(/title:"(.*?)"/g,"");                                                                           	
+                  }                                                                                            	
+                  str1[1] = str.match(/link:(.*?)(\s|$)/g);                                  	
+                  if(str1[1]) {               	
+                  	document.getElementById("with_link_to").value = trim(RegExp.$1);                                                         	
+                  	str = str.replace(/link:(.*?)(\s|$)/g,"");                                                                        	
+                  }   
+                  // NOT handling starts, first is -"car" case 
+                  str1[3] = str.match(/\-"(.*?)"(\s|$)/g); 
+                                  
+                  if(str1[3]) {    
+                     var temp_string = str1[3].toString();
+                     temp_string = temp_string.replace(/\-/g, "");
+                     document.getElementById("without_words").value = trim(temp_string);
+                     str = str.replace(/\-"(.*?)"(\s|$)/g, "");
+                  }
+                  // str1[3] = str.match(/\-(.*?)(\s|$)/g); // Modifying this to accomodate table-tennis type terms, cannot do it.
+                  str1[3] = str;
+     
+                  // Bundle the words if NOT(-) is present in the quotes
+                  var quoted_not = str.match(/.*".*[-+]+.*".*/);
+                  var without_words = "";
+                  if(str1[3])  {  
+                     if(quoted_not) {
+                        var t = str.match(/".*"/g);
+                        var k = t.toString().replace(/"/g,"");
+                        document.getElementById("exact_phrase_in").value = k;
+                        str = str.replace(/".*"/g, "");
+                        str1[3] = str; // Reset current string
+                     }
+                     // Ends bundled word execution
+     
+                     // Match if terms like table-tennis  exist
+                     var regex = /((\w{1,})(\-)\w{1,}\s*)/g
+                     if (str1[3].toString().match(regex)) {   
+                       str1[3] = str1[3].toString().replace(regex, " ");
+                     }
+                     // Match if minus exist, comes from above.
+                     str1[3] = str1[3].match(/\-(.*?)(\s|$)/g);  
+                     if(str1[3]) {
+                       var temp_string       = str1[3].toString();                                                                          
+                       var exploded_elements = temp_string.split(",");                                                                    
+                       var without_words = "";                                                                                            
+                       for(var i=0 ; i< exploded_elements.length ; i++){                                                                    
+                          without_words += exploded_elements[i].substring(1,exploded_elements[i].length);                                    
+                          without_words += " ";                                                                                            
+                       }
+                       document.getElementById("without_words").value = trim(without_words);                                                    
+                       str = str.replace(/(\s+\-\w+|^\-\w+)/g,"");  // Modify str remove  negated terms except of the form bread-butter
+                     }
+                  }
+     
+// ENd NOT execution                                                                                                                                  
+                                                                                                                                    
+              	str1[2] = str.match(/\+(.*?)(\s|$)/g);    
+     			if(str1[2]) {                                                                                                
+     				var temp_string       = str1[2].toString();                         
+     				var exploded_elements = temp_string.split(",");                                                         
+     				var all_words = "";                                                                         
+     				for(var i=0 ; i< exploded_elements.length ; i++){                                         
+     					all_words += exploded_elements[i].substring(1,exploded_elements[i].length);                              
+     					all_words += " ";                                                                                       
+                     }
+                     document.getElementById("all_words").value = trim(all_words);                                                         
+                     str = str.replace(/\+(.*?)(\s|$)/g,"");                                                                         
+                 }  
+     
+                 str1[4] = str.match(/domain:(.*?)(\s|$)/g);                                                                               
+                 if(str1[4]) { 
+                     document.getElementById("domain_select").value = trim(RegExp.$1);                                                       
+                     str = str.replace(/domain:(.*?)(\s|$)/g,"");                                                                     
+                 }                                                                                                                   
+                 str1[5] = str.match(/url:"(.*?)"/g);                                                                                     
+                 if(str1[5]) {                                                                                                              
+                     document.getElementById("with_text_in").value = trim(RegExp.$1);                  
+                     /* Assuming 'url' is the second value in dropdown */
+                     document.getElementById("text_url").value = document.getElementById('text_url').getElementsByTagName('option')[1].value;
+                     str = str.replace(/url:"(.*?)"/g,"");                                                                          
+                 }    
+                                                            
+                 str1[6] = str.match(/\((.*?)\)/g);                        
+                 if(str1[6]) {                                                                                                            
+                     var str_to_break = RegExp.$1;                                                                                       
+                     var exploded_elements =  str_to_break.split(" OR ");                                                               
+                     var words = "";                                                                                                    
+                     for(var i = 0;i < exploded_elements.length ; i++ ){                    
+                        words += exploded_elements[i];                                                                               
+                        words += " ";                               
+                     }                                                                                                                     
+                     document.getElementById("atleast_one_word").value = trim(words);                                                       
+                     str = str.replace(/\((.*?)\)/g,"");                                                                              
+                 }                                                                                                                          
+                 str1[7] = str.match(/"(.*?)"/g);                                                                                         
+                 if(str1[7]) {                                                                                                              
+                     document.getElementById("exact_phrase_in").value = trim(RegExp.$1);                                                     
+                     str = str.replace(/"(.*?)"/g,"");                                                                                
+                 }                                                                                                                          
+                 str1[8] = str.match(/host:(.*?)(\s|$)/g);                                                                                
+                 if(str1[8]) {                                                                                                              
+                     document.getElementById("with_domain_at").value = trim(RegExp.$1);                                                      
+                     str = str.replace(/host:(.*?)(\s|$)/g,"");                                                                       
+                 }                                                                                                                          
+                 str = str.replace(/^[\s]+/,"");
+                 str = trim(str);
+                 str = str.replace(/ OR /," ");
+                 if(str){
+                    if(document.getElementById("atleast_one_word").value == "") {
+                        document.getElementById("atleast_one_word").value += str;
+                    } else {
+                        document.getElementById("atleast_one_word").value += " "+str;
+                    }
+                 }
+     /*ends here*/
+           } 
+
+     
+ } function trim(str){
+               return str.replace(/^[\s]+/,"").replace(/\s+$/,"");
+             } 
+function passQueryAdv(url) {
+   url += "?&cat=" + document.blah1.cat.value;
+   url += "&query=" + escape(document.blah1.query.value);
+   location.href = url;
+   return false;
+concatParamToAllUrls();}
+
+ 
+    var focusChange = 1;
+    var obj;
+    function checkFocus(h){
+
+        focusChange = 2;
+    }
+    function checkBlur(h){
+        focusChange = 1;
+        obj = h;
+    }
+    function retainFocus(){
+        if (focusChange==1){
+            obj.focus();
+            if(obj.setSelectionRange){
+                obj.setSelectionRange(obj.value.length, obj.value.length);
+            }else if(obj.createTextRange){
+                var range = obj.createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', obj.value.length);
+                range.moveStart('character', obj.value.length);
+                range.select();
+            }
+        }
+    }jQuery(document).ready(function () {
+               if (jQuery('html').hasClass('is-not-touch-device')) {
+               var region_dropdown = jQuery('#in_language').retinaSelect();
+               var filetype_dropdown = jQuery('#in_filetype').retinaSelect();
+               var date_dropdown = jQuery('#in_date').retinaSelect();
+               var region_dropdown = jQuery('#in_region').retinaSelect();
+               var domain_dropdown = jQuery('#domain_select').retinaSelect();
+               var text_in_dropdown = jQuery('#text_url').retinaSelect();
+
+               jQuery('.select-style').replaceWith(function() {
+                   return jQuery('select, div', this);
+               });
+
+               jQuery('div#words9').siblings('.wrapper-dropdown').attr('id', 'language-dd');
+               jQuery('div#words10').siblings('.wrapper-dropdown').attr('id', 'filetype-dd');
+               jQuery('div#words11').siblings('.wrapper-dropdown').attr('id', 'date-dd');
+               jQuery('div#words12').siblings('.wrapper-dropdown').attr('id', 'country-dd');
+               jQuery('div#words5').siblings('.wrapper-dropdown').attr('id', 'textin-dd');
+               jQuery('div#words8').siblings('.wrapper-dropdown').attr('id', 'domain-dd');
+
+               jQuery('.wrapper-dropdown').click(function() {
+                   var scroll_result  = jQuery('.wrapper-dropdown.active .dropdown').css('overflow-y');
+                   if (scroll_result == 'scroll') {
+                       jQuery('.wrapper-dropdown.active .dropdown').css('border-bottom-left-radius', '1px');
+                       jQuery('.wrapper-dropdown.active .dropdown').css('border-bottom-right-radius', '1px');
+                   }
+               });
+               }
+
+               jQuery('div, span, img, a, ul, li').attr('unselectable', 'on');
+               jQuery('input').attr('unselectable', 'off');
+            });
+            jQuery(document).ready(function () {
+                jQuery('.wrapper-dropdown').each(function () {
+                    var selected_value = jQuery(this).prev().val();
+                    if (selected_value != "") {
+                        jQuery(this).find('*').removeClass('selected-option');
+                        jQuery(this).find('.dropdown li a').each(function (){
+                            if (jQuery(this).attr('name') == selected_value) {
+                                jQuery(this).trigger('click');
+                            } 
+                        });                         
+                    }
+                });
+            });
+            function checkHeightAndResize() {
+                   var windowHeight = jQuery(window).height();
+                   if (windowHeight <= 800) {
+                       jQuery('#country-dd .dropdown').css('max-height', '126px');
+                       jQuery('#country-dd .dropdown').css('overflow-y', 'scroll'); 
+                   } else if (windowHeight > 800 && windowHeight < 850) {
+                       jQuery('#country-dd .dropdown').css('max-height', '126px');
+                       jQuery('#country-dd .dropdown').css('overflow-y', 'scroll');  
+                   } else if (windowHeight >= 850) {
+                       jQuery('#country-dd .dropdown').css('max-height', '176px');
+                       jQuery('#country-dd .dropdown').css('overflow-y', 'scroll');  
+                   }
+              }
+            jQuery(document).ready(function () {
+                checkHeightAndResize();
+                jQuery(window).resize(checkHeightAndResize);
+            });function setCat(catr, obj) {
+                if (document.blah1.query.value) {
+                    document.blah1.cat.value = catr;
+                }
+            }
+            function verifyChecked (form_obj, category) {
+                var formname = form_obj.name;
+                var orig_query = document[formname].query.value;
+                if (orig_query == '') {
+                    return false;
+                }
+                hideAutosuggest();
+                //Since on form submit we are reloading pages. We are destroying autocomplete so as to save us from ajax delayed responses.
+                if($.isFunction($('#query_top').unbind)){
+                    $('#query_top').unbind();
+                }
+                setTimeout(function(){form_obj.submit();}, 0); //2015-02-19 [Abhi] workaround for safari browsers. This doesn't effect others though. [#31588]
+                //form_obj.submit();
+                return true;
+            }
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "<!--KEEPTEL-->http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+    </script>
+    </head>
+    <body  class='air-theme' >
+        <script>execute_action();</script> 
+        <div id="wrapper" class=" advanced_search_page ">
+    <div class="navbar navbar-default nav-effect" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+    <a class="navbar-brand ixquick-navbar-brand" tabindex="0" href="index-.html" target="_top"><img src="../graphics/no_tm_ixquick_retina_results_page_logo.png" width="144" height="41" /></a>
+    <a class="menu_anchor" href="../do/preferences.pl-language_ui=english.html" tabindex="0" onClick="return slide_menu_action(event);"><div class="settings_cont inner-pages"><span id="menu-icon-id">Settings</span></div></a>
+    
+    
+	<div id='results_header'>
+	<form action="/do/search" class="cpt_prgtr" autocomplete="off" method="POST" name="blah1" id="search_form" onSubmit="return verifyChecked(this);"  target="_top" >
+
+	<div id='search'>
+	<table cellspacing="0" cellpadding="0" border="0" class="search_container">
+	<tbody><tr>
+	<td id='input_p'><!--[if IE 7]><div style="position:relative; width:300px; height:0;"></div><![endif]-->
+	<div class='search-field'>
+	<div class="text-fields">
+    <div>
+    <span class="clear_search"></span>
+    <span class='no_text' style="display: none;">enter your search terms here</span>
+    <input name="cat" type=hidden value="web">
+                        <input  name="language" type=hidden value="english">
+    <input type="hidden" name="nj" id="nj" value="1" />
+	<input type='text' autocomplete='off' name='query' id='query_top' value="" queryterm="" onChange="checkContent();" onKeyDown="checkContent();" onkeyup="if(!checkNullKeyPressed(event)){}checkContent();">
+	</div>
+    </div>
+    
+    <span class='small-go-btn' title='Ixquick Web Search'><input type="submit" value="GO" id="submit1"></span>
+    
+    </div>
+	</td>
+    
+    
+    
+	<td></td>
+	<td><noscript></noscript></td>
+	</tr>
+	<tr>
+    <script> 
+    update_form_method('search_form');
+    jQuery('#nj').attr('value', '0');
+    
+	</script>
+        </tr>	
+	</tbody>
+	</table>
+	</div>
+	</form>
+    
+</div>
+</div>
+</div>
+
+<style> ul.slide-menu *:focus,a#menu-icon-id:focus{outline:none;} </style><div class="slide-wrapper" id="menu-id" unselectable="on"><ul class="slide-menu"><li><a href="protect-privacy-.html" class="single right-arrow">Privacy</a></li><li><a href="../do/preferences.pl-_language=english&language_ui=english&nj=0.html" class="single right-arrow">Settings</a></li><li><a href="https://support.ixquick.com/index.php?/Knowledgebase/List" class="single right-arrow">Support</a></li><li><a>Community</a><ul class="slide-sub-menu"><li><a href="https://www.facebook.com/ixquick">Facebook</a></li><li><a href="https://twitter.com/#!/ixquick">Twitter</a></li><li><a href='https://blog.startpage.com'>Blog</a></li></ul></li><li><a href="aboutixquick/index-.html" class="single right-arrow">About Us</a></li><li class="no-mobile"><a>Add Ixquick</a><ul class="slide-sub-menu"><li><a href="download-ixquick-plugin-.html" id="my-browser-name">Add to Browser</a></li><li><a href="make-ixquick-your-homepage-.html">Homepage</a></li><li><a href="mobile-app-qa-.html">Mobile Device</a></li><li><a href="download-ixquick-toolbar-.html">Toolbar</a></li></ul></li><li class="list-box-opener"><a class="single open-box">Language</a><div class="menu-list-box" id="settings_lang_div">
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('dansk', 'dan', 'ixquick.com'); return retina_set_language('dansk', 'dan','ixquick.com');" href='../dan/index-.html'>Dansk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('deutsch', 'deu', 'ixquick.com'); return retina_set_language('deutsch', 'deu','ixquick.com');" href='../deu/index-.html'>Deutsch</a></td>
+</tr>
+<tr>
+<td><strong>English</strong></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english_uk', 'uk', 'ixquick.com'); return retina_set_language('english_uk', 'uk','ixquick.com');" href='../uk/index-.html'>English UK</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('espanol', 'esp', 'ixquick.com'); return retina_set_language('espanol', 'esp','ixquick.com');" href='../esp/index-.html'>Espa&ntilde;ol</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('francais', 'fra', 'ixquick.com'); return retina_set_language('francais', 'fra','ixquick.com');" href='../fra/index-.html'>Fran&ccedil;ais</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('italiano', 'ita', 'ixquick.com'); return retina_set_language('italiano', 'ita','ixquick.com');" href='../ita/index-.html'>Italiano</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nederlands', 'ned', 'ixquick.com'); return retina_set_language('nederlands', 'ned','ixquick.com');" href='../ned/index-.html'>Nederlands</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('norsk', 'nor', 'ixquick.com'); return retina_set_language('norsk', 'nor','ixquick.com');" href='../nor/index-.html'>Norsk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('polski', 'pol', 'ixquick.com'); return retina_set_language('polski', 'pol','ixquick.com');" href='../pol/index-.html'>Polski</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('portugues', 'por', 'ixquick.com'); return retina_set_language('portugues', 'por','ixquick.com');" href='../por/index-.html'>Portugu&ecirc;s</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('suomi', 'suo', 'ixquick.com'); return retina_set_language('suomi', 'suo','ixquick.com');" href='../suo/index-.html'>Suomi</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('svenska', 'sve', 'ixquick.com'); return retina_set_language('svenska', 'sve','ixquick.com');" href='../sve/index-.html'>Svenska</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('turkce', 'tur', 'ixquick.com'); return retina_set_language('turkce', 'tur','ixquick.com');" href='../tur/index-.html'>T&uuml;rk&ccedil;e</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('jiantizhongwen', 'jia', 'ixquick.com'); return retina_set_language('jiantizhongwen', 'jia','ixquick.com');" href='../jia/index-.html'>&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nihongo', 'nih', 'ixquick.com'); return retina_set_language('nihongo', 'nih','ixquick.com');" href='../nih/index-.html'>&#26085;&#26412;&#35486;</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('fantizhengwen', 'fan', 'ixquick.com'); return retina_set_language('fantizhengwen', 'fan','ixquick.com');" href='../fan/index-.html'>&#32321;&#39636;&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('hangul', 'han', 'ixquick.com'); return retina_set_language('hangul', 'han','ixquick.com');" href='../han/index-.html'>&#54620;&#44544;</a></td>
+</tr>
+</table>
+
+</div></li><li><a href="spread-the-word-.html" class="single right-arrow">Share</a></li><li class="list-box-opener"><a class="single open-box">Theme</a><div class="menu-list-box theme-box settings_themes" id="settings_themes" style="white-space:nowrap;"><table class="slide-sub-menu" cellspacing="0" cellpadding="0"><tr ><td><a  data-theme='theme-air-new' class='theme-air-new' onClick="change_theme('air', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='air-new'>Air</a></td></tr><tr ><td><a  data-theme='theme-night-new' class='theme-night-new' onClick="change_theme('night', 'ixquick.com');updateThemeClass('night-theme');updateDesignType(1, 'ixquick.com')" name='night-new'>Night</a></td></tr><tr ><td><a  data-theme='theme-white-new' class='theme-white-new' onClick="change_theme('white', 'ixquick.com');updateThemeClass('white-theme');updateDesignType(1, 'ixquick.com')" name='white-new'>White</a></td></tr><tr ><td><a  data-theme='theme-black-new' class='theme-black-new' onClick="change_theme('black', 'ixquick.com');updateThemeClass('black-theme');updateDesignType(1, 'ixquick.com')" name='black-new'>Black</a></td></tr><tr ><td><a  data-theme='theme-classic-new' class='theme-classic-new' onClick="change_theme('black', 'ixquick.com');updateThemeClass('black-theme');updateDesignType(1, 'ixquick.com')" name='classic-new'></a></td></tr><tr class="retro"><td><a  data-theme='theme-air-retro' class='theme-air-retro' onClick="change_theme('air', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='air-retro'>Air (Classic)</a></td></tr><tr class="retro"><td><a  data-theme='theme-night-retro' class='theme-night-retro' onClick="change_theme('night', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='night-retro'>Night (Classic)</a></td></tr><tr class="retro"><td><a  data-theme='theme-bubbles-retro' class='theme-bubbles-retro' onClick="change_theme('bubbles', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='bubbles-retro'>Bubbles (Classic)</a></td></tr><tr class="retro"><td><a  data-theme='theme-day-retro' class='theme-day-retro' onClick="change_theme('day', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='day-retro'>Daybreak (Classic)</a></td></tr><tr class="retro"><td><a  data-theme='theme-white-retro' class='theme-white-retro' onClick="change_theme('white', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='white-retro'>White (Classic)</a></td></tr><tr class="retro"><td><a  data-theme='theme-black-retro' class='theme-black-retro' onClick="change_theme('black', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='black-retro'>Black (Classic)</a></td></tr><tr class="classic"><td><a href="https://classic.ixquick.com" target="_blank" data-theme='theme-classic-retro' class='theme-classic-retro' onClick="collapse_menu_poup()" name='classic-retro'>Classic</a></td></tr></table></div></li></ul></div>
+<!--[if IE 9]><style>.ac_results{ width: 476px!important;}</style> <![endif]-->
+<script type="text/javascript">
+    if (typeof getAutoqueryService === 'function') {
+        getAutoqueryService('/do', 'english', 'query_top', 'jquery.autocomplete.js', '');
+    }
+</script>
+
+            <div id="content-box" class="content-box ">
+                <noscript><style>#content-box {visibility:visible}.select-style select{-webkit-appearance:none;}.select-style{height:27px;}</style></noscript>
+                <script type='text/javascript'>
+                            if (!(BrowserDetect.browser == 'IE' && BrowserDetect.version == 8)) {
+                                var requiredFonts = new Array('Proxima Nova','ProximaNova-Bold'); 
+                                checkFontLoaded('content-box', requiredFonts);
+                            }
+                            </script>
+
+                <div unselectable="on" class="eng" id="head_left">
+                        <a class="links_n" id="web" tabindex="0" onclick="setCat('web', this); if(verifyChecked(document.blah1)){ return false; } return true;" href="index.html">Web</a> &nbsp;&nbsp; 
+                        <a id="pics" tabindex="0" onclick="setCat('pics', this); if(verifyChecked(document.blah1)){ return false; } return true;" href="pics.html">Images</a> &nbsp;&nbsp;
+                        <a id="video" tabindex="0" onclick="setCat('video', this); if (verifyChecked(document.blah1)){ return false; } return true;" href="video.html">Videos</a> &nbsp;&nbsp;
+                        <a class="links_n active" tabindex="0" id="xsearch" href="Javascript:void();">Advanced</a> &nbsp;&nbsp; 
+                        <!--    <a class="bookmark" rel="sidebar" href="Javascript:void();" id="bookmark_text">Bookmark this search</a> -->
+                </div>
+                <div id="content-heading" class="heading">
+                    <span class='ad-search font_bold'>
+                        Advanced Search
+                    </span>
+                    <span class='tips pull-right'>
+                        <a href="power-search-techniques.html" tabindex="0">Tips</a>
+                    </span>
+                </div>
+                <!-- search text input field  -->
+                <div class="settings">
+                    <!-- words -->
+                    <form id="advanced_search_form" name="advanced_search_form" class="cpt_prgtr" method="POST" action="/do/search" onsubmit="return do_action();" autocomplete="off">
+                        <input type="hidden" value="web" name="cat">
+                        <input type="hidden" value="english" name="language">
+                        <input type="hidden" value="" name="prf">
+                        <input type="hidden" value="" name="prfh">
+                        <input type='hidden' name='abp' id='abp' value='-1' />
+                        <input type="hidden" name="nj" id="nj" value="1" />
+                        <script> jQuery('[name="nj"]').each(function () { jQuery(this).attr('value', '0'); }); </script>
+                        <input type="hidden" value="eng" name="slc">
+                        <div id="top-margin-1" class='top-margin'>
+                            <div class="form-group">
+                                <div class="col-sm-12 controls">
+                                    <div id="input-group-first" class="input-group">
+                                        <div class="title_wrapper_large">
+                                            <div id="words-title" class="title_wrapper_small input-group-addon pn-bold">
+                                                <span id="text-1" class="title_name">Words</span>
+                                            </div>
+                                        </div>
+                                        <div id="words1" class="text_desc input-group-addon pn-bold">
+                                            <span id="text-2">
+                                                <span class="bold-text">All</span> of these words
+                                            </span>
+                                        </div>
+                                        <div id="div-form-1" class="form_wrapper">
+                                            <input name="all_terms" id="all_words" value="" type="text" class="form-control" autofocus>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 controls">
+                                    <div id="input-group2" class="input-group">
+                                        <div id="words-title-2" class="title_wrapper_large input-group-addon pn-bold">
+                                            <span id=""></span>
+                                        </div>
+                                        <div id="words2" class="text_desc input-group-addon pn-bold">
+                                            This <span class="bold-text">exact phrase</span>
+                                        </div>
+                                        <div id="div-form-2" class="form_wrapper">
+                                            <input name="exact_phrase" id="exact_phrase_in" value="" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 controls">
+                                    <div id="input-group3" class="input-group">
+                                        <div id="words-title-3" class="title_wrapper_large input-group-addon pn-bold">
+                                            <span id=""></span>
+                                        </div>
+                                        <div id="words3" class="text_desc input-group-addon pn-bold">
+                                            <span id="text-4"><span class="bold-text">At least one</span> of these words</span>
+                                        </div>
+                                        <div id="div-form-3" class="form_wrapper">
+                                            <input name="atleast_one" value="" id="atleast_one_word" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 controls">
+                                    <div id="input-group4" class="input-group">
+                                        <div id="words-title-4" class="title_wrapper_large input-group-addon pn-bold">
+                                            <span id=""></span>
+                                        </div>
+                                        <div id="words4" class="text_desc input-group-addon pn-bold">
+                                            <span id="text-5"><span class="bold-text">Without</span> these words</span>
+                                        </div>
+                                        <div id="div-form-4" class="form_wrapper">
+                                            <input name="without_word" id="without_words" value="" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12 controls">
+                                    <div id="input-group5" class="input-group">
+                                        <div id="words-title-5" class="title_wrapper_large input-group-addon pn-bold">
+                                            <span id=""></span>
+                                        </div>
+                                        <div id="words5" class="text_desc input-group-addon pn-bold">
+                                            <span id="text-6">With this in the</span>
+                                        </div>
+                                            <div class="select-style">
+                                                <select name="text_in" id="text_url">
+                                                    <option data-html-text='title' value='title'>title</option>
+                                                    <option data-html-text='url' value='url'>url</option>
+                                                </select>
+                                            </div>
+                                        <div id="div-form-5" class="form_wrapper">
+                                            <input name="with_text" id="with_text_in" value="" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- words -->
+                            <!-- Domain -->
+                            <div id="top-margin-2" class='top-margin'>
+                                <div class="form-group">
+                                    <div class="col-sm-12 controls">
+                                        <div id="input-group-domain" class="input-group">
+                                            <div class="title_wrapper_large">
+                                                <div id="words-title-6" class="title_wrapper_small input-group-addon pn-bold">
+                                                    <span id="text-domain" class="title_name">Domain</span>
+                                                </div>
+                                            </div>
+                                            <div id="words6" class="text_desc input-group-addon pn-bold">
+                                                <span id="text-7">At this <span class="bold-text">domain name</span></span>
+                                            </div>
+                                            <div id="div-form-6" class="form_wrapper">
+                                                <input name="with_domain" id="with_domain_at" VALUE="" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12 controls">
+                                        <div id="input-group6" class="input-group">
+                                            <div id="words-title-7" class="title_wrapper_large input-group-addon pn-bold">
+                                                <span id=""></span>
+                                            </div>
+                                            <div id="words7" class="text_desc input-group-addon pn-bold">
+                                                <span id="text-8"><span class="bold-text">Linked to</span> this domain name</span>
+                                            </div>
+                                            <div id="div-form-7" class="form_wrapper">
+                                                <input name="with_link" id="with_link_to" value="" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12 controls">
+                                        <div id="input-group7" class="input-group">
+                                            <div id="words-title-8" class="title_wrapper_large input-group-addon pn-bold">
+                                                <span id=""></span>
+                                            </div>
+                                            <div id="words8" class="text_desc input-group-addon pn-bold">
+                                                <span id="text-9">At this <span class="bold-text">type of</span> domain name</span>
+                                            </div>
+                                            <div class='select-style'><select id='domain_select' name='domain_type'><option value='' data-html-text=Any>Any</option><option value='au' data-html-text='au'>au</option>
+<option value='nz' data-html-text='nz'>nz</option>
+<option value='co.uk' data-html-text='co.uk'>co.uk</option>
+<option value='com' data-html-text='com'>com</option>
+<option value='gov' data-html-text='gov'>gov</option>
+<option value='net' data-html-text='net'>net</option>
+<option value='org' data-html-text='org'>org</option>
+<option value='edu' data-html-text='edu'>edu</option>
+</select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Domain -->
+                            
+                            
+                            <div class='button-container'>
+                                <input type='submit' id="search-btn" value="SEARCH">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script language="javascript" type="text/javascript">
+                     update_form_method('advanced_search_form');
+                     setCategoryOnload(); 
+                </script></div>
+            </div>
+        </div>
+        <script>
+        
+        if ((BrowserDetect.browser == 'IE' && BrowserDetect.version == 8)) {
+                                    var requiredFonts = new Array('Proxima Nova','ProximaNova-Bold'); 
+                                    checkFontLoaded('content-box', requiredFonts);
+                                }
+
+        </script>                           
+        <script language="javascript" type="text/javascript" src="../js/abp-adType=1&advertiser=1&advertising=1&changed=1443414093.js"></script>
+
+        
+	<div class="footer" id="footer">
+ 	<div class="copyright">
+  	&copy; 2015 Ixquick
+ 	</div>
+		
+ 	<div class="right_links"><a id="startmail" href="https://startmail.com/" style="text-decoration: none;">
+    <!--<span class="icon icon-small"><span class="icon-mail"></span></span>&nbsp;-->
+  	<span style="text-decoration: underline;">StartMail</span></a>
+  	<a id="privacy_policy" href="privacy-policy-.html">Privacy Policy</a>
+ 	</div>
+    <div class='imgavt'> </div>
+    </div>
+        
+    </body>
+</html>

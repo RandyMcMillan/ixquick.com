@@ -1,0 +1,719 @@
+<!DOCTYPE HTML>
+    <!--[if lt IE 7 ]> <html class='ie6 ie'> <![endif]-->                                                                         
+    <!--[if IE 7 ]> <html class='ie7 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 8 ]> <html class='ie8 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 9 ]> <html class='ie9 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if (gt IE 9)|!(IE)]><!-->                                                                                                                                                                          
+    <html>                                                                                                                                                                                                  
+    <!--<![endif]-->
+     <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">     
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title> TIETOSUOJA - Tietosuojak&#228;yt&#228;nt&#246; </title>
+    
+<link rel="icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../graphics/favicon/ix-apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../graphics/favicon/ix-apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../graphics/favicon/ix-apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../graphics/favicon/ix-apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../graphics/favicon/ix-apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../graphics/favicon/ix-apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../graphics/favicon/ix-apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../graphics/favicon/ix-apple-touch-icon-152x152.png">
+<link rel="icon" sizes="196x196" href="../graphics/favicon/ix-favicon-196x196.png" type="images/png">
+<link rel="icon" sizes="160x160" href="../graphics/favicon/ix-favicon-160x160.png" type="images/png">
+<link rel="icon" sizes="96x96" href="../graphics/favicon/ix-favicon-96x96.png" type="images/png">
+<link rel="icon" sizes="16x16" href="../graphics/favicon/ix-favicon-16x16.png" type="images/png">
+<link rel="icon" sizes="32x32" href="../graphics/favicon/ix-favicon-32x32.png" type="images/png">
+<link href="../graphics/favicon/ix-favicon-16x16.png" type="images/png" rel="shortcut icon">
+<meta name="msapplication-TileColor" content="#6589c7">
+<meta name="msapplication-TileColor" content="/graphics/favicon/ix-mstile-144x144.png">
+
+    
+    <link href='../css/retina_about_pages-v=5.css' type='text/css' media="all"  rel='StyleSheet' />
+    <!--[if lt IE 9]><link href='../css/lt_ie9-v=5.css' type='text/css' media="all"  rel='StyleSheet' /><![endif]-->
+    <!--[if lt IE 9]><style>.closeArea a {background-image: none;} 
+                    .closeArea a{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/graphics/retina_bookmark_cross.png', sizingMethod='scale') !important;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='/graphics/retina_bookmark_cross.png', sizingMethod='scale')" !important; }
+                    </style><![endif]-->
+    <script language='javascript' type='text/javascript' src='../js/retina_about_pages-v=5.js'></script>            
+    <!--[if lt IE 9]><script language='javascript' type='text/javascript' src='../js/less_than_ie9-v=5.js'></script><![endif]-->
+    <script>function setFocus() { var pageUrl = window.location.href; if (!pageUrl.match(/jump_to/)) { document.getElementById("query_top").focus(); } }</script>
+    
+	<script>
+   	jQuery(window).load(function() {
+		jQuery('.accordionButton').click(function(e){
+			e.preventDefault();
+            var div_display = jQuery(this).next('.accordionContent').css('display');
+            if (div_display == 'block') {
+                jQuery(this).next('.accordionContent').slideUp();
+            } else {
+                jQuery('div.accordionContent').slideUp();
+                jQuery(this).next('.accordionContent').slideToggle();
+            }
+    	});
+    });
+
+jQuery(window).load(function () {
+    jQuery('div[id^=tOoLtIp]').each(function() {
+        var obj = jQuery(this);
+        jQuery(this).addClass('sb-tooltip');
+        jQuery(this).find('*').removeAttr('bgcolor color face style');
+    });
+});
+
+function verifyChecked (form_obj) { 
+    var formname = form_obj.name; 
+    var orig_query = document[formname].query.value; 
+    if (orig_query == "") { 
+        return false; 
+    } 
+    form_obj.submit(); 
+
+    return false; 
+}
+      
+    </script>
+	
+    <script type='text/javascript'>
+    jQuery(window).load(function() {         
+                                    concatParamToAllUrls(); 
+jQuery('.external').click(function(){
+        var link = jQuery(this).attr('data-link');
+        var str;
+        if(link.match(/facebook/i)) {
+           str = "";
+        } else if(link.match(/twitter/i)) {
+           str = "";
+        }
+
+        r = confirm(str);
+        if(r==true) { 
+            document.location = link;
+        } 
+        return false;
+    });
+jQuery(window).load(function () {
+    var page_url = document.URL;
+    if( page_url.match("company-faq") || 
+        page_url.match("protect-privacy-qa") || 
+        page_url.match("preferences.pl") ) {
+        if (page_url.match(/.html#q/) || page_url.match("jump_to")) {
+        } else { 
+          document.getElementById('query_top').focus();
+        }
+    } else { 
+        document.getElementById('query_top').focus();
+    }
+});
+
+jQuery(function() {     
+//if(jQuery('.rightContent').height()<jQuery('.leftContent').height()){
+//jQuery('.leftContent').css("border-right","none");
+    //jQuery('#borderLR').hide();
+//}else{
+    //jQuery('.leftContent').css("border-right","none");
+//jQuery('#borderLR').show();
+//jQuery('#borderLR').height(jQuery('.bodyContent').height()-40);
+//}
+});
+});
+function newImage(arg) {
+  if (document.images) {
+        rslt = new Image();
+        rslt.src = arg;
+        return rslt;
+  }
+}
+
+function loadImage() {
+    img1 = newImage("/graphics/selectedMenuBack.png");
+    img2 = newImage("/graphics/hoverMenuBack.png");
+    img2 = newImage("/graphics/separator.gif");
+}
+
+loadImage();
+		function concatParamToAllUrls (referenceUrlId) {
+			/* Get current url */
+			var currentUrl = window.location.href;
+			currentUrl = unescape(currentUrl);
+			var isParamPresentInFormField = false; /* flag to check if prf OR prfh param is present in form field */
+			var isParamPresentInUrl = false;  /* flag to check if prf OR prfh param is present in url */
+            var isValidParam = false;  /*flag to check if prf OR prfh parameter is valid or not.*/
+            var alreadyHiddenPrfBlankPresent = false;
+			var paramName = "";
+			var paramValue = "";
+
+			/* Loop through each input type element and check if prf OR prfh is present or not. If yes mark flag as true */
+			jQuery(":input").each(function(i){
+					
+				if( (jQuery(this).attr("name") == "prfh") || (jQuery(this).attr("name") == "prf") ){
+					//isParamPresentInFormField = true;
+					paramName  = jQuery(this).attr("name") + "=";
+					paramValue = jQuery(this).attr("value");
+                    if (paramValue != "") {
+                         isParamPresentInFormField = true;
+                    } else {
+                       alreadyHiddenPrfBlankPresent = true;
+
+                    }
+				}
+				
+			});
+
+			/* Is prf OR prfh present in Url. If yes then set flag as true */
+			if( (currentUrl.match(/(.*?)(&|\?)(prfh)(=)(.*?)($|&)/g)) || (currentUrl.match(/(.*?)(&|\?)(prf)(=)(.*?)($|&)/g)) ){
+				isParamPresentInUrl = true;
+			}
+            var param_name = RegExp.$3;
+            var parm_opt = RegExp.$4;
+            var prm_value = RegExp.$5;
+            if (/^[a-zA-Z0-9/_]+$/.test(prm_value)) {
+                isValidParam = true;
+            }
+
+			//alert('isParamPresentInFormField ' + isParamPresentInFormField + ' isParamPresentInUrl ' + isParamPresentInUrl);
+			if( isValidParam && ((isParamPresentInUrl) || (isParamPresentInFormField)) ){
+				var concatThisParam = "";
+
+				/* Prepare param to be concatenated */
+				if (isParamPresentInUrl) {
+					concatThisParam = param_name + parm_opt + prm_value;
+				} else if(isParamPresentInFormField){
+					concatThisParam = paramName + paramValue ;
+					
+				}
+
+				/* If advance search url is calling this method then concat prf OR prfh param to this url only. Else concat to all the urls */
+				if (typeof referenceUrlId != "undefined") {
+					jQuery('#' + referenceUrlId).attr('href', jQuery('#' + referenceUrlId).attr('href') + '&' + concatThisParam);
+					
+				} else {
+				   /* Add prf OR prfh as form field as well if not already present. */
+				   if (!isParamPresentInFormField) {
+                       if (alreadyHiddenPrfBlankPresent) {
+                           var myParam = concatThisParam;
+                           var param_elements = myParam.split('=');
+                          jQuery('input[name='+param_elements[0]+']').val(param_elements[1]);
+                       } else {
+					      jQuery("<input type='hidden' value='" + prm_value + "' name='" + param_name + "' id='" + param_name + "' />").prependTo(jQuery('#input_p'));
+                       }
+                   }
+				   jQuery('.addsettings').each(function(index){ 
+					   var originalUrl = jQuery(this).attr('href');
+                       if (originalUrl) {
+					   if ( originalUrl.match( /(.*?)(\?)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '&' + concatThisParam);
+					   } else if( originalUrl.match( /(.*?)(\/)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   } else if(originalUrl.match( /(.*)(\/)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   }
+                       }
+					   
+				   });
+			   }
+			}
+		} function eId(item) { 
+        return document.getElementById(item);                                                                                                                                                                    
+    }                                                                                                                                                                                                          
+    var allCats = new Array('web','pics','video');                                                                                                                                          
+                                                                                                                                                                                                               
+    function hasClass(ele,cls) {                                                                                                                                                                                
+        return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));                                                                                                                             
+    }                                                                                                                                                                                       
+                                                                                                                                                                                                     
+    function addClass(ele,cls) {                                                                                                                                                            
+        if (!this.hasClass(ele,cls)) {                                                                                                                                                       
+            ele.className += ' ' + cls;                                                                                                                                                   
+        }                                                                                                                                                                                           
+    }                                                                                                                                                                                            
+                                                                                                                                                                                                    
+    function removeClass(ele,cls) {                                                                                                                                               
+        if (hasClass(ele,cls)) {                                                                                                                                                          
+            var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');                                                                                                                                   
+            ele.className=ele.className.replace(reg," ");                                                                                                                                       
+        }                                                                                                                                                                                       
+    }                                                                                                                                                                                              
+                                                                                                                                                                                                         
+    function passQueryAdv(url) {                                                                                                                                                                                 
+        url += '?&cat=' + document.blah1.cat.value;                                                                                                                                                              
+        url += '&query=' + escape(document.blah1.query.value);
+        eId('xsearch').href = url; concatParamToAllUrls('xsearch');
+    }
+    
+    function setCat(catr) { 
+        document.blah1.cat.value = catr;
+        for(var i = 0; i < allCats.length; i++) {
+            removeClass(eId(allCats[i]), 'active');
+        }
+        addClass(eId(catr), 'active');
+        eId('query_top').focus();
+        if (catr != 'web') {
+            //eId('enhanced').style.visibility = 'hidden';
+            //eId('detail').style.visibility = 'hidden';
+        } else {
+            //eId('enhanced').style.visibility = 'visible';
+            //eId('detail').style.visibility = 'visible';
+        }
+        return false;
+    }
+ 
+    function trim(str) {
+       return str.replace(/^\s+|\s+$/g, '');
+    }
+
+    function get_value(c_name) {
+       var current_url = location.href;
+      if ( (current_url.indexOf('prfh') != -1) && (current_url.indexOf(c_name) != -1) ) {
+           c_start= current_url.indexOf(c_name + "EEE");
+           if (c_start!=-1)
+              {
+                c_start=c_start + c_name.length+3;
+                c_end=current_url.indexOf("N1N",c_start);
+                if (c_end==-1) c_end = current_url.length;
+                return unescape(current_url.substring(c_start,c_end));
+              }
+         } else {
+            if (document.cookie.length>0)
+               {
+                 c_start=document.cookie.indexOf(c_name + "EEE");
+                 if (c_start!=-1)
+                    {
+                      c_start=c_start + c_name.length+3;
+                      c_end=document.cookie.indexOf("N1N",c_start);
+                      if (c_end==-1) c_end=document.cookie.length;
+                      return unescape(document.cookie.substring(c_start,c_end));
+                     }
+                  }
+
+         }
+       return "";
+     }
+
+    function change_form_method() {
+       if(get_value('enable_post_method') == '0') {
+          document.blah1.method = 'GET';
+       }
+    }
+
+    function verifyChecked (form_obj) {
+        var formname = form_obj.name;
+        var orig_query = document[formname].query.value; 
+        if (orig_query == '') {
+           return false;
+        }
+        form_obj.submit();
+        return false;
+    } 
+
+
+        $(document).ready(function() {
+
+            if((BrowserDetect.OS.indexOf("BB10") != -1) && (navigator.userAgent.indexOf("Mobile Safari") != -1)) MY_BROWSER = "Browser";
+            if ( ((MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium')) && (MY_BROWSER_VERSION > 31) ) {
+
+            actionUrl = document.blah1.action;
+            document.blah1.action = actionUrl.replace(/\/search$/, '/metasearch.pl'); }
+ });
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+    
+    
+    
+    function highlight () {                                                                                                                                                                                       
+        var question_count = 28;                                                                                                                                                                                
+        var url = location.href;                                                                                                                                                                                
+                                                                                                                                                                                                              
+        for (var i=1 ;i <= question_count ;i++)                                                                                                                                                                   
+        {                                                                                                                                                                                                       
+            var answer_id = 'q'+i+'ab'; 
+            if(document.getElementById(answer_id) != null) {                                                                                                                                                  
+                document.getElementById(answer_id).style.backgroundColor = '#FFFFFF';                                                                                                                            
+            }                                                                                                                                                                                                   
+        }                                                                                                                                                                                                        
+        if ( (url.indexOf('privacy') != -1) && (document.getElementById('qgoogle_cookieab'))) {                                                                                                                  
+            document.getElementById('qgoogle_cookieab').style.backgroundColor = '#FFFFFF' ;                                                                                                                       
+        }                                                                                                                                                                                                        
+                                                                                                                                                                                                               
+        var ie = (document.all)? true: false;                                                                                                                                                                 
+        if (url.indexOf('#') != -1) {                                                                                                                                                                         
+            var offset = url.indexOf('#');                                                                                                                                                                       
+            var tagname = url.substring(offset + 1);                                                                                                                                                            
+                                                                                                                                                                                                              
+            if (tagname != 'field') {                                                                                                                                                                            
+                if (tagname == 'lowestprice') {                                                                                                                                                                  
+                    tagname = 'phone';                                                                                                                                                                          
+                }                                                                                                                                                                                               
+                if (tagname == 'google_cookie') {                                                                                                                                                               
+                    tagname = 'q' + tagname;                                                                                                                                                                     
+                }                                                                                                                                                                                                
+                tagname += 'ab';                                                     
+                if (document.getElementById(tagname)) {                                                                                                                                                         
+                    document.getElementById(tagname).style.backgroundColor = '#EFF3FF'
+                }
+        //Added to color the question part as white on the privacy q-a page.
+/*
+            if(url.indexOf('protect-privacy') != -1) {
+                var question = url.substring(offset + 1) + 'q';
+                if (document.getElementById(question)) {
+                    document.getElementById(question).style.backgroundColor ='#FFFFFF';
+                }
+            }
+*/
+            } else {
+                for (var i=1; i < 10; i++) {
+                    var fieldname = tagname + i;
+                    if (document.getElementById(fieldname)) {
+                        document.getElementById(fieldname).style.backgroundColor = '#EFF3FF';
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+        setTimeout('highlight()',200);
+    }
+highlight();
+
+jQuery(document).ready(function () {
+ jQuery('#information-sharing-link').on('click',function () {
+         jQuery('#info-sharing-div').show();
+         jQuery('#loadingId').show();
+         blockPageScrolling('info-sharing-div');
+    });
+ jQuery('.closeArea a, #loadingId').on('click',function () {
+         jQuery('#info-sharing-div').hide();
+         jQuery('#loadingId').hide();
+         blockPageScrolling('info-sharing-div');
+    });
+ jQuery('#url_gen_link').on('click',function () {
+         jQuery('#url-generator-div').show();
+         jQuery('#loadingId').show();
+         blockPageScrolling('url-generator-div');
+    });
+ jQuery('.closeArea a, #loadingId').on('click',function () {
+         jQuery('#url-generator-div').hide();
+         jQuery('#loadingId').hide();
+         blockPageScrolling('url-generator-div');
+    });
+ jQuery(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+     jQuery('#url-generator-div').hide();
+     jQuery('#info-sharing-div').hide();
+     blockPageScrolling('url-generator-div');
+     blockPageScrolling('info-sharing-div');
+     jQuery('#loadingId').hide();
+  }
+    });
+jQuery('#loadingId').doubletap(
+         /** doubletap-dblclick callback */
+         function(event){
+             event.preventDefault();
+         },
+         /** touch-click callback (touch) */
+         function(event){
+             jQuery('#url-generator-div').hide();
+             jQuery('#info-sharing-div').hide();
+             blockPageScrolling('url-generator-div');
+             blockPageScrolling('info-sharing-div');
+             jQuery('#loadingId').hide();
+         },
+         /** doubletap-dblclick delay (default is 500 ms) */
+         250
+    );
+});
+
+    </script>
+    </head>
+
+    <body  >
+    
+    
+    <div id="wrapper" class="">
+    <div class="navbar navbar-default nav-effect" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+    <a class="navbar-brand ixquick-navbar-brand" tabindex="0" href="index-.html" target="_top"><img src="../graphics/no_tm_ixquick_retina_results_page_logo.png" width="144" height="41" /></a>
+    <a class="menu_anchor" href="../do/preferences.pl-language=suomi&language_ui=suomi.html" tabindex="0" onClick="return slide_menu_action(event);"><div class="settings_cont inner-pages"><span id="menu-icon-id">Asetukset</span></div></a>
+    
+    
+	<div id='results_header'>
+	<form action="/do/search" class="cpt_prgtr" autocomplete="off" method="POST" name="blah1" id="search_form" onSubmit="return verifyChecked(this);"  target="_top" >
+
+	<div id='search'>
+	<table cellspacing="0" cellpadding="0" border="0" class="search_container">
+	<tbody><tr>
+	<td id='input_p'><!--[if IE 7]><div style="position:relative; width:300px; height:0;"></div><![endif]-->
+	<div class='search-field'>
+	<div class="text-fields">
+    <div>
+    <span class="clear_search"></span>
+    <span class='no_text' style="display: none;">sy&#246;t&#228; hakutermit t&#228;h&#228;n</span>
+    <input type="hidden" value="suomi" name="language">
+    <input type="hidden" name="nj" id="nj" value="1" />
+	<input type='text' autocomplete='off' name='query' id='query_top' value="" queryterm="" onChange="checkContent();" onKeyDown="checkContent();" onkeyup="if(!checkNullKeyPressed(event)){}checkContent();">
+	</div>
+    </div>
+    
+    <span class='small-go-btn' title='Ixquick Web Hae'><input type="submit" value="SIIRRY" id="submit1"></span>
+    
+    </div>
+	</td>
+    
+    
+    
+	<td></td>
+	<td><noscript></noscript></td>
+	</tr>
+	<tr>
+    <script> 
+    update_form_method('search_form');
+    jQuery('#nj').attr('value', '0');
+    
+	</script>
+        </tr>	
+	</tbody>
+	</table>
+	</div>
+	</form>
+    
+</div>
+</div>
+</div>
+
+<style> ul.slide-menu *:focus,a#menu-icon-id:focus{outline:none;} </style><div class="slide-wrapper" id="menu-id" unselectable="on"><ul class="slide-menu"><li><a href="protect-privacy-.html" class="single right-arrow">Tietosuoja</a></li><li><a href="../do/preferences.pl-_language=suomi&language_ui=suomi&nj=0.html" class="single right-arrow">Asetukset</a></li><li><a>Yhteis&#246;</a><ul class="slide-sub-menu"><li><a href="https://www.facebook.com/ixquick">Facebook</a></li><li><a href="https://twitter.com/#!/ixquick">Twitter</a></li><li><a href='https://blog.startpage.com'>Blogi</a></li></ul></li><li><a href="aboutixquick/index-.html" class="single right-arrow">Tietoja meist&#228;</a></li><li class="no-mobile"><a>Lis&#228;&#228; Ixquick</a><ul class="slide-sub-menu"><li><a href="download-ixquick-plugin-.html" id="my-browser-name">Lis&#228;&#228; selaimeen</a></li><li><a href="make-ixquick-your-homepage-.html">Kotisivuksi</a></li><li><a href="mobile-app-qa-.html">Mobiililaite</a></li><li><a href="download-ixquick-toolbar-.html">Ty&#246;kalupalkin</a></li></ul></li><li class="list-box-opener"><a class="single open-box">Kieli</a><div class="menu-list-box" id="settings_lang_div">
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('dansk', 'dan', 'ixquick.com'); return retina_set_language('dansk', 'dan','ixquick.com');" href='../dan/index-.html'>Dansk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('deutsch', 'deu', 'ixquick.com'); return retina_set_language('deutsch', 'deu','ixquick.com');" href='../deu/index-.html'>Deutsch</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english', 'eng', 'ixquick.com'); return retina_set_language('english', 'eng','ixquick.com');" href='../eng/index-.html'>English</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english_uk', 'uk', 'ixquick.com'); return retina_set_language('english_uk', 'uk','ixquick.com');" href='../uk/index-.html'>English UK</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('espanol', 'esp', 'ixquick.com'); return retina_set_language('espanol', 'esp','ixquick.com');" href='../esp/index-.html'>Espa&ntilde;ol</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('francais', 'fra', 'ixquick.com'); return retina_set_language('francais', 'fra','ixquick.com');" href='../fra/index-.html'>Fran&ccedil;ais</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('italiano', 'ita', 'ixquick.com'); return retina_set_language('italiano', 'ita','ixquick.com');" href='../ita/index-.html'>Italiano</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nederlands', 'ned', 'ixquick.com'); return retina_set_language('nederlands', 'ned','ixquick.com');" href='../ned/index-.html'>Nederlands</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('norsk', 'nor', 'ixquick.com'); return retina_set_language('norsk', 'nor','ixquick.com');" href='../nor/index-.html'>Norsk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('polski', 'pol', 'ixquick.com'); return retina_set_language('polski', 'pol','ixquick.com');" href='../pol/index-.html'>Polski</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('portugues', 'por', 'ixquick.com'); return retina_set_language('portugues', 'por','ixquick.com');" href='../por/index-.html'>Portugu&ecirc;s</a></td>
+<td><strong>Suomi</strong></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('svenska', 'sve', 'ixquick.com'); return retina_set_language('svenska', 'sve','ixquick.com');" href='../sve/index-.html'>Svenska</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('turkce', 'tur', 'ixquick.com'); return retina_set_language('turkce', 'tur','ixquick.com');" href='../tur/index-.html'>T&uuml;rk&ccedil;e</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('jiantizhongwen', 'jia', 'ixquick.com'); return retina_set_language('jiantizhongwen', 'jia','ixquick.com');" href='../jia/index-.html'>&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nihongo', 'nih', 'ixquick.com'); return retina_set_language('nihongo', 'nih','ixquick.com');" href='../nih/index-.html'>&#26085;&#26412;&#35486;</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('fantizhengwen', 'fan', 'ixquick.com'); return retina_set_language('fantizhengwen', 'fan','ixquick.com');" href='../fan/index-.html'>&#32321;&#39636;&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('hangul', 'han', 'ixquick.com'); return retina_set_language('hangul', 'han','ixquick.com');" href='../han/index-.html'>&#54620;&#44544;</a></td>
+</tr>
+</table>
+
+</div></li><li><a href="spread-the-word-.html" class="single right-arrow">Osuus</a></li><li class="list-box-opener"><a class="single open-box">Teema</a><div class="menu-list-box theme-box" id="settings_themes" style="white-space:nowrap;"><table class="slide-sub-menu" cellspacing="0" cellpadding="0"><tr><td><a onClick="change_theme('air', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='air-new'>Ilma</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='night-new'>Ehtoo</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='white-new'>Munanvalkuainen</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='black-new'>Musta</a></td></tr><tr><td><a onClick="change_theme('air', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='air-retro'>Ilma (Classic)</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='night-retro'>Ehtoo (Classic)</a></td></tr><tr><td><a onClick="change_theme('bubbles', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='bubbles-retro'>Kupla (Classic)</a></td></tr><tr><td><a onClick="change_theme('day', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='day-retro'>P&#228;iv&#228;nkoitto (Classic)</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='white-retro'>Munanvalkuainen (Classic)</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='black-retro'>Musta (Classic)</a></td></tr></table></div></li></ul></div>
+<!--[if IE 9]><style>.ac_results{ width: 476px!important;}</style> <![endif]-->
+<script type="text/javascript">
+    if (typeof getAutoqueryService === 'function') {
+        getAutoqueryService('/do', 'suomi', 'query_top', 'jquery.autocomplete.js', '');
+    }
+</script>
+
+
+    <div id="wrapper-inner" class="" style="">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id='inner_content'>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%" class="bodyContent">
+            <tr>
+              <td class="left_column_td" nowrap="nowrap" valign="top">
+                <!--td class="left_column_td" nowrap="nowrap" style="padding-left:30px;"-->
+                <div class="leftContent" style="">
+    
+    <div class="sidebar">
+<div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>TIETOSUOJA</span></a></div><div class="accordionContent" style="display: block;" ><ul><li><a href="protect-privacy.html" >Kuinka suojaamme yksityisyytt&#228;si</a></li><li><a href="protect-privacy-qa.html" >Kysymykset & Vastaukset</a></li><li class="selected"><a  href="privacy-policy.html">Tietosuojak&#228;yt&#228;nt&#246;mme</a><span class="menubg_right"></span></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="../do/preferences.pl-language_ui=suomi.html">ASETUKSET</a></li><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="company-faq.html">UKK</a></li><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>YHTEIS&#246;</span></a></div><div class="accordionContent"><ul><li><a href="https://www.facebook.com/ixquick" >Facebook</a></li><li><a href="https://twitter.com/#!/ixquick" >Twitter</a></li><li><a href="https://blog.startpage.com" >Blogi</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>TIETOJA</span></a></div><div class="accordionContent"><ul><li><a href="what-makes-ixquick-special.html" >Miten eroamme muista</a></li><li><a href="company-background.html" >Yrityksen historia</a></li><li><a href="company-management-bio.html" >Ty&#246;ntekij&#228;mme</a></li><li><a href="company.html" >Yritys</a></li><li><a href="press-center.html" >Lehdist&#246;keskus</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>LIS&#228;&#228; IXQUICK</span></a></div><div class="accordionContent"><ul><li><a href="download-ixquick-plugin.html" id="sidebar_browser_name">Lis&#228;&#228; selaimeen</a></li><li><a href="make-ixquick-your-homepage.html" >Kotisivuksi</a></li><li><a href="mobile-app-qa.html" >Mobiililaite</a></li><li><a href="download-ixquick-toolbar.html" >Ty&#246;kalupalkin</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="spread-the-word.html">OSUUS</a></li></div><br><br><br><br><br><br>
+    </div></div></td>
+    <td>
+    <div class="rightContent" id="content">
+    <h1>Tietosuojak&#228;yt&#228;nt&#246;mme</h1><div class="pad_t20">
+    <h3 class="cont">
+    <table border="0" cellpadding="3" cellspacing="3" class="txt_18" width="100%">
+        <tbody>
+            <tr>
+                <td valign="top" width="25%">Lyhyesti sanottuna:</td>
+                <td width="75%">Ixquick EI ker&#228;&#228; tai jaa MIT&#196;&#196;N henkil&#246;kohtaisia tietoja!<br>Ei mit&#228;&#228;n. Ei yht&#228;&#228;n. Ei yht&#228;&#228;n mit&#228;&#228;n.</td>
+            </tr>
+            <tr>
+                <td valign="top" width="25%">Pidempi versio:</td>
+                <td width="75%">Ixquick on vahvasti sitoutunut turvaamaan k&#228;ytt&#228;j&#228;yhteis&#246;ns&#228; yksityisyyden. T&#228;ss&#228; tietosuojak&#228;yt&#228;nn&#246;ss&#228; kerrotaan ne hyvin rajoitetut ja ei-henkil&#246;kohtaiset tiedot, joita Ixquick.com ("Ixquick") saattaa ker&#228;t&#228;, sek&#228; tietojen paljastusk&#228;yt&#228;nt&#246;mme.</td>
+            </tr>
+        </tbody>
+    </table></h3><div class="pad_t30"><h2>IP-osoitteet</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">Hakuihin liittyvi&#228; k&#228;ytt&#228;jien IP-osoitteita EI tallenneta.</span><br>Ainut poikkeus t&#228;h&#228;n ovat loukkaavat (automaattiset) kyselij&#228;t, jotka l&#228;hett&#228;v&#228;t Ixquickille nopeasti monta kysely&#228; per&#228;kk&#228;in.</h3><br><br><h2>Tietojen ker&#228;&#228;minen</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">Me emme halua ker&#228;t&#228; mit&#228;&#228;n henkil&#246;kohtaisia tietoja k&#228;ytt&#228;jist&#228;mme. Nada. Zilch. Zero.</span><br>Kun k&#228;yt&#228;t Ixquick-sivustoa, emme tallenna IP-osoitettasi, emme talleta hakuusi yhdistetty&#228; selainta (Internet Explorer, Safari, Firefox, Chrome, jne.) tai tietokonealustaa (Windows, Mac, Linux, jne.), emmek&#228; tallenna varsinaisia hakusanojasi.<br><br>T&#228;m&#228; k&#228;yt&#228;nt&#246; olla t&#228;ysin ker&#228;&#228;m&#228;tt&#228; tietoja suojelee yksityisyytt&#228;si, sill&#228; tiedot IP-osoitteestasi, selaimestasi ja alustastasi voidaan yhdist&#228;&#228; muihin tietoihin tietokoneesi, sijaintisi tai sinun itsesi <a class="blue_link" href="https://panopticlick.eff.org" target="_blank">yksil&#246;lliseksi tunnistamiseksi</a>. On my&#246;s t&#228;rke&#228;&#228;, ettei hakutermej&#228; tallenneta, koska my&#246;s ne voivat v&#228;litt&#228;&#228; henkil&#246;kohtaista informaatiota. (Ajattele esimerkiksi jotakuta, joka tekee haun omalla nimell&#228;&#228;n ja/tai henkil&#246;tunnuksellaan.)<br><br>Itse asiassa ainoa ker&#228;&#228;m&#228;mme tieto on yhteenlaskettu kokonaism&#228;&#228;r&#228; siit&#228;, kuinka monta hakua sivustollamme suoritetaan kunakin p&#228;iv&#228;n&#228; (mitta kokonaisliikenteest&#228;), sek&#228; ajoittain joitakin muita puhtaasti ei-henkil&#246;kohtaisia tilastoja. T&#228;llaisiin tilastoihin voi kuulua se, kuinka monta kertaa palveluumme ollaan yhteydess&#228; erilaisilla k&#228;ytt&#246;j&#228;rjestelmill&#228;, selaintyypeill&#228;, kieliasetuksilla, jne. tai n&#228;iden yhdistelm&#228;ll&#228;.<br><br>Laskemme vain <i>numerot </i>, emmek&#228; voi mitenk&#228;&#228;n tiet&#228;&#228;, mik&#228; <i>sinun</i> k&#228;ytt&#246;j&#228;rjestelm&#228;si, selaimesi, kieliasetuksesi jne voi olla, koska emme tallenna niit&#228; tietoja.</h3><h2 class="pad_t30">Ev&#228;steet</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">Ixquick ei k&#228;yt&#228; tunnistavia ev&#228;steit&#228;</span><br><div class="pri_preferences"><div class="pre_cont">Preferences</div></div><a class="blue_link" href="protect-privacy-qa.html#q11" target="_blank">Ev&#228;steet</a> ovat pieni&#228; m&#228;&#228;ri&#228; dataa, jonka web-palvelin l&#228;hett&#228;&#228; k&#228;vij&#228;n tietokoneen kiintolevyasemaan k&#228;ytt&#228;j&#228;n k&#228;ydess&#228; jollakin sivustolla. Ixquick k&#228;ytt&#228;&#228; ainoastaan yht&#228; &#150; nimet&#246;nt&#228; &#150; ev&#228;stett&#228; nimelt&#228;&#228;n &#148;preferences&#148;. T&#228;m&#228;n ev&#228;steen tarkoituksena on muistaa hakuasetukset, jotka tallensit seuraavaa k&#228;ynti&#228;si varten. Se vanhenee 90 p&#228;iv&#228;n kuluttua.<br><br>Voit joko sallia tai est&#228;&#228; ev&#228;steet muuttamalla selaimesi asetuksia. Ota kuitenkin huomioon, ett&#228; Ixquick.com -asetuksesi eiv&#228;t toimi oikein, jos ev&#228;steet on estetty. On mahdollista sallia ev&#228;steet ainoastaan valituilta verkkosivuilta.<br><br>Voit s&#228;&#228;nn&#246;llisesti poistaa ev&#228;steet tietokoneen kovalevylt&#228;, jolloin tyhjenn&#228;t koko sivuhistorian ja siten kaikki tiedot, joita on saattanut tallentua tietokoneellesi surffatessasi verkossa. Jos poistat ev&#228;steet, sinua ei tunnisteta toistuvana k&#228;vij&#228;n&#228; tai lukijana palatessasi tietylle verkkosivulle.<br><br>Edist&#228;&#228;kseen ev&#228;steet&#246;nt&#228; interneti&#228; Ixquickill&#228; on <a class="blue_link" href="urlgenerator-details.html" target="_blank" onclick="return false;" id="url_gen_link">URL-generaattori </a>, joka poistaa ev&#228;steiden asettamisen tarpeen. Se muistaa asetuksesi tietosuojayst&#228;v&#228;llisell&#228; tavalla. L&#246;yd&#228;t sen <a class="blue_link" href="../do/preferences.pl-language_ui=suomi.html" target="_blank"> "SETTINGS" (ASETUKSET)</a>-sivun alalaidasta.</h3><h2 class="pad_t30">Ulkoiset linkit</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">Ixquick tarjoaa v&#228;lipalvelintoiminnon, joka antaa k&#228;ytt&#228;jien n&#228;hd&#228; ulkoisten sivujen tiedot joutumatta paljastamaan IP-osoitettaan n&#228;ille sivustoille.</span><br>Hakukoneyritys ja mainos- ja kustannustoiminnan harjoittaja l&#246;yt&#228;&#228; sivustoltamme erilaisia linkkej&#228;, mukaan lukien hakutuloksia ja sponsoroituja hakutuloksia. Itsen&#228;iset yritykset omistavat n&#228;m&#228; sivustot ja yll&#228;pit&#228;v&#228;t niit&#228; eik&#228; Ixquick ole niist&#228; vastuussa mill&#228;&#228;n tavalla eik&#228; t&#228;m&#228; tietosuojamenettely koske niit&#228;. Ixquick ei ole vastuussa n&#228;iden sivustojen sis&#228;ll&#246;st&#228; eik&#228; niiden ker&#228;&#228;misest&#228; tai k&#228;yt&#246;st&#228;. Korostamme, ett&#228; t&#228;m&#228; tietosuojamenettely koskee vain Ixquick.com-sivustoa. Ixquick tarjoaa v&#228;lipalvelintoiminnon, joka antaa k&#228;ytt&#228;jien n&#228;hd&#228; ulkoisten sivujen tiedot joutumatta paljastamaan IP-osoitettaan n&#228;ille sivustoille.  Lis&#228;tietoja t&#228;st&#228; upeasta tietosuojaty&#246;kalusta on <a class="blue_link" href="../proxy/suo/help.html" target="blank">t&#228;ss&#228;</a>. </h3><h2 class="pad_t30">S&#228;hk&#246;postiosoitteita</h2><h3 class="cont"><span class="txt_green txt_i mar_b10" style="display:inline-block;">
+                         Ixquick ei myy eik&#228; paljasta yhteystietojasi kolmansille osapuolille.</span><br>K&#228;ytt&#228;j&#228;n l&#228;hett&#228;ess&#228; kommentteja, kysymyksi&#228;, ehdotuksia tai palautetta Ixquickille s&#228;hk&#246;postitse ja liitt&#228;ess&#228;nne niihin s&#228;hk&#246;postiosoitteen ja/tai yhteystietoja, Ixquick saattaa k&#228;ytt&#228;&#228; n&#228;it&#228; tietoja vastatessaan k&#228;ytt&#228;j&#228;lle. Ixquick ei myy eik&#228; paljasta yhteystietojanne kolmansille osapuolille. Saatamme kuitenkin ajoittain l&#228;hett&#228;&#228; s&#228;hk&#246;postia k&#228;ytt&#228;jillemme koskien Ixquickin yritystietoja. T&#228;m&#228; palvelu on vapaaehtoista ja sis&#228;lt&#228;&#228; mahdollisuuden erota postituslistalta.</h3><h2 class="pad_t30">Alle 13-vuotiaat lapset</h2><h3 class="cont"><span style="display:inline-block;" class="txt_green txt_i mar_b10">Huomaa, ettemme ker&#228;&#228; lainkaan henkil&#246;kohtaisia tietoja.</span><br>T&#228;m&#228;n vuoksi Ixquick ei tietoisesti pyyd&#228;, ker&#228;&#228; tai jaa henkil&#246;kohtaisesti tunnistavia tietoja my&#246;sk&#228;&#228;n alle 13-vuotiailta k&#228;ytt&#228;jilt&#228;. Pid&#228;mme lasten yksityisyyden suojaamista verkossa hyvin t&#228;rke&#228;n&#228;.</h3><h2 class="pad_t30">Tietojen jakaminen</h2><h3 class="cont"><span style="display:inline-block;" class="txt_green txt_i mar_b10">Ixquickill&#228; ei ole antaa henkil&#246;kohtaisia tietoja jaettavaksi.</span><br>Ixquick ei jaa henkil&#246;kohtaisia tietoja mink&#228;&#228;n kolmannen osapuolen hakukoneen tai sponsoroitujen hakutulosten tarjoajien kanssa. Napsauta <a class="blue_link" href="information-sharing.html" target='_blank' onclick='return false;' id="information-sharing-link"> t&#228;t&#228; </a> saadaksesi lis&#228;tietoja. </h3><h2 class="pad_t30">Hallituksen pyynn&#246;t</h2><h3 class="cont">Ixquickin p&#228;&#228;toimisto on Euroopan Alankomaissa. Lakimiehemme tarkastavat l&#228;pikotaisin kaikki k&#228;ytt&#228;jien tietojen luovutuspyynn&#246;t ja -vaatimukset milt&#228; tahansa hallitukselta (mukaan lukien Yhdysvaltojen hallitus), emmek&#228; noudata niit&#228;, ellei meit&#228; koskeva laki vaadi sit&#228; meilt&#228; kiistattomasti. Ja t&#228;ss&#228;kin hypoteettisessa tilanteessa viittaisimme siihen tosiasiaan, ettei meill&#228; ole henkil&#246;tietoja jaettavaksi. Emme ole 14 vuoden toimintamme aikana saanut yht&#228;k&#228;&#228;n t&#228;llaista pyynt&#246;&#228;.<br><br>Ainoa laillinen tapa, joka saisi meid&#228;t ker&#228;&#228;m&#228;&#228;n henkil&#246;kohtaisia tietoja, on p&#228;tev&#228; m&#228;&#228;r&#228;ys tai tuomioistuimen p&#228;&#228;t&#246;s, joka velvoittaisi meid&#228;t toimimaan n&#228;in suhteessa tiettyyn k&#228;ytt&#228;j&#228;&#228;n, jota ep&#228;ill&#228;&#228;n rikoksesta. T&#228;m&#228; on tarpeeksi vakava seikka yksityisyyden rajoittamiseksi.</h3><h2 class="pad_t30">Sinun yksityisyytesi, meid&#228;n tulevaisuutemme.</h2><h3 class="cont">Uskomme vakaasti, ett&#228; meill&#228; on laillinen oikeus turvata k&#228;ytt&#228;jiemme yksityisyys olemalla ker&#228;&#228;m&#228;tt&#228; ja/tai salaamalla heid&#228;n henkil&#246;kohtaiset tietonsa, ja ett&#228; meill&#228; on oikeus jatkaa n&#228;in toimimista.<br><br>Ottaen huomioon Euroopan vahvan yksityisyyssuojan oikeuden eurooppalaiset hallitukset eiv&#228;t voi noin vain pakottaa meid&#228;n kaltaisiamme palveluntarjoajia ottamaan k&#228;ytt&#246;&#246;n kokonaisvaltaista k&#228;ytt&#228;jien vakoiluohjelmaa. Mik&#228;li niin koskaan tapahtuisi, taistelisimme loppuun saakka.</h3><br><br style="clear:both;"></div></div><div class="quote_txt txt_center">Tietosuoja<br>Se ei ole vain k&#228;yt&#228;nt&#246;mme - se on missiomme!</div><br><br><h2>K&#228;ytt&#228;j&#228;</h2><h3 class="cont">Ixquick.com on hollantilaisen yhti&#246;n omistama ja sen osoite on: Surfboard Holding BV, Postbus 1079, 3700 BB Zeist  Alankomaat. Tietosuojamenettelyst&#228; vastaa Robert E.G. Beens. <br/>(<img src='../graphics/startpage_robert_email_black.gif'>)</h3><div class="about-page-popup" id="info-sharing-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<table width="100%" border="0" cellspacing="0" cellpadding="8"><tr><td><br/>
+<h1>Tietojen jakaminen</h1><br/><br/>
+Joillakin Ixquickin hakutulossivuilla on joitakin selv&#228;sti merkittyj&#228; sponsoroituja linkkej&#228; toiminnan rahoittamiseksi. Kyseiset linkit on haettu Google Adwords -sovelluksesta. Mainoksia EI ole r&#228;&#228;t&#228;l&#246;ity k&#228;ytt&#228;jien hakujen mukaan, ja Ixquick EI koskaan tallenna mit&#228;&#228;n henkil&#246;kohtaisia tietoja eik&#228; luovuta henkil&#246;kohtaisia tietoja Googlelle. Jos k&#228;ytt&#228;j&#228; ei k&#228;yt&#228; v&#228;lityspalvelinta ja napsauttaa hakutuloksia, h&#228;n siirtyy ulkopuoliselle verkkosivustolle Ixquickin tarjoaman suojan ulkopuolelle. N&#228;in tapahtuu napsautettaessa kaikkia ulkoisia sivuja ja sponsoroituja linkkej&#228;. Huomautus: V&#228;lityspalvelin voi auttaa k&#228;ytt&#228;m&#228;&#228;n kaikkia tavanomaisia hakutuloksia nimett&#246;m&#228;n&#228;, mutta kuten huomaat, t&#228;m&#228; ei ole mahdollista sponsoroitujen linkkien osalta, sill&#228; mainostajien on pystytt&#228;v&#228; havaitsemaan click fraud -mainoshuijaukset.<br/><br/>
+Ixquickin t&#228;rkeimp&#228;n&#228; tavoitteena on suojata k&#228;ytt&#228;jiemme yksityisyytt&#228; ja tarjota samalla laadukasta palvelua.
+<br/><br/></td></tr></table></div>
+<div class="about-page-popup" id="url-generator-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><h1>URL-generaattori</h1><div><div class="cont_nor pad_t10"><h3>Asetusten tallennus ilman ev&#196;steit&#196;</h3></div><div class="pad_t25"><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5"><tr><td><ul class="check_green_l_17 url_gen"><li>Voit tallentaa Ixquick-ominaisuudet napsauttamalla "Tallenna Asetukset" -painiketta "<a class="blue_link" target='_blank' href='../do/preferences.pl-language_ui=suomi.html'>Asetukset</a>-sivulla.<li>N&#228;in tallennat asetukset tietokoneellesi &#148;preferences&#148;-nimiseen &#148;ev&#228;steeseen&#148;, joka on kiintolevylle tallennettu pieni tiedosto.</li><li>Ixquickin asetusev&#228;stett&#228; ei voida tunnistaa ev&#228;steeksi ja sen vastaanottaminen on turvallista, mit&#228; vastoin yleiset ev&#228;steet voivat olla uhka yksityisyydellesi.</li><li>K&#228;ytt&#228;j&#228;t, jotka eiv&#228;t hyv&#228;ksy ev&#228;steit&#228; tai poistavat ne s&#228;&#228;nn&#246;llisesti, eiv&#228;t pystyisi pit&#228;m&#228;&#228;n asetuksiaan t&#228;ll&#228; tavalla.</li><li>N&#228;ille henkil&#246;ille Ixquick tarjoaa erityisen "URL-generaattori"-painikkeen "<a class="blue_link" target='_blank' href='../do/preferences.pl-language_ui=suomi.html'>Asetukset</a>-sivun alaosassa.<li>Painamalla kyseist&#228; painiketta luot erityisen Ixquick URL:n, joka sis&#228;lt&#228;&#228; valitsemasi asetukset.</li><li>Se voidaan luoda luettavassa tai h&#228;ivytetyss&#228; muodossa.</li><li>Voit asettaa luodun URL:n nyt suoraan aloitussivuksesi tai kopioida sen ja k&#228;ytt&#228;&#228; sit&#228; kirjanmerkkin&#228;.</li><li>Kun luot t&#228;m&#228;n URL:n, kaikkia asetuksiasi k&#228;ytet&#228;&#228;n k&#228;ydess&#228;si seuraavan kerran Ixquickilla.</li><li id="customplugin" style="display:none;">Voit my&#246;s painaa kohtaa 'Asenna Custom Plugin' URL-osoitteen luomisen j&#228;lkeen. Se auttaa asentamaan hakukent&#228;n pluginin, joka sis&#228;lt&#228;&#228; asetuksesi.</li><li id="customplugin_ff" style="display:none;">Sinua pyydet&#228;&#228;n ehk&#228; ensin poistamaan aiemmin tallennetut versiot hakukent&#228;n pudotusvalikosta.</li><li id="customplugin_chrome" style="display:none;">Varmista, ett&#228; sy&#246;tt&#228;m&#228;si 'Hakusana' eroaa muista aiemmin tallentamistasi hakusanoista.</li></ul><div class="cont_nor pad_t10"><b><b>Ixquick tarjoaa yksityisyytt&#228;si suojaavia ominaisuuksia, joiden avulla liikkuminen Internetiss&#228; on turvallisempaa.</b></b></div></div><br/></td></tr></table>
+<script type='text/javascript'>
+    var agent = navigator.userAgent;
+    if ( (agent.indexOf('Firefox/') != -1) || (agent.indexOf('Chrome/') != -1) ||
+         (agent.indexOf('SeaMonkey/') != -1) || (agent.indexOf('MSIE 7') != -1) ||
+         (agent.indexOf('MSIE 8') != -1) ) {
+
+        document.getElementById('customplugin').style.display = '';
+        if (agent.indexOf('Firefox/') != -1) {
+            document.getElementById('customplugin_ff').style.display = '';
+        }
+        if (agent.indexOf('Chrome/') != -1) {
+            document.getElementById('customplugin_chrome').style.display = '';
+        }
+    }
+</script><input type="hidden" id="query_top" height="10"></div></div></div>
+<div id="loadingId"></div>
+</div></div><div id="toPopup"><div class="close"></div><div id="popup_content"><div id="sm-video" style="position: relative; display: block; width: 639px; height: 360px;">Jwplayer Loading<div style="display: none;" id="sm-video_aspect"></div><div id="sm-video_jwpsrv" style="position: absolute; top: 0px; z-index: 10;"></div></div></div></div>
+    </div></div>
+    <div class="clear"></div>
+    </td>
+    </tr>
+</tbody>
+</table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    
+	<div class="footer" id="footer">
+ 	<div class="copyright">
+  	&copy; 2015 Ixquick
+ 	</div>
+		
+ 	<div class="right_links"><a id="startmail" href="https://startmail.com/" style="text-decoration: none;">
+    <!--<span class="icon icon-small"><span class="icon-mail"></span></span>&nbsp;-->
+  	<span style="text-decoration: underline;">StartMail</span></a>
+  	<a id="privacy_policy" href="privacy-policy-.html">Tietosuojak&#228;yt&#228;nt&#246;</a>
+ 	</div>
+    <div class='imgavt'> </div>
+    </div>
+    <script type="text/javascript" charset="utf-8"> $(function() { $('body').hide().show(); });</script>
+    </body>
+    </html>

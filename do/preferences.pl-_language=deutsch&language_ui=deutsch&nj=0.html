@@ -1,0 +1,1245 @@
+<!DOCTYPE HTML>
+    <!--[if lt IE 7 ]> <html class='ie6 ie'> <![endif]-->                                                                         
+    <!--[if IE 7 ]> <html class='ie7 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 8 ]> <html class='ie8 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 9 ]> <html class='ie9 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if (gt IE 9)|!(IE)]><!-->                                                                                                                                                                          
+    <html>                                                                                                                                                                                                  
+    <!--<![endif]-->
+     <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">     
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title> Sucheinstellungen </title>
+    
+<link rel="icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../graphics/favicon/ix-apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../graphics/favicon/ix-apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../graphics/favicon/ix-apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../graphics/favicon/ix-apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../graphics/favicon/ix-apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../graphics/favicon/ix-apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../graphics/favicon/ix-apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../graphics/favicon/ix-apple-touch-icon-152x152.png">
+<link rel="icon" sizes="196x196" href="../graphics/favicon/ix-favicon-196x196.png" type="images/png">
+<link rel="icon" sizes="160x160" href="../graphics/favicon/ix-favicon-160x160.png" type="images/png">
+<link rel="icon" sizes="96x96" href="../graphics/favicon/ix-favicon-96x96.png" type="images/png">
+<link rel="icon" sizes="16x16" href="../graphics/favicon/ix-favicon-16x16.png" type="images/png">
+<link rel="icon" sizes="32x32" href="../graphics/favicon/ix-favicon-32x32.png" type="images/png">
+<link href="../graphics/favicon/ix-favicon-16x16.png" type="images/png" rel="shortcut icon">
+<meta name="msapplication-TileColor" content="#6589c7">
+<meta name="msapplication-TileColor" content="/graphics/favicon/ix-mstile-144x144.png">
+
+    
+    <link href='../css/retina_about_pages-v=5.css' type='text/css' media="all"  rel='StyleSheet' />
+    <!--[if lt IE 9]><link href='../css/lt_ie9-v=5.css' type='text/css' media="all"  rel='StyleSheet' /><![endif]-->
+    
+    <script language='javascript' type='text/javascript' src='../js/retina_about_pages-v=5.js'></script>            
+    <!--[if lt IE 9]><script language='javascript' type='text/javascript' src='../js/less_than_ie9-v=5.js'></script><![endif]-->
+    <script>function setFocus() { var pageUrl = window.location.href; if (!pageUrl.match(/jump_to/)) { document.getElementById("query_top").focus(); } }</script>
+    
+	<script>
+   	jQuery(window).load(function() {
+		jQuery('.accordionButton').click(function(e){
+			e.preventDefault();
+            var div_display = jQuery(this).next('.accordionContent').css('display');
+            if (div_display == 'block') {
+                jQuery(this).next('.accordionContent').slideUp();
+            } else {
+                jQuery('div.accordionContent').slideUp();
+                jQuery(this).next('.accordionContent').slideToggle();
+            }
+    	});
+    });
+
+jQuery(window).load(function () {
+    jQuery('div[id^=tOoLtIp]').each(function() {
+        var obj = jQuery(this);
+        jQuery(this).addClass('sb-tooltip');
+        jQuery(this).find('*').removeAttr('bgcolor color face style');
+    });
+});
+
+function verifyChecked (form_obj) { 
+    var formname = form_obj.name; 
+    var orig_query = document[formname].query.value; 
+    if (orig_query == "") { 
+        return false; 
+    } 
+    form_obj.submit(); 
+
+    return false; 
+}
+      
+    </script>
+	
+    <script type='text/javascript'>
+    jQuery(window).load(function() {         
+                                    concatParamToAllUrls(); 
+jQuery('.external').click(function(){
+        var link = jQuery(this).attr('data-link');
+        var str;
+        if(link.match(/facebook/i)) {
+           str = "";
+        } else if(link.match(/twitter/i)) {
+           str = "";
+        }
+
+        r = confirm(str);
+        if(r==true) { 
+            document.location = link;
+        } 
+        return false;
+    });
+jQuery(window).load(function () {
+    var page_url = document.URL;
+    if( page_url.match("company-faq") || 
+        page_url.match("protect-privacy-qa") || 
+        page_url.match("preferences.pl") ) {
+        if (page_url.match(/.html#q/) || page_url.match("jump_to")) {
+        } else { 
+          document.getElementById('query_top').focus();
+        }
+    } else { 
+        document.getElementById('query_top').focus();
+    }
+});
+
+jQuery(function() {     
+//if(jQuery('.rightContent').height()<jQuery('.leftContent').height()){
+//jQuery('.leftContent').css("border-right","none");
+    //jQuery('#borderLR').hide();
+//}else{
+    //jQuery('.leftContent').css("border-right","none");
+//jQuery('#borderLR').show();
+//jQuery('#borderLR').height(jQuery('.bodyContent').height()-40);
+//}
+});
+});
+function newImage(arg) {
+  if (document.images) {
+        rslt = new Image();
+        rslt.src = arg;
+        return rslt;
+  }
+}
+
+function loadImage() {
+    img1 = newImage("/graphics/selectedMenuBack.png");
+    img2 = newImage("/graphics/hoverMenuBack.png");
+    img2 = newImage("/graphics/separator.gif");
+}
+
+loadImage();
+		function concatParamToAllUrls (referenceUrlId) {
+			/* Get current url */
+			var currentUrl = window.location.href;
+			currentUrl = unescape(currentUrl);
+			var isParamPresentInFormField = false; /* flag to check if prf OR prfh param is present in form field */
+			var isParamPresentInUrl = false;  /* flag to check if prf OR prfh param is present in url */
+            var isValidParam = false;  /*flag to check if prf OR prfh parameter is valid or not.*/
+            var alreadyHiddenPrfBlankPresent = false;
+			var paramName = "";
+			var paramValue = "";
+
+			/* Loop through each input type element and check if prf OR prfh is present or not. If yes mark flag as true */
+			jQuery(":input").each(function(i){
+					
+				if( (jQuery(this).attr("name") == "prfh") || (jQuery(this).attr("name") == "prf") ){
+					//isParamPresentInFormField = true;
+					paramName  = jQuery(this).attr("name") + "=";
+					paramValue = jQuery(this).attr("value");
+                    if (paramValue != "") {
+                         isParamPresentInFormField = true;
+                    } else {
+                       alreadyHiddenPrfBlankPresent = true;
+
+                    }
+				}
+				
+			});
+
+			/* Is prf OR prfh present in Url. If yes then set flag as true */
+			if( (currentUrl.match(/(.*?)(&|\?)(prfh)(=)(.*?)($|&)/g)) || (currentUrl.match(/(.*?)(&|\?)(prf)(=)(.*?)($|&)/g)) ){
+				isParamPresentInUrl = true;
+			}
+            var param_name = RegExp.$3;
+            var parm_opt = RegExp.$4;
+            var prm_value = RegExp.$5;
+            if (/^[a-zA-Z0-9/_]+$/.test(prm_value)) {
+                isValidParam = true;
+            }
+
+			//alert('isParamPresentInFormField ' + isParamPresentInFormField + ' isParamPresentInUrl ' + isParamPresentInUrl);
+			if( isValidParam && ((isParamPresentInUrl) || (isParamPresentInFormField)) ){
+				var concatThisParam = "";
+
+				/* Prepare param to be concatenated */
+				if (isParamPresentInUrl) {
+					concatThisParam = param_name + parm_opt + prm_value;
+				} else if(isParamPresentInFormField){
+					concatThisParam = paramName + paramValue ;
+					
+				}
+
+				/* If advance search url is calling this method then concat prf OR prfh param to this url only. Else concat to all the urls */
+				if (typeof referenceUrlId != "undefined") {
+					jQuery('#' + referenceUrlId).attr('href', jQuery('#' + referenceUrlId).attr('href') + '&' + concatThisParam);
+					
+				} else {
+				   /* Add prf OR prfh as form field as well if not already present. */
+				   if (!isParamPresentInFormField) {
+                       if (alreadyHiddenPrfBlankPresent) {
+                           var myParam = concatThisParam;
+                           var param_elements = myParam.split('=');
+                          jQuery('input[name='+param_elements[0]+']').val(param_elements[1]);
+                       } else {
+					      jQuery("<input type='hidden' value='" + prm_value + "' name='" + param_name + "' id='" + param_name + "' />").prependTo(jQuery('#input_p'));
+                       }
+                   }
+				   jQuery('.addsettings').each(function(index){ 
+					   var originalUrl = jQuery(this).attr('href');
+                       if (originalUrl) {
+					   if ( originalUrl.match( /(.*?)(\?)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '&' + concatThisParam);
+					   } else if( originalUrl.match( /(.*?)(\/)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   } else if(originalUrl.match( /(.*)(\/)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   }
+                       }
+					   
+				   });
+			   }
+			}
+		} function eId(item) { 
+        return document.getElementById(item);                                                                                                                                                                    
+    }                                                                                                                                                                                                          
+    var allCats = new Array('web','pics','video');                                                                                                                                          
+                                                                                                                                                                                                               
+    function hasClass(ele,cls) {                                                                                                                                                                                
+        return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));                                                                                                                             
+    }                                                                                                                                                                                       
+                                                                                                                                                                                                     
+    function addClass(ele,cls) {                                                                                                                                                            
+        if (!this.hasClass(ele,cls)) {                                                                                                                                                       
+            ele.className += ' ' + cls;                                                                                                                                                   
+        }                                                                                                                                                                                           
+    }                                                                                                                                                                                            
+                                                                                                                                                                                                    
+    function removeClass(ele,cls) {                                                                                                                                               
+        if (hasClass(ele,cls)) {                                                                                                                                                          
+            var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');                                                                                                                                   
+            ele.className=ele.className.replace(reg," ");                                                                                                                                       
+        }                                                                                                                                                                                       
+    }                                                                                                                                                                                              
+                                                                                                                                                                                                         
+    function passQueryAdv(url) {                                                                                                                                                                                 
+        url += '?&cat=' + document.blah1.cat.value;                                                                                                                                                              
+        url += '&query=' + escape(document.blah1.query.value);
+        eId('xsearch').href = url; concatParamToAllUrls('xsearch');
+    }
+    
+    function setCat(catr) { 
+        document.blah1.cat.value = catr;
+        for(var i = 0; i < allCats.length; i++) {
+            removeClass(eId(allCats[i]), 'active');
+        }
+        addClass(eId(catr), 'active');
+        eId('query_top').focus();
+        if (catr != 'web') {
+            //eId('enhanced').style.visibility = 'hidden';
+            //eId('detail').style.visibility = 'hidden';
+        } else {
+            //eId('enhanced').style.visibility = 'visible';
+            //eId('detail').style.visibility = 'visible';
+        }
+        return false;
+    }
+ 
+    function trim(str) {
+       return str.replace(/^\s+|\s+$/g, '');
+    }
+
+    function get_value(c_name) {
+       var current_url = location.href;
+      if ( (current_url.indexOf('prfh') != -1) && (current_url.indexOf(c_name) != -1) ) {
+           c_start= current_url.indexOf(c_name + "EEE");
+           if (c_start!=-1)
+              {
+                c_start=c_start + c_name.length+3;
+                c_end=current_url.indexOf("N1N",c_start);
+                if (c_end==-1) c_end = current_url.length;
+                return unescape(current_url.substring(c_start,c_end));
+              }
+         } else {
+            if (document.cookie.length>0)
+               {
+                 c_start=document.cookie.indexOf(c_name + "EEE");
+                 if (c_start!=-1)
+                    {
+                      c_start=c_start + c_name.length+3;
+                      c_end=document.cookie.indexOf("N1N",c_start);
+                      if (c_end==-1) c_end=document.cookie.length;
+                      return unescape(document.cookie.substring(c_start,c_end));
+                     }
+                  }
+
+         }
+       return "";
+     }
+
+    function change_form_method() {
+       if(get_value('enable_post_method') == '0') {
+          document.blah1.method = 'GET';
+       }
+    }
+
+    function verifyChecked (form_obj) {
+        var formname = form_obj.name;
+        var orig_query = document[formname].query.value; 
+        if (orig_query == '') {
+           return false;
+        }
+        form_obj.submit();
+        return false;
+    } 
+
+
+        $(document).ready(function() {
+
+            if((BrowserDetect.OS.indexOf("BB10") != -1) && (navigator.userAgent.indexOf("Mobile Safari") != -1)) MY_BROWSER = "Browser";
+            if ( ((MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium')) && (MY_BROWSER_VERSION > 31) ) {
+
+            actionUrl = document.blah1.action;
+            document.blah1.action = actionUrl.replace(/\/search$/, '/metasearch.pl'); }
+ });
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+    
+    var message_array = new Array('polski', 'Uwaga:\nje&#380;eli ustawienia wyszukiwarki Ixquick zosta&#322;y utracone po jej ponownym uruchomieniu, prawdopodobnie nale&#380;y zmieni&#263; preferencje prywatno&#347;ci w przegl&#261;darce.\nWi&#281;cej informacji na ten temat mo&#380;na znale&#378;&#263; w wykazie cz&#281;sto zadawanych pyta&#324;. \n', 'norsk', 'Note:\nHvis du har mistet innstillingene for Ixquick etter at du starter nettleseren p&#229; nytt, er det mulig at dine personvernpreferanser m&#229; stilles inn igjen.\nDu kan finne flere opplysninger p&#229; siden \'La oss f&#229; vite om det\' under FAQ.\n', 'deutsch', 'Hinweis:\nFalls Ihre Ixquick-Einstellungen nach dem Neustart Ihres Browsers verloren gehen, m&#252;ssen Sie gegebenenfalls die Datenschutzeinstellungen Ihres Browsers anpassen.\nWeitere Informationen dazu finden Sie unter den h&#228;ufig gestellten Fragen. \n', 'dansk', 'Bem&#230;rk:\nHvis dine Ixquick-indstillinger g&#229;r tabt, efter at du har genstartet din browser, skal browserens indstillinger for beskyttelse af personlige oplysninger muligvis &#230;ndres.\nDu kan finde yderligere oplysninger under "Ofte stillede sp&#248;rgsm&#229;l". \n', 'hangul', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'turkce', 'Not:\nTaray&#305;c&#305;n&#305;z&#305; yeniden ba&#351;latt&#305;ktan sonra Ixquick ayarlar&#305;n&#305;z kaybolduysa, taray&#305;c&#305;n&#305;z&#305;n gizlilik tercihlerinin ayarlanmas&#305; gerekiyor olabilir.\nDaha fazla bilgi edinmek i&#231;in SSS b&#246;l&#252;m&#252;ne bak&#305;n.\n', 'english', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted.\nFurther information can be found on the FAQ.\n', 'francais', 'Remarque&#160;:\nSi, au red&#233;marrage de votre navigateur, vous constatez que vos param&#232;tres Ixquick n&#146;ont pas &#233;t&#233; sauvegard&#233;s, v&#233;rifiez les options de votre navigateur portant sur la vie priv&#233;e.\nConsultez la rubrique FAQ pour en savoir plus.\n', 'espanol', 'Nota:\nSi no encuentra la configuraci&#243;n de Ixquick despu&#233;s de reiniciar el explorador, es posible que deban ajustarse las preferencias de privacidad del explorador.\nPuede encontrar m&#225;s informaci&#243;n en las Preguntas frecuentes. \n', 'english_uk', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s privacy preferences may need to be adjusted.\nFurther information can be found on the FAQ.\n', 'nederlands', 'Noot:\nAls uw Ixquick instellingen verloren gaan na het herstarten van uw browser, ligt dat waarschijnlijk aan de privacy instellingen van uw browser.\nMeer informatie vindt u op de "Laat het ons weten" pagina onder "veelgestelde vragen".\n', 'portugues', 'Nota:\nCaso suas configura&#231;&#245;es do Ixquick sejam perdidas ap&#243;s a reinicializa&#231;&#227;o do navegador, talvez seja necess&#225;rio ajustar as prefer&#234;ncias de privacidade do navegador.\nMais informa&#231;&#245;es podem ser encontradas nas Perguntas frequentes.\n', 'suomi', 'Huomaa:\nJos Ixquickin asetuksiin tekem&#228;si muutokset h&#228;vi&#228;v&#228;t selaimesi uudelleen k&#228;ynnist&#228;misen yhteydess&#228;, voi olla tarpeen s&#228;&#228;t&#228;&#228; selaimesi tietosuoja-asetuksia.\nLis&#228;tietoa l&#246;yd&#228;t Usein kysytyt kysymykset -osiosta.\n', 'svenska', 'Obs!\nOm dina inst&#228;llningar f&#246;r Ixquick &#228;r borta n&#228;r du startat om webbl&#228;saren kan du beh&#246;va justera webbl&#228;sarens sekretessinst&#228;llningar.\nMer information finns i v&#229;ra vanliga fr&#229;gor och svar.\n', 'nihongo', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'jiantizhongwen', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'fantizhengwen', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'italiano', 'Nota bene:\nse le impostazioni di Ixquick vanno perse dopo avere riavviato il browser, potrebbe essere necessario modificare le preferenze della privacy del browser.\nMaggiori informazioni sono disponibili nelle FAQ.\n');
+
+    function hide () {
+        for (var i=0; i<hide.arguments.length; i++) {
+            document.getElementById(hide.arguments[i]).style.display = 'none';
+        }
+    }
+    function show () {
+        for (var i=0; i<show.arguments.length; i++) {
+            document.getElementById(show.arguments[i]).style.display = '';
+        }
+    }
+  function showMessage (enable_retina_design) {
+
+    var language_selected = '';
+    if (document.settings.pref_language_ui) {
+      if (!enable_retina_design) {
+        var disp_lang_obj = document.settings.pref_language_ui; 
+        language_selected = disp_lang_obj.options[disp_lang_obj.selectedIndex].value;
+      } else {
+        language_selected = $('[name=pref_language_ui]').val();
+      }
+    }
+
+   if (language_selected == '') {
+        language_selected = 'english';
+    } 
+    for (var i = 0; i < message_array.length; i += 2) {
+        if (message_array[i] == language_selected) {
+            var text = document.createElement('span');
+            text.innerHTML = message_array[i+1];
+            //alert(text.innerHTML);
+            break;
+        }
+    }
+    return true;
+}
+    function show_plugin_install (obj_id, do_display) {
+        if ( (MY_BROWSER == 'Firefox') || (MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium') || (MY_BROWSER == 'SeaMonkey') ||
+             ((MY_BROWSER == 'Explorer') && (MY_BROWSER_VERSION >= 7) && (MY_BROWSER_VERSION < 9))) {
+            /* 2015-04-30 [Krishna] Don't show the 'Install Custom Plugin' button in mobile devices. */
+            if (do_display == 1 && !BrowserDetect.OS.match(/Android|iOS|Blackberry|Windows\s+Phone\s+8/i)) {
+                show(obj_id);
+            }
+        }
+}
+    function get_http_host() {
+    var http_host = '';
+    var page_url = document.URL;
+    var url_parts = page_url.split('://');
+    var protocol = url_parts[0];
+
+    if (url_parts[1].indexOf('/') != -1) {
+       var slash_pos = url_parts[1].indexOf('/');
+       http_host = protocol + '://' + url_parts[1].substr(0, slash_pos);
+    } else {
+       http_host = protocol + '://' + url_parts[1];
+    }
+    
+    return http_host;
+}
+    
+    function add_plugin (plugin_url, favicon_url, brand, custom_text) {
+        plugin_url += '&browser=' + MY_BROWSER + '&version=' + MY_BROWSER_VERSION;
+
+        if ((MY_BROWSER == 'Explorer') && (MY_BROWSER_VERSION >= 7) && (MY_BROWSER_VERSION < 9)) {
+            window.external.AddSearchProvider(plugin_url);
+
+        } else if (MY_BROWSER == 'Firefox') {
+            window.sidebar.addSearchEngine(plugin_url+'&a=b.src', favicon_url, brand, custom_text);
+
+        } else if (MY_BROWSER == 'Chrome' || MY_BROWSER == 'Chromium') {
+            window.external.AddSearchProvider(plugin_url);
+
+        } else if (MY_BROWSER == 'SeaMonkey') {
+            window.sidebar.addSearchEngine(plugin_url+'&a=b.src', favicon_url, brand, custom_text);
+        }
+    }
+function bookmarkUrl(title, url){
+    if (window.sidebar) {// firefox
+    //    window.sidebar.addPanel(title, url, '');
+    }
+    else if(window.opera && window.print){ // opera
+        var elem = document.createElement('a');
+        elem.setAttribute('href',url);
+        elem.setAttribute('title',title);
+        elem.setAttribute('rel','sidebar');
+        elem.click();
+    }
+    else if(document.all)// ie
+        window.external.AddFavorite(url, title);
+}
+                    function makeHomePage(obj, page_url) {
+			            enable_retina_design = 1;
+                        load_img('/do/adviewtrack.pl?a=10&g=357&l=deutsch');
+                        var ua = navigator.userAgent;
+                        var ff = 0;
+                        if (ua.indexOf('Firefox') != -1) {
+                            ff = 1;
+                        }
+                        var homepage_url = page_url;
+                        var http_host = get_http_host();if ((http_host.indexOf('ixquick.') != -1) && (page_url.indexOf('http') != 0)) {homepage_url = http_host + page_url;
+                        }
+                        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome');
+                        var is_edge = navigator.userAgent.indexOf('Edge');
+                            var agentname = navigator.userAgent;  var out_str = '';if (is_edge != -1 || (agentname.toLowerCase().indexOf('netscape') != -1) || (agentname.toLowerCase().indexOf('navigator') != -1)) {
+                            out_str += 'Die Startseite f&#252;r diesen Browser kann leider nicht automatisch konfiguriert werden. Sie k&#246;nnen die Startseite jedoch manuell konfigurieren. Geben Sie in diesem Fall bei den Einstellungen f&#252;r die Startseite den URL <!--HOME-->/deu/<!--/HOME--> ein.';
+                            } else if (agentname.toLowerCase().indexOf('firefox') != -1) {
+                                
+                                out_str += 'Um Ihre Startseite in Firefox einzurichten, gehen Sie wie folgt vor:<ul class="check_green_l_16">';
+                                if (BrowserDetect.OS.indexOf('Linux') != -1) {
+                                out_str += '<li>Klicken Sie im Browsermen&#252; auf den Men&#252;punkt "Extras".</li>';
+                                out_str += '<li>Klicken Sie nun in dem neuen Men&#252; ganz unten auf "Einstellungen".</li>';
+                                }
+                                else if (BrowserDetect.OS.indexOf('Mac') != -1) {
+                                    out_str += '<li>Klicken Sie im Browsermen&#252; auf den Men&#252;punkt "Extras". </li>';
+                                    out_str += '<li>Klicken Sie nun in dem neuen Men&#252; ganz unten auf "Einstellungen".</li>';
+                                }
+                                else if (BrowserDetect.OS.indexOf('Window') != -1) {
+                                    out_str += '<li>Klicken Sie im Browsermen&#252; auf den Men&#252;punkt "Extras".</li>';
+                                    out_str += '<li>Klicken Sie nun in dem neuen Men&#252; ganz unten auf "Einstellungen".</li>';
+                                }
+                                out_str += '<li>Klicken Sie auf &#132;Allgemein&#147;</li>';
+                                out_str += '<li>L&#246;schen Sie im Feld &#132;Homepage&#147; die existierende Adresse und ersetzen Sie sie durch <!--HOME-->/deu/<!--/HOME-->.</li>';
+                                out_str += '<li>Wenn Sie sich im Browser gerade auf der gew&#252;nschten Seite befinden, k&#246;nnen Sie auch den Button &#147;Aktuelle Seiten verwenden&#148; unter dem Feld &#147;Startseite&#148; klicken.</li></ul>';
+                                
+                            } else if (BrowserDetect.browser.toLowerCase().indexOf('chrome') != -1) { /* (for retina) So that Instructions for chrome are not displayed for other browsers */
+                                
+                                out_str += 'Um Ihre Startseite in Chrome einzurichten, gehen Sie wie folgt vor:';
+                                    // checking for mac OS
+                                    if (BrowserDetect.OS.indexOf('Mac') != -1) {
+                                        // if version is beetween 3 and 18
+                                        if (BrowserDetect.version >= 3 && BrowserDetect.version <= 18) {
+                                            out_str += '<ul class="check_green_l_16"><li>Klicken Sie auf das Schraubenschl&#252;ssel-Symbol <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="margin-top:-5px;" align="absmiddle" /></li>';
+                                            out_str += '<li>Gehen Sie zu Pr&#228;ferenzen -> Basics.</li>';
+                                            out_str += '<li>W&#228;hlen Sie im Abschnitt "Home page" die Option "Open this page" aus.</li>';
+                                            out_str += '<li>Geben Sie <!--HOME-->/deu/<!--HOME--> in das Textfeld "Diese Seite &#246;ffnen" ein.</li>';
+                                            out_str += '<li>Um Ihre Homepage jederzeit anzuzeigen, wenn Sie Google Chrome starten, w&#228;hlen Sie im Abschnitt "On startup" die Option "Open the home page" aus.</li>';
+                                            if (BrowserDetect.version <= 9) {
+                                                out_str += '<li>Schlie&#223;en Sie Pr&#228;ferenzen.</li>';
+                                            } else {
+                                                out_str += '<li>Schlie&#223;en Sie den Pr&#228;ferenzen-Tab.</li>';
+                                            }
+                                        } else {
+                                            // for version greater than or equal to 19
+                                            if ((BrowserDetect.version >= 19) && (BrowserDetect.version < 23)) {
+                                                out_str += '<ul class="check_green_l_16"><li>Gehen Sie zum Schraubenschl&#252;ssel-Symbol <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="position:absolute;"/> <span> -> Einstellungen</span>.</li>';
+                                            } else {
+                                                if (BrowserDetect.version >= 23) {
+                                                    out_str += '<ul class="check_green_l_16"><li>Bewegen Sie den Maus Cursor &#252;ber das Icon <img src=\'/graphics/chrome_settingMenu.gif\' height="25" style="margin-top:-1px;"/> <span>-> Klicken Sie dann "Einstellungen"</span></li>';
+                                                }
+                                            }
+                                            out_str += '<li>Klicken Sie auf "Seiten einstellen" im Abschnitt "Starten".</li>';
+                                            out_str += '<li>Geben Sie <!--HOME-->/deu/<!--HOME--> in das Textfeld "Neue Seite hinzuf&#252;gen" ein.</li>';
+                                            out_str += '<li>Klicken Sie den Button "Fertig".</li>';
+                                        }
+                                    } else {
+                                        //  check for windows OS
+                                        if (BrowserDetect.OS.indexOf('Window') != -1) {
+                                            // for version beetween 3 and 18
+                                            if (BrowserDetect.version >= 3 && BrowserDetect.version <= 18) {
+                                                out_str += '<ul class="check_green_l_16"><li>Klicken Sie auf das Schraubenschl&#252;ssel-Symbol <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="margin-top:-5px;" align="absmiddle" /></li>';
+                                                out_str += '<li>Gehen Sie zu Optionen -> Basics.</li>';
+                                                out_str += '<li>W&#228;hlen Sie im Abschnitt "Home page" die Option "Open this page" aus.</li>';
+                                                out_str += '<li>Geben Sie <!--HOME-->/deu/<!--HOME--> in das Textfeld "Diese Seite &#246;ffnen" ein.</li>';
+                                                out_str += '<li>Um Ihre Homepage jederzeit anzuzeigen, wenn Sie Google Chrome starten, w&#228;hlen Sie im Abschnitt "On startup" die Option "Open the home page" aus.</li>';
+                                                if (BrowserDetect.version <= 9) {
+                                                    out_str += '<li>Klicken Sie auf "Schlie&#223;en".</li>';
+                                                } else {
+                                                    out_str += '<li>Schlie&#223;en Sie dieses Einstellungen-Tab.</li>';
+                                                }
+
+                                            } else {
+                                                // for version greater than 18
+                                                if ((BrowserDetect.version >= 19) && (BrowserDetect.version < 23)) {
+                                                    out_str += '<ul class="check_green_l_16"><li>Gehen Sie zum Schraubenschl&#252;ssel-Symbol <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="position:absolute;"/> <span> -> Einstellungen</span>.</li>';
+                                                } else {
+                                                    if (BrowserDetect.version >= 23) {
+                                                        out_str += '<ul class="check_green_l_16"><li>Bewegen Sie den Maus Cursor &#252;ber das Icon <img src=\'/graphics/chrome_settingMenu.gif\' height="25" style="margin-top:-1px;"/> <span>-> Klicken Sie dann "Einstellungen"</span></li>';} }
+                                                        out_str += '<li>Klicken Sie auf "Seiten einstellen" im Abschnitt "Starten".</li>';
+                                                        out_str += '<li>Geben Sie <!--HOME-->/deu/<!--HOME--> in das Textfeld "Neue Seite hinzuf&#252;gen" ein.</li>';
+                                                        out_str += '<li>Klicken Sie den Button "Fertig".</li>';
+                                            }
+                                        } else {
+                                            // checking for Linux OS
+                                            if (BrowserDetect.version >= 3 && BrowserDetect.version <= 18) {
+                                                out_str += '<ul class="check_green_l_16"><li>Klicken Sie auf das Schraubenschl&#252;ssel-Symbol <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="margin-top:-5px;" align="absmiddle" /></li>';
+                                                if (BrowserDetect.version <= 9) {
+                                                    out_str += '<li>Gehen Sie zu Einstellungen -> Basics.</li>';
+                                                } else {
+                                                    out_str += '<li>Gehen Sie zu Pr&#228;ferenzen -> Basics.</li>';
+                                                }
+                                                out_str += '<li>W&#228;hlen Sie im Abschnitt "Home page" die Option "Open this page" aus.</li>';
+                                                out_str += '<li>Geben Sie <!--HOME-->/deu/<!--HOME--> in das Textfeld "Diese Seite &#246;ffnen" ein.</li>';
+                                                out_str += '<li>Um Ihre Homepage jederzeit anzuzeigen, wenn Sie Google Chrome starten, w&#228;hlen Sie im Abschnitt "On startup" die Option "Open the home page" aus.</li>';
+                                                if (BrowserDetect.version <= 9) {
+                                                    out_str += '<li>Klicken Sie auf "Schlie&#223;en".</li>';
+                                                } else {
+                                                    out_str += '<li>Schlie&#223;en Sie den Pr&#228;ferenzen-Tab.</li>';
+                                                }
+                                            } else {
+                                                if ((BrowserDetect.version >= 19) && (BrowserDetect.version < 23)) {
+                                                    out_str += '<ul class="check_green_l_16"><li>Gehen Sie zum Schraubenschl&#252;ssel-Symbol <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="position:absolute;"/> <span> -> Einstellungen</span>.</li>';
+                                                } else {
+                                                    if (BrowserDetect.version >= 23) {
+                                                        out_str += '<ul class="check_green_l_16"><li>Bewegen Sie den Maus Cursor &#252;ber das Icon <img src=\'/graphics/chrome_settingMenu.gif\' height="25" style="margin-top:-1px;"/> <span>-> Klicken Sie dann "Einstellungen"</span></li>';
+                                                    }
+                                                }
+                                                out_str += '<li>Klicken Sie auf "Seiten einstellen" im Abschnitt "Starten".</li>';
+                                                out_str += '<li>Geben Sie <!--HOME-->/deu/<!--HOME--> in das Textfeld "Neue Seite hinzuf&#252;gen" ein.</li>';
+                                                out_str += '<li>Klicken Sie den Button "Fertig".</li>';
+                                            }
+                                    }
+                                }
+                                            out_str += '</ul>'; 
+                                            
+                                        } else if ((agentname.toLowerCase().indexOf('seamonkey') != -1) && (BrowserDetect.OS.indexOf('Mac') != -1)) {
+                                            out_str += 'W&#228;hlen Sie im Mozilla-Men&#252; Ihres Browsers &#132;Bearbeiten&#147; und dann die Option &#132;Einstellungen&#147; aus.<br>W&#228;hlen Sie anschlie&#223;end unter &#132;Kategorie&#147; die Option &#132;Navigator&#147; aus.<br>Geben Sie im Feld &#132;Adresse&#147; <!--HOME-->/deu/<!--/HOME--> ein.<br>Klicken Sie auf &#132;OK&#147;, um dieses Fenster zu schlie&#223;en.';
+                                            
+                                        } else if ((agentname.toLowerCase().indexOf('seamonkey') != -1) && (BrowserDetect.OS.indexOf('Linux') != -1)) {
+                                            out_str += 'W&#228;hlen Sie im Browser-Men&#252; &#132;Bearbeiten&#147; die Option &#132;Einstellungen&#147; aus.<br>W&#228;hlen Sie anschlie&#223;end unter &#132;Kategorie&#147; die Option &#132;Navigator&#147; aus.<br>Geben Sie im Feld &#132;Adresse&#147; <!--HOME-->/deu/<!--/HOME--> ein.<br>Klicken Sie auf &#132;OK&#147;, um dieses Fenster zu schlie&#223;en.';
+                                            
+                                    } else if (((agentname.toLowerCase().indexOf('opera') != -1) || (agentname.indexOf('OPR') != -1)) && (BrowserDetect.OS.indexOf('Mac') != -1)) { /* (for retina)To detect newer versions of opera having different useragent*/
+                                        out_str += 'W&#228;hlen Sie im Opera-Men&#252; Ihres Browsers &#132;Extras&#147; und dann die Option &#132;Einstellungen&#147; aus.<br>W&#228;hlen Sie anschlie&#223;end die Registerkarte &#132;Allgemein&#147; aus.<br>Geben Sie im Feld &#132;Startseite&#147; <!--HOME-->/deu/<!--/HOME--> ein.<br>Klicken Sie auf &#132;OK&#147;, um dieses Fenster zu schlie&#223;en.</font><br></body></html>';
+                                        
+                                    } else if ((((agentname.toLowerCase().indexOf('opera') != -1)  || (agentname.indexOf('OPR') != -1)) && (BrowserDetect.OS.indexOf('Linux') != -1)) || (((agentname.toLowerCase().indexOf('opera') != -1) || (agentname.indexOf('OPR') != -1)) && (BrowserDetect.OS.indexOf('Window') != -1))) { /* (for retina)To detect newer versions of opera having different useragent*/
+                                        out_str += '<ul class="check_green_l_16"><li>W&#228;hlen Sie in Ihrem Browser &#132;Extras&#147; und dann die Option &#132;Einstellungen&#147; aus.</li><li>W&#228;hlen Sie anschlie&#223;end die Registerkarte &#132;Allgemein&#147; aus.</li><li>Geben Sie im Feld &#132;Startseite&#147; <!--HOME-->/deu/<!--/HOME--> ein.</li><li>Klicken Sie auf &#132;OK&#147;, um dieses Fenster zu schlie&#223;en.</li></ul>';
+                                        
+                                    }
+                                    else if ((agentname.toLowerCase().indexOf('safari') != - 1)) {
+                                        out_str += '<ul class="check_green_l_16"><li>W&#228;hlen Sie im Men&#252; &#132;Safari&#147; Ihres Browsers die Option &#132;Einstellungen&#147; aus.</li><li>W&#228;hlen Sie anschlie&#223;end &#132;Allgemein&#147; aus.</li><li>Geben Sie im Feld &#132;Startseite&#147; <!--HOME-->/deu/<!--/HOME--> ein.</li><li>Schlie&#223;en Sie das Fenster.</li></ul>';
+                                        
+                                    } else {
+                                        out_str += 'Die Startseite f&#252;r diesen Browser kann leider nicht automatisch konfiguriert werden. Sie k&#246;nnen die Startseite jedoch manuell konfigurieren. Geben Sie in diesem Fall bei den Einstellungen f&#252;r die Startseite den URL <!--HOME-->/deu/<!--/HOME--> ein.';
+                                        
+                                    }
+                                    out_str = out_str.replace(/<!--HOME-->.*?<!--\/HOME-->/g, homepage_url);return out_str;
+ }
+    function load_img (img_url) {
+
+    if (document.images) {
+        var dt = new Date();
+        var arbit_num = dt.getTime(); 
+        img_url += '&anticache=' + arbit_num + '&/filename.gif';
+        var i_ob = new Image(); i_ob.src = img_url;
+    }
+    return true;
+    }function change_the_url (url,text){
+if(document.getElementById('anchor_tag_for_new_ui')) {
+document.getElementById('anchor_tag_for_new_ui').onclick = function(){bookmarkUrl(text,url);};
+}
+if (document.getElementById('anchor_tag_for_new_ui_homepage')) {
+ document.getElementById('anchor_tag_for_new_ui_homepage').onclick = function() {this.style.behavior='url(#default#homepage)'; this.setHomePage(url); return false;};
+}
+}
+var isMapDetailActive = false;
+var MapDetailTimeoutId;
+function showMapDetail() {
+clearTimeout(MapDetailTimeoutId);
+var offset = findPos(document.getElementById('mapd'));
+var mapdl = document.getElementById('map-detail');
+mapdl.style.left = (offset[0] - 10) + 'px';
+mapdl.style.top = (offset[1] + 30) + 'px';
+mapdl.style.display = 'block';
+isMapDetailActive = true;
+
+jQuery('#mapd').click( function(){
+isMapDetailActive = true;
+jQuery('#mapd').removeAttr("onmouseout").removeAttr("onmouseover");
+jQuery('#map-detail').removeAttr("onmouseout").removeAttr("onmouseover");
+});
+jQuery('#map-detail a.popup_close').click( function(){
+isMapDetailActive = false;
+jQuery('#map-detail').hide();
+document.getElementById('mapd').onmouseover = function(){showMapDetail()};
+document.getElementById('mapd').onmouseout = function(){hideMapDetail()};
+document.getElementById('map-detail').onmouseover = function(){isMapDetailActive = true; clearTimeout(MapDetailTimeoutId);};
+document.getElementById('map-detail').onmouseout = function(){hideMapDetail()};
+});
+
+}
+function checkAndHideMapDetail() {
+if(!isMapDetailActive) {
+document.getElementById('map-detail').style.display = 'none';
+isMapDetailActive = false;
+}
+}
+function hideMapDetail() { isMapDetailActive = false; MapDetailTimeoutId = setTimeout('checkAndHideMapDetail()', 10); }
+
+    function findPos(obj) {
+        var curleft = curtop = 0;
+        if (obj.offsetParent) {
+            curleft = obj.offsetLeft;
+            curtop = obj.offsetTop;
+            while (obj = obj.offsetParent) {
+                curleft += obj.offsetLeft; curtop += obj.offsetTop;
+            }
+        }
+        return [curleft,curtop];
+    }
+  $(window).load(function () {
+        if (jQuery('#lang').length && jQuery('#lang_div').length) {
+    		$('#lang').hammer({
+		         prevent_default: true
+     		  }).on("tap", function(ev) {
+          			  ev.gesture.preventDefault();
+		         	  ev.gesture.stopPropagation();
+			          showLang();
+    			      setTimeout('hideLang()', 400);
+		    });
+    		$('#lang_div').hammer().on("tap", function(ev) {
+    			ev.gesture.preventDefault();
+	    		ev.gesture.stopPropagation();
+		        isLangActive = true; clearTimeout(langTimeoutId);
+    			showLang();
+	    	});
+		    $('#lang_div').hammer().on("tap", '.addsettings', function(ev) {
+			    ev.gesture.preventDefault();
+    			ev.gesture.stopPropagation();
+    			setTimeout('hideLang()', 100);
+	    	});
+        }
+    });
+
+
+           jQuery(window).load(function () {
+                jQuery('select option').each(function () {
+                   var any_text = 'Beliebig'; 
+                   var option_value = jQuery(this).attr('value');
+                   if (option_value == "") {
+                       jQuery(this).attr('data-html-text', any_text);
+                   } else {
+                       jQuery(this).attr('data-html-text', option_value);
+                   }
+                });
+
+                var lang_dropdown = jQuery('[name="pref_language"]').retinaSelect();
+                var lang_ui_dropdown = jQuery('[name="pref_language_ui"]').retinaSelect();
+                var home_theme_dropdown = jQuery('[name="pref_homepage_theme"]').retinaSelect();
+                var home_dropdown = jQuery('[name="pref_homepage"]').retinaSelect();
+                var num_results_dropdown = jQuery('[name="pref_num_of_results"]').retinaSelect();
+                var suggestions_dropdown = jQuery('[name="pref_suggestions"]').retinaSelect();
+                var pic_privacy_dropdown = jQuery('[name="pref_picture_privacy"]').retinaSelect();
+                var calculator_dropdown = jQuery('[name="pref_calculator_decimal"]').retinaSelect();
+
+                jQuery('.select-style').replaceWith(function() {
+                    return jQuery('select, div', this);
+                });
+
+                jQuery('[name="pref_language"]').next('.wrapper-dropdown').attr('id', 'dd_pref_language');
+                jQuery('[name="pref_language_ui"]').next('.wrapper-dropdown').attr('id', 'dd_pref_language_ui');
+                jQuery('[name="pref_homepage_theme"]').next('.wrapper-dropdown').attr('id', 'dd_homepage_theme');
+                jQuery('[name="pref_homepage"]').next('.wrapper-dropdown').attr('id', 'dd_homepage');
+                jQuery('[name="pref_num_of_results"]').next('.wrapper-dropdown').attr('id', 'dd_num_results');
+                jQuery('[name="pref_suggestions"]').next('.wrapper-dropdown').attr('id', 'dd_text_suggestions');
+                jQuery('[name="pref_calculator_decimal"]').next('.wrapper-dropdown').attr('id', 'dd_calculator');
+                jQuery('[name="pref_picture_privacy"]').next('.wrapper-dropdown').attr('id', 'dd_picture_privacy');
+
+                jQuery('.wrapper-dropdown').click(function() {
+                    var scroll_result  = jQuery('.wrapper-dropdown.active .dropdown').css('overflow-y');
+                    if (scroll_result == 'scroll') {
+                        jQuery('.wrapper-dropdown.active .dropdown').css('border-bottom-left-radius', '1px');
+                        jQuery('.wrapper-dropdown.active .dropdown').css('border-bottom-right-radius', '1px');
+                    }
+                });
+
+                jQuery('.wrapper-dropdown').each(function () {
+                    var selected_value = jQuery(this).prev().val();
+                    var selected_id = jQuery(this).attr('id');
+                    var click = ('ontouchstart' in window) ? 'touchend' : 'click';
+                    if (selected_id == 'dd_pref_language' || selected_id == 'dd_pref_language_ui' || selected_id == 'dd_text_suggestions' || selected_id == 'dd_picture_privacy') {
+                        jQuery(this).find('li:first').remove();
+                    }
+                    if (selected_value == "") {
+                        if (selected_id != 'dd_homepage') {
+                            jQuery(this).find('*').removeClass('selected-option');
+                        }
+                    } else {
+                        jQuery(this).find('*').removeClass('selected-option');
+                        jQuery(this).find('.dropdown li a').each(function (){
+                            if (jQuery(this).attr('name') == selected_value) {
+                                jQuery(this).trigger(click);
+                            } 
+                        });                         
+                    }
+                });
+                /*
+                var mode = jQuery(document.documentMode);
+                if (mode[0] == '8' || mode[0] == '9') {
+                    jQuery('*').attr('unselectable', 'on');
+                    jQuery('#new_design_url_needed,#query_top').attr('unselectable', 'off');
+                }
+                */
+            });
+                                               function getMakeHomepageContent(abc, urlgen_url) { 
+                                                   var homepageContent = makeHomePage(abc, urlgen_url);
+                                                   jQuery('#home-popup-div-inner').html(homepageContent);
+                                               }
+    </script>
+    </head>
+
+    <body  >
+    <script language='javascript' type='text/javascript' src='../js/wz_tooltip.js'></script>
+    
+    <div id="wrapper" class="">
+    <div class="navbar navbar-default nav-effect" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+    <a class="navbar-brand ixquick-navbar-brand" tabindex="0" href="../deu/index-.html" target="_top"><img src="../graphics/no_tm_ixquick_retina_results_page_logo.png" width="144" height="41" /></a>
+    <a class="menu_anchor" href="preferences.pl-language=deutsch&language_ui=deutsch.html" tabindex="0" onClick="return slide_menu_action(event);"><div class="settings_cont inner-pages"><span id="menu-icon-id">Sucheinstellungen</span></div></a>
+    
+    
+	<div id='results_header'>
+	<form action="https://ixquick.com/do/search" class="cpt_prgtr" autocomplete="off" method="POST" name="blah1" id="search_form" onSubmit="return verifyChecked(this);"  target="_top" >
+
+	<div id='search'>
+	<table cellspacing="0" cellpadding="0" border="0" class="search_container">
+	<tbody><tr>
+	<td id='input_p'><!--[if IE 7]><div style="position:relative; width:300px; height:0;"></div><![endif]-->
+	<div class='search-field'>
+	<div class="text-fields">
+    <div>
+    <span class="clear_search"></span>
+    <span class='no_text' style="display: none;">geben Sie&#160;hier Ihren Suchbegriff ein</span>
+    <input type="hidden" value="deutsch" name="language">
+    <input type="hidden" name="nj" id="nj" value="1" />
+	<input type='text' autocomplete='off' name='query' id='query_top' value="" queryterm="" onChange="checkContent();" onKeyDown="checkContent();" onkeyup="if(!checkNullKeyPressed(event)){}checkContent();">
+	</div>
+    </div>
+    
+    <span class='small-go-btn' title='Ixquick Web Suchen'><input type="submit" value="LOS" id="submit1"></span>
+    
+    </div>
+	</td>
+    
+    
+    
+	<td></td>
+	<td><noscript></noscript></td>
+	</tr>
+	<tr>
+    <script> 
+    update_form_method('search_form');
+    jQuery('#nj').attr('value', '0');
+    
+	</script>
+        </tr>	
+	</tbody>
+	</table>
+	</div>
+	</form>
+    
+</div>
+</div>
+</div>
+
+<style> ul.slide-menu *:focus,a#menu-icon-id:focus{outline:none;} </style><div class="slide-wrapper" id="menu-id" unselectable="on"><ul class="slide-menu"><li><a href="../deu/protect-privacy-.html" class="single right-arrow">Datenschutz</a></li><li><a href="preferences.pl-_language=deutsch&language_ui=deutsch&nj=0.html" class="single right-arrow">Sucheinstellungen</a></li><li><a href="https://support.ixquick.com/index.php?de/Knowledgebase/List" class="single right-arrow">Support</a></li><li><a>Community</a><ul class="slide-sub-menu"><li><a href="https://www.facebook.com/ixquick.de">Facebook</a></li><li><a href="https://twitter.com/ixquick_de">Twitter</a></li><li><a href='https://blog.ixquick.de'>Blog</a></li></ul></li><li><a href="../deu/aboutixquick/index-.html" class="single right-arrow">&#220;ber uns</a></li><li class="no-mobile"><a>Ixquick hinzuf&#252;gen</a><ul class="slide-sub-menu"><li><a href="../deu/download-ixquick-plugin-.html" id="my-browser-name">Dem Browser hinzuf&#252;gen</a></li><li><a href="../deu/make-ixquick-your-homepage-.html">Startseite</a></li><li><a href="../deu/mobile-app-qa-.html">Mobiles Ger&#228;t</a></li><li><a href="../deu/download-ixquick-toolbar-.html">Symbolleiste</a></li></ul></li><li class="list-box-opener"><a class="single open-box">Sprache</a><div class="menu-list-box" id="settings_lang_div">
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('dansk', 'dan', 'ixquick.com'); return retina_set_language('dansk', 'dan','ixquick.com');" href='../dan/index-.html'>Dansk</a></td>
+<td><strong>Deutsch</strong></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english', 'eng', 'ixquick.com'); return retina_set_language('english', 'eng','ixquick.com');" href='../eng/index-.html'>English</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english_uk', 'uk', 'ixquick.com'); return retina_set_language('english_uk', 'uk','ixquick.com');" href='../uk/index-.html'>English UK</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('espanol', 'esp', 'ixquick.com'); return retina_set_language('espanol', 'esp','ixquick.com');" href='../esp/index-.html'>Espa&ntilde;ol</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('francais', 'fra', 'ixquick.com'); return retina_set_language('francais', 'fra','ixquick.com');" href='../fra/index-.html'>Fran&ccedil;ais</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('italiano', 'ita', 'ixquick.com'); return retina_set_language('italiano', 'ita','ixquick.com');" href='../ita/index-.html'>Italiano</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nederlands', 'ned', 'ixquick.com'); return retina_set_language('nederlands', 'ned','ixquick.com');" href='../ned/index-.html'>Nederlands</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('norsk', 'nor', 'ixquick.com'); return retina_set_language('norsk', 'nor','ixquick.com');" href='../nor/index-.html'>Norsk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('polski', 'pol', 'ixquick.com'); return retina_set_language('polski', 'pol','ixquick.com');" href='../pol/index-.html'>Polski</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('portugues', 'por', 'ixquick.com'); return retina_set_language('portugues', 'por','ixquick.com');" href='../por/index-.html'>Portugu&ecirc;s</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('suomi', 'suo', 'ixquick.com'); return retina_set_language('suomi', 'suo','ixquick.com');" href='../suo/index-.html'>Suomi</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('svenska', 'sve', 'ixquick.com'); return retina_set_language('svenska', 'sve','ixquick.com');" href='../sve/index-.html'>Svenska</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('turkce', 'tur', 'ixquick.com'); return retina_set_language('turkce', 'tur','ixquick.com');" href='../tur/index-.html'>T&uuml;rk&ccedil;e</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('jiantizhongwen', 'jia', 'ixquick.com'); return retina_set_language('jiantizhongwen', 'jia','ixquick.com');" href='../jia/index-.html'>&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nihongo', 'nih', 'ixquick.com'); return retina_set_language('nihongo', 'nih','ixquick.com');" href='../nih/index-.html'>&#26085;&#26412;&#35486;</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('fantizhengwen', 'fan', 'ixquick.com'); return retina_set_language('fantizhengwen', 'fan','ixquick.com');" href='../fan/index-.html'>&#32321;&#39636;&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('hangul', 'han', 'ixquick.com'); return retina_set_language('hangul', 'han','ixquick.com');" href='../han/index-.html'>&#54620;&#44544;</a></td>
+</tr>
+</table>
+
+</div></li><li><a href="../deu/spread-the-word-.html" class="single right-arrow">Teilen</a></li><li class="list-box-opener"><a class="single open-box">Design</a><div class="menu-list-box theme-box" id="settings_themes" style="white-space:nowrap;"><table class="slide-sub-menu" cellspacing="0" cellpadding="0"><tr><td><a onClick="change_theme('air', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='air-new'>Luft</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='night-new'>Nacht</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='white-new'>Klassisch Wei&#223;</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='black-new'>Schwarz</a></td></tr><tr><td><a onClick="change_theme('air', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='air-retro'>Luft (Classic)</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='night-retro'>Nacht (Classic)</a></td></tr><tr><td><a onClick="change_theme('bubbles', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='bubbles-retro'>Seifenblasen (Classic)</a></td></tr><tr><td><a onClick="change_theme('day', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='day-retro'>Morgend&#228;mmerung (Classic)</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='white-retro'>Klassisch Wei&#223; (Classic)</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='black-retro'>Schwarz (Classic)</a></td></tr></table></div></li></ul></div>
+<!--[if IE 9]><style>.ac_results{ width: 476px!important;}</style> <![endif]-->
+<script type="text/javascript">
+    if (typeof getAutoqueryService === 'function') {
+        getAutoqueryService('https://ixquick.com/do', 'deutsch', 'query_top', 'jquery.autocomplete.js', 'https://ixquick.com');
+    }
+</script>
+
+
+    <div id="wrapper-inner" class="" style="max-width:1032px">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id='inner_content'>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%" class="bodyContent">
+            <tr>
+              <td class="left_column_td" nowrap="nowrap" valign="top">
+                <!--td class="left_column_td" nowrap="nowrap" style="padding-left:30px;"-->
+                <div class="leftContent" style="width:265px">
+    
+    <div class="sidebar">
+<div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>DATENSCHUTZ</span></a></div><div class="accordionContent"><ul><li><a href="../deu/protect-privacy.html" >Wir sch&#252;tzen Sie</a></li><li><a href="../deu/protect-privacy-qa.html" >Fragen und Antworten</a></li><li><a href="../deu/privacy-policy.html" >Unsere Datenschutzrichtlinien</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; background: #eaf1ff !important;padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="preferences.pl-language_ui=deutsch.html">SUCHEINSTELLUNGEN</a></li><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="https://support.ixquick.com/index.php?de/Knowledgebase/List">SUPPORT</a></li><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>COMMUNITY</span></a></div><div class="accordionContent"><ul><li><a href="https://www.facebook.com/ixquick.de" >Facebook</a></li><li><a href="https://twitter.com/ixquick_de" >Twitter</a></li><li><a href="https://blog.ixquick.de" >Blog</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>&#220;BER</span></a></div><div class="accordionContent"><ul><li><a href="../deu/what-makes-ixquick-special.html" >Was an uns anders ist</a></li><li><a href="../deu/company-background.html" >Unternehmensgeschichte</a></li><li><a href="../deu/company-management-bio.html" >Unsere Mitarbeiter</a></li><li><a href="../deu/company.html" >Unternehmen</a></li><li><a href="../deu/press-center.html" >Pressezentrum</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>IXQUICK HINZUF&#252;GEN</span></a></div><div class="accordionContent"><ul><li><a href="../deu/download-ixquick-plugin.html" id="sidebar_browser_name">Dem Browser hinzuf&#252;gen</a></li><li><a href="../deu/make-ixquick-your-homepage.html" >Startseite</a></li><li><a href="../deu/mobile-app-qa.html" >Mobiles Ger&#228;t</a></li><li><a href="../deu/download-ixquick-toolbar.html" >Symbolleiste</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="../deu/spread-the-word.html">TEILEN</a></li></div><br><br><br><br><br><br>
+    </div></div></td>
+    <td>
+    <div class="rightContent" id="content">
+    <script type="text/javascript" src="../js/jquery.hammer.min.js"></script><h1>Sucheinstellungen</h1><div class="pad_t30"><input type='hidden' name='urlgenerator_status' id='urlgenerator_status' value='1' /><form name="settings" method='post' class="settings-no-js" id="preferences-form"><input type='hidden' name='cat' value=""><input type='hidden' name='query' value=""><input type="hidden" value="1" name="nj" id="nj"><script> jQuery('[name="nj"]').each(function () { jQuery(this).attr('value', '0'); }); </script><input type="hidden" value="deutsch" name="language_ui"><script> 
+function submitMyForm() {
+     document.settings.submit();
+     return false;
+} </script><table border=0 cellspacing=0 cellpadding=5 style="width: 100%;table-layout: fixed;padding-top:17px;"><tr valign="top" class='td_head'><td width='220' valign="top"  class='td_head'>Suchsprache</td><td width='206'class='td_head'><div class="select-style"><select name=pref_language style='width:155px;'>
+<option  value=""></option>
+<option value=dansk>Dansk</option>
+<option selected value=deutsch>Deutsch</option>
+<option value=english>English</option>
+<option value=english_uk>English UK</option>
+<option value=espanol>Espa&ntilde;ol</option>
+<option value=fantizhengwen>&#32321;&#39636;&#20013;&#25991;</option>
+<option value=francais>Fran&ccedil;ais</option>
+<option value=hangul>&#54620;&#44544;</option>
+<option value=italiano>Italiano</option>
+<option value=jiantizhongwen>&#20013;&#25991;</option>
+<option value=nederlands>Nederlands</option>
+<option value=nihongo>&#26085;&#26412;&#35486;</option>
+<option value=norsk>Norsk</option>
+<option value=polski>Polski</option>
+<option value=portugues>Portugu&ecirc;s</option>
+<option value=suomi>Suomi</option>
+<option value=svenska>Svenska</option>
+<option value=turkce>T&uuml;rk&ccedil;e</option>
+</select>
+</div></td><td width="20"  class='td_head'></td><td  class='td_head_s'>Bevorzugt Seiten in dieser Sprache anzeigen.<a name="interface_language"></a></td></tr><tr valign="top" class='td_head'><td width='150' align="top"  class='td_head'>Schnittstellensprache</td><td class='td_head'><div class="select-style"><select name=pref_language_ui style='width:155px;'>
+<option  value=""></option>
+<option value=dansk>Dansk</option>
+<option selected value=deutsch>Deutsch</option>
+<option value=english>English</option>
+<option value=english_uk>English UK</option>
+<option value=espanol>Espa&ntilde;ol</option>
+<option value=fantizhengwen>&#32321;&#39636;&#20013;&#25991;</option>
+<option value=francais>Fran&ccedil;ais</option>
+<option value=hangul>&#54620;&#44544;</option>
+<option value=italiano>Italiano</option>
+<option value=jiantizhongwen>&#20013;&#25991;</option>
+<option value=nederlands>Nederlands</option>
+<option value=nihongo>&#26085;&#26412;&#35486;</option>
+<option value=norsk>Norsk</option>
+<option value=polski>Polski</option>
+<option value=portugues>Portugu&ecirc;s</option>
+<option value=suomi>Suomi</option>
+<option value=svenska>Svenska</option>
+<option value=turkce>T&uuml;rk&ccedil;e</option>
+</select>
+</div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Anzeigen von Ixquick-Tipps und Nachrichten vorzugsweise in dieser Sprache.<a name="homepage_theme"></a></td></tr><tr valign="top" class='td_head'><td width='150'  class='td_head'>Homepage - Benutzeroberfl&#228;che</td><td class='td_head'><div class="select-style"><select name=pref_homepage_theme style='width:155px;'>
+<option selected value="air_new">Luft</option>
+<option value="night_new">Nacht</option>
+<option value="white_new">Klassisch Wei&#223;</option>
+<option value="black_new">Schwarz</option>
+<option value="air_retro">Luft (Classic)</option>
+<option value="night_retro">Nacht (Classic)</option>
+<option value="bubbles_retro">Seifenblasen (Classic)</option>
+<option value="day_retro">Morgend&#228;mmerung (Classic)</option>
+<option value="white_retro">Klassisch Wei&#223; (Classic)</option>
+<option value="black_retro">Schwarz (Classic)</option>
+</select>
+</div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Die Ixquick-Benutzeroberfl&#228;che anpassen<a name="homepage_search_mode"></a></td></tr><tr valign="top" class='td_head'><td width='150' valign="top"  class='td_head'>Homepage-Suchmodus</td><td class='td_head'><div class="select-style"><select name=pref_homepage style='width:155px;'>
+<option selected value="">Ixquick Suche</option>
+<option value="advanced-search.html">Erweiterte Suche</option>
+</select>
+</div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Die Ixquick-Homepage anpassen.<a name="font_size"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'><a name="results_per_page"></a>Suchergebnisse pro Seite</td><td class='td_head'><div class="select-style"><select name=pref_num_of_results style='width:155px;'><option selected value=10>10</option><option value=20>20</option><option value=50>50</option><option value=100>100</option></select></div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Geben Sie an, wieviele Ergebnisse je Seite angezeigt werden sollen.<a name="search_tools"></a></td></tr>
+<tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Schnellsuchfeld<a name='slide_down_header'></a></td><td align="left" class='td_head'><input id="slide_down_check" value="1" checked name="pref_slide_down_header" class="css-checkbox" type="checkbox" />
+<label for="slide_down_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Zeigt das Schnellsuchfeld in der Kopfzeile an, wenn Sie hochscrollen.<a name="cluster_setting"></a></td></tr><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Zeigt die Anzahl der Web-Ergebnisse an<a name='results_count'></a></td><td align="left" class='td_head'><input id="results_count_check" name="pref_results_count" value="1" class="css-checkbox" type="checkbox" />
+<label for="results_count_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Zeigt die ungef&#228;hre Gesamtzahl der Ergebnisse f&#252;r jede Websuche an.<a name="cluster_setting"></a></td></tr><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' ><a name='underline_search_results_title'></a>Alle Titel der Web-Ergebnisse unterstreichen</td><td align="left" class='td_head'><input id="underline_search_results_title_check" name="pref_underline_title" value="1" class="css-checkbox" type="checkbox" />
+<label for="underline_search_results_title_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Unterstreicht alle Titel der Web-Suchergebnisse, nicht nur bei Mauskontakt.<a name="cluster_setting"></a></td></tr><tr valign="top" class='td_head'><td class='td_head'>Suchergebnis in einem neuen Fenster &#246;ffnen</td><td class='td_head'><input id="new_window_check" value="1" checked name="pref_disable_open_in_new_window" class="css-checkbox" type="checkbox" />
+<label for="new_window_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Wenn auf ein Ergebnis geklickt wird, wird die Seite in einem neuen Fenster angezeigt.<a name="power_refinement"></a></td></tr><tr class='td_head'><td  class='td_head'>Leistungsstarke Verfeinerung</td><td class='td_head'><input id="power_refine_check" name="pref_power_refinement" value="1" class="css-checkbox" type="checkbox" />
+<label for="power_refine_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Erm&#246;glicht die Gruppierung angezeigter Web-Ergebnisse<a name="automatic_highlight"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Automatisch markieren</td><td class='td_head'><input id="auto_highlight_check" name="pref_automatic_highlight" value="1" class="css-checkbox" type="checkbox" />
+<label for="auto_highlight_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Suchbegriffe auf der Seite markieren, wenn auf ein Ergebnis geklickt wird.<a name="exact_phrase"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Exakte Wortgruppe</td><td class='td_head'><input id="exact_phrase_check" checked name="pref_enable_exact_phrase" value="1" class="css-checkbox" type="checkbox" />
+<label for="exact_phrase_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td class="td_head_s" class='td_head_s'>Bei der Suche nach einer genauen Wortgruppe ("") z&#228;hlen die Ergebnisse ohne Anf&#252;hrungszeichen, wenn nur sehr wenige Ergebnisse gefunden werden.<a name="post_setting"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Geographische Karten</td><td class='td_head'><input id="geo_map_check" value="1" name="pref_geo_map" class="css-checkbox" type="checkbox" />
+<label for="geo_map_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Erm&#246;glich die statische Anzeige von Google Maps innerhalb von Suchanfragen, bei absoluter Wahrung Ihrer Privatsph&#228;re. <a href='javascript:void(0);' id='mapd' onMouseOver="retinaToolTip('map-detail',WIDTH, 368,PADDING,15,FOLLOWMOUSE,false, FONTFACE,'Proxima Nova', FONTSIZE,'13.5px', FONTCOLOR,'#023a9c',RETINAPOPUP,true,BGCOLOR,'#F7FAFF',BORDERCOLOR,'#dee8f9',BODYCLASS,'map-detail-tooltip',MAINDIVCLASS,'geo-map-tooltip-div');" onmouseout="UnTip();" class='blue_link'>Mehr</a><div id='map-detail'><a href="javascript:void(0);" class="popup_close"></a>
+									<p class="font_bold">Ixquick bietet Ihnen geografische Kartenresultate von Google und bewahrt dabei Ihre Privatsph&#228;re!</p>
+									<p>Wenn Sie einen bestimmten Ort mit Ixquick suchen, senden wir eine Anfrage an Google und &#252;bermitteln die Antwort anonym an Sie. Dabei wird weder Ihre IP Adresse noch Ihr Besuch aufgezeichnet. Au&#223;erdem werden keine Tracking Cookies in Ihrem Browser installiert.</p> 
+									<p>Unsere Kartenanzeige erlaubt es Ihnen innerhalb der Ansicht zu zoomen. Dabei wird zu keinem Zeitpunkt eine direkte Verbindung zwischen Google und Ihrem Browser hergestellt. Die JavaScript basierte Scroll und Drag Funktion ist deaktiviert um Ihre Privatsph&#228;re zu sch&#252;tzen.</p></div>
+<a name="post_setting"></a></td></tr><style>tr.jump_filter td input { vertical-align : bottom; }  .jump_filter td.border {border-bottom:1px solid #C30000; border-top:1px solid #C30000; margin:4px; padding:4px;} .jump_filter td.border-left {-moz-border-radius-topleft:8px; -webkit-border-top-left-radius:8px; -moz-border-radius-bottomleft:8px; -webkit-border-bottom-left-radius:8px; border-top-left-radius:8px; border-bottom-left-radius:8px; border-left:1px solid #C30000; margin:6px; padding:6px;} .jump_filter td.border-right {-moz-border-radius-topright:8px; -webkit-border-top-right-radius:8px; -moz-border-radius-bottomright:8px; -webkit-border-bottom-right-radius:8px; border-top-right-radius:8px; border-bottom-right-radius:8px; border-right:1px solid #C30000;} .jump_filter input{margin-right:7px}</style><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >POST oder GET nutzen</td><td align="left" class='td_head'><input id="post_method_check" checked name="pref_enable_post_method" value="1" class="css-checkbox" type="checkbox" />
+<label for="post_method_check" name="" class="css-label"><span></span>POST</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >F&#252;r noch&#160;mehr Privatsph&#228;re &#150; sorgt daf&#252;r, dass Ihre Suchbegriffe nicht in den Logfiles&#160;von Webmastern der Seiten auftauchen, die Sie von unserer Ergebnisliste aus&#160;besuchen.<a name="cluster_setting"></a><tr valign='top' class='td_head'><td valign='top' align='left'  class='td_head'> Immer zu folgenden Servern verbinden </td><td align='left' class='td_head'><table border=0 cellspacing=0 cellpadding=0><tr valign="top"><td><input id="cluster_radio_1" value="default" class="css-radio" type="radio" name ="pref_connect_to_server" checked>
+<label for="cluster_radio_1" name="" class="css-label"><span></span>den n&#228;chsten/schnellsten</label></td></tr><tr valign="top">
+<td><input id="cluster_radio_2" value="eu" class="css-radio" type="radio" name ="pref_connect_to_server" >
+<label for="cluster_radio_2" name="" class="css-label"><span></span>EU-Servern</label></td></tr><tr valign="top">
+<td><input id="cluster_radio_3" value="us" class="css-radio" type="radio" name ="pref_connect_to_server" >
+<label for="cluster_radio_3" name="" class="css-label"><span></span>US-Servern</label></td></tr></table>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>(<a href="../deu/server-select.html" target='_blank' onclick="return false;" id="server_select_link" class="blue_link">F&#252;r Details hier klicken</a>)<a name="family_filter"></a></td></tr><tr valign='top' class='td_head'><td valign='top' align='left'  class='td_head'>Familienfilter</td><td align='left' class='td_head'><table border=0 cellspacing=0 cellpadding=0><tr valign="top"><td><input id="family_filter_radio_1" class="css-radio" type="radio" value="0" name="pref_disable_family_filter"  style='vertical-align:middle;'  ><label for="family_filter_radio_1" name="" class="css-label"><span></span>Filtern Sie alle Ergebnisse</label>
+</td></tr><tr valign="top"><td><input id="family_filter_radio_2" class="css-radio" type="radio" value="" name="pref_disable_family_filter"  style='vertical-align:middle;'  checked><label for="family_filter_radio_2" name="" class="css-label"><span></span>Filter abh&#228;ngig von der Suche</label>
+</td></tr><tr valign="top"><td><input id="family_filter_radio_3" class="css-radio" type="radio" value="1" name="pref_disable_family_filter"  style='vertical-align:middle;'  ><label for="family_filter_radio_3" name="" class="css-label"><span></span>Meine Ergebnisse nicht filtern</label>
+</td></tr></table></td><td width="1" class='td_head'></td><td  class='td_head_s'>Ergebnisse mit nicht jugendfreien Inhalten nicht anzeigen.<a name="video_family_filter"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Video Familienfilter</td><td class='td_head'><input id="video_filter_check" value="1" checked name="vf_disable_video_family_filter" class="css-checkbox" type="checkbox" />
+<label for="video_filter_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Zeige keine Erwachsenenvideos.<a name="video_preferences"></a></td></tr><tr valign="top" class='td_head'>
+<td valign="top" align="left" class='td_head'>Beim Abspielen von Videos</td>
+<td align="left" class='td_head'>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr valign="top">
+<td><input id="video_control_radio_1" class="css-radio" type="radio" value="0" name="pref_enable_video_settings"><label for="video_control_radio_1" name="" class="css-label"><span></span>Auf Ixquick bleiben</label>
+</td></tr><tr valign="top">
+<td><input id="video_control_radio_2" class="css-radio" type="radio" value="1" name="pref_enable_video_settings"><label for="video_control_radio_2" name="" class="css-label"><span></span>Zu anderer Website wechseln</label>
+</td></tr><tr valign="top"> 
+<td><input id="video_control_radio_3" class="css-radio" type="radio" value="" name="pref_enable_video_settings"checked><label for="video_control_radio_3" name="" class="css-label"><span></span>Jedes Mal fragen</label>
+</td></tr>
+</tbody>
+</table>
+</td>
+<td width="1" class='td_head'></td>
+<td class='td_head_s'>Videos direkt auf der Ergebnisseite von Ixquick ansehen oder auf anderer Website &#246;ffnen.<a name="ssl_setting"></a></td>
+</tr><input type='hidden' name='pref_ssl' value='1'/><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Zeige Proxy-Sicherheitsvorschl&#228;ge</td><td align="left" class='td_head'><input id="proxy_safety_check" value="1" name="pref_enable_proxy_safety_suggest" checked class="css-checkbox" type="checkbox" />
+<label for="proxy_safety_check" name="" class="css-label"><span></span>einschalten</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Beim Anzeigen einer Seite &#252;ber den Proxy wird mithilfe einer sicheren Suchdatenbank festgestellt, ob die Ursprungsseite Malware enth&#228;lt. N&#228;here Informationen finden Sie <a href="https://support.ixquick.com/index.php?/Knowledgebase/Article/View/1181/34/the-show-proxy-safety-suggestions-feature" target='_blank' class="blue_link">hier</a>.</td></tr><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Suchvorschl&#228;ge</td><td align="left" class='td_head'><div class="select-style"><select name=pref_suggestions style='width:155px;'>
+<option value=""></option>
+<option value="off">Aus</option>
+<option value="on">An</option>
+</select></div></td><td width="1" class='td_head'></td><td class='td_head_s' >Suchvorschl&#228;ge in der Suchbox anzeigen. Klicken Sie <a href='../deu/search-suggestions-explained.html' target='_blank' onclick='return false;' id="search-suggestions-link" class='blue_link'>hier</a> f&#252;r Details.<a name="anonymous_search"></a></td></tr><tr valign='top' class='td_head'><td valign='top' align='left'  class='td_head'>Suchengine-Quellen</td><td align='left' class='td_head'><table border=0 cellspacing=0 cellpadding=0><tr valign="top"><td><input type="radio" value="0" name="pref_search_engine_sources"  style='vertical-align:middle;'   id="search_engine_radio_1" class="css-radio"><label for="search_engine_radio_1"name="" class="css-label"><span></span>Europ&#228;ische und nordamerikanische Engines</td></tr><td><input type="radio" value="1" name="pref_search_engine_sources"  style='vertical-align:middle;'  checked id="search_engine_radio_2" class="css-radio"><label for="search_engine_radio_2"name="" class="css-label"><span></span>Engines aus anderen Gebieten einbeziehen</td></tr></table></td><td width="1" class='td_head'></td><td  class='td_head_s'>W&#228;hlen Sie, ob Sie hochwertige Quellen au&#223;erhalb von Europa und Nordamerika einbeziehen m&#246;chten. Ihre Suchabfrage wird anonym an Quellen weitergeleitet, um&#160;ihre Ergebnisse abzurufen.<a name="search_engine_sources"></a></td></tr><tr><td align='left' style="vertical-align:bottom;padding-bottom: 10px;margin: 0;"><input type=hidden name=save value=1><br><input type=hidden name="clear" value=""><input type=submit value="" style="height:0px;" class="invisible"><input type="hidden" name="cvt" value="aa233b2a5d5945add6c5db65f738f41e97661bf3,6d6669537844695935376e663470576e454e4a48,1443553035"><script>
+jQuery(window).load(function () {
+ jQuery('#generate_url_button').hammer({prevent_default: true}).on("tap", function(ev) {
+   ev.gesture.preventDefault();
+   ev.gesture.stopPropagation();
+   settings.generateurl.value='1';
+   settings.submit();
+  });
+});                                                                                                                                                                                                         
+</script><style>a.btn_blue:link, a.btn_blue:visited { text-decoration: none; } a.btn_green:link, a.btn_green:visited { text-decoration: none; }</style><table cellpadding="0" border="0" cellspacing="0" id="urlgen" style="visibility: hidden; height: 0px;display:none;"><tbody><tr><td nowrap="" onClick=" settings.generateurl.value='1'; settings.submit(); " nowrap><a onMouseOver="retinaToolTip('Erzeugt eine direkte URL, die Ihre Einstellungen enth&#228;lt.', BGCOLOR, '#f2f6fc', BORDERWIDTH, 0, BORDERCOLOR, '#668bc4', FONTCOLOR, '#5e6c8c', FONTSIZE, 12, FONTFACE,'Proxima Nova', PADDING, 8,MAINDIVCLASS,'nowrap');" onMouseOut="" id="generate_url_button" href="javascript:void(0);" style="padding-bottom:0px;margin-top:-22px;position:relative;top:-13px;" class="btn_green  btn_green_deu"><span>ERZEUGEN<br />SIE EINE URL</span></a></td></tr></tbody></table><script type="text/javascript">document.getElementById('urlgen').style.display='block';document.getElementById('urlgen').style.visibility='visible'; document.getElementById('urlgen').style.height='auto';</script> <noscript> <span class="button button_green"><button title="Erzeugt eine direkte URL, die Ihre Einstellungen enth&#228;lt" type="submit" name="generateurl" value="ERZEUGEN<br />SIE EINE URL">ERZEUGEN<br />SIE EINE URL</button></span> </noscript></td><td style="vertical-align:bottom;padding-bottom: 10px;margin: 0;"><table cellpadding="0" border="0" cellspacing="0" class="width_adjust" style="display: none; visibility: hidden; height: 0px;" id="install_plugin"><body><tr><td nowrap=""  style="margin-bottom:-15px"><a href="javascript:void(0);" style="margin-top:-1px; *margin-top:0px;" class="btn_green_b  btn_green_b_deu"><span>INSTALLIEREN DES<br /> KUNDENSPEZIFISCHEN PLUGIN</span></a></td></tr></tbody></table><script type="text/javascript">show_plugin_install('install_plugin', 0); </script></td><td style="padding-bottom:0px;padding-right:15px;">&nbsp;</td><td nowrap="" style="padding-top:0px; " class="td_head_s" ><div style="margin-top:0px;"><br>Erlaubt Ihnen, Einstellungen ohne die Nutzung von Cookies abzuspeichern.<br>(<a id="url_gen_link" class="blue_link" href="../deu/urlgenerator-details.html" target='_blank' onclick='return false;'>F&#252;r Details hier klicken</a>)</div></td></tr><tr><td colspan="4"><a name="urlgenbutton" style='top:-4px;position:relative;'>oder</a> <input type=hidden name="generateurl" value=""><br></td></tr><tr><td class="td_head" style="padding-right:24px;"><table cellpadding="0" border="0" cellspacing="0" style="visibility: hidden; display:none; height: 0px;" id="save_pref"><tbody><tr><td nowrap="" onclick="if (showMessage(1)) { submitMyForm();} else { var newlhref = location.href.replace('#nocookiesmsg', '');location.href = newlhref+'#nocookiesmsg'; return false; }"><a class="btn_blue btn_blue_big_deu" href="javascript:void(0);"><span>MEINE EINSTELLUNGEN<br />SPEICHERN</span></a></td></tr></tbody></table><script type="text/javascript">document.getElementById('save_pref').style.visibility='visible';document.getElementById('save_pref').style.display='block';document.getElementById('save_pref').style.height='auto';</script><noscript><span class="button button_blue"><button type="submit" value="MEINE EINSTELLUNGEN<br />SPEICHERN">MEINE EINSTELLUNGEN<br />SPEICHERN</button></span></noscript></td><noscript><style>@media all {.select-style select{-webkit-appearance:none;height:23px;overflow:visible; width:115% !important} .select-style{height:22px;}}</style></noscript><td><table cellpadding="0" border="0" cellspacing="0" style="visibility: hidden; display:none;height: 0px;" id="clear_pref"><tbody><tr><td nowrap="" onclick="settings.clear.value='Einstellungen <br />l&#246;schen';settings.submit();"><a class="btn_blue btn_blue_big_deu" href="javascript:void(0);"><span>EINSTELLUNGEN <br />L&#214;SCHEN</span></a></td></tr></tbody></table><script type="text/javascript">document.getElementById('clear_pref').style.visibility='visible';document.getElementById('clear_pref').style.display='block';document.getElementById('clear_pref').style.height='auto';</script><noscript><span class="button button_blue"><button type="submit" name="clear_button" value="EINSTELLUNGEN <br />L&#214;SCHEN">EINSTELLUNGEN <br />L&#214;SCHEN</button></span></noscript></td><td>&nbsp;</td><td class="td_head_s">Wenn Sie Ihre Einstellungen speichern, wird ein kleines <a href="../deu/protect-privacy-qa.html#q11" class='blue_link' target='_blank' onclick='return false;' id="cookie_popup">Cookie</a> in Ihrem Browser gesetzt, das sich bei Ihrem n&#228;chsten Besuch an Ihre Einstellungen erinnert.</td></tr></td> </tr></table></form>
+<div class="about-page-popup" id="url-generator-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><h1>Der URL-generator</h1><div><div class="cont_nor pad_t10"><h3>Speichern sie ihre einstellungen ohne cookies</h3></div><div class="pad_t25"><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5"><tr><td><ul class="check_green_l_17 url_gen"><li>Sie k&#246;nnen Ihre Pr&#228;ferenzen bei Ixquick durch Klicken auf den Button &#132;Sucheinstellungen Speichern&#148; auf der Seite "<a class="blue_link" target='_blank' href='preferences.pl-language_ui=deutsch.html'>Sucheinstellungen</a>".<li>Dadurch werden Ihre Einstellungen auf Ihrem Computer in einem 'Cookie' - einem kleinen Programm - auf Ihrer Festplatte gespeichert.Das Cookie tr&#228;gt den Namen 'Einstellungen'.</li><li>Das Ixquick-&#132;Einstellungen&#148;-Cookie ist vollkommen harmlos und &#252;bermittelt keinerlei Daten. Generell ist bei Cookies allerdings Vorsicht angebracht, da diese auch zur einseitigen Daten&#252;bermittlung verwendet werden.</li><li>Nutzerinnen, die es vorziehen, Cookies zu sperren, oder diese regelm&#228;&#223;ig zu l&#246;schen, sind nicht in der Lage, die Einstellungen so zu speichern.</li><li>Diesen Nutzerinnen bietet Startpage die Funktion &#132;Erzeugen einer URL&#148; am Ende der &#132;<a class="blue_link" target='_blank' href='preferences.pl-language_ui=deutsch.html'>Sucheinstellungen</a>&#148;-Seite.<li>Wenn Sie den Button klicken, wird eine eigene URL erzeugt, auf der nun Ihre Einstellungen gespeichert sind.</li><li>Diese kann in lesbarer oder verschl&#252;sselter Form erstellt werden.</li><li>Die so erstellte URL kann nun als Startseite festgelegt oder als Bookmark im Browser abgelegt werden.</li><li>Wenn Sie diese URL als Ihre Ixquick-Startseite verwenden, werden immer Ihre pers&#246;nlichen Einstellungen verwendet.</li><li id="customplugin" style="display:none;">F&#252;r noch mehr Komfort klicken Sie auf 'Kundenspezifisches Plugin installieren', nachdem Sie Ihre URL erstellt haben.</li><li>Dies wird eine Suchleiste installieren, die Ihre Einstellungen enth&#228;lt.</li><li id="customplugin_ff" style="display:none;">M&#246;glicherweise m&#252;ssen Sie zuvor gespeicherte Versionen zuerst in der Auswahlbox l&#246;schen.</li><li id="customplugin_chrome" style="display:none;">Vergewissern Sie sich, dass das Keyword, welches Sie eingeben, zum vorher gespeicherten differiert.</li></ul><div class="cont_nor pad_t10"><b><b>Ixquick bietet Ihnen viele Funktionen zum Schutz Ihrer Privatsph&#228;re im Internet!</b></b></div></div><br/></td></tr></table>
+<script type='text/javascript'>
+    var agent = navigator.userAgent;
+    if ( (agent.indexOf('Firefox/') != -1) || (agent.indexOf('Chrome/') != -1) ||
+         (agent.indexOf('SeaMonkey/') != -1) || (agent.indexOf('MSIE 7') != -1) ||
+         (agent.indexOf('MSIE 8') != -1) ) {
+
+        document.getElementById('customplugin').style.display = '';
+        if (agent.indexOf('Firefox/') != -1) {
+            document.getElementById('customplugin_ff').style.display = '';
+        }
+        if (agent.indexOf('Chrome/') != -1) {
+            document.getElementById('customplugin_chrome').style.display = '';
+        }
+    }
+</script><input type="hidden" id="query_top" height="10"></div></div></div>
+<div class="about-page-popup" id="server-select-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><h1 style="margin-top: -20px;">W&#228;hlen Sie Ihren Server f&#252;r die Suche</h1><div><div style="padding-top: 10px;"><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5" ><tr><td><ul class="check_green_l_17 url_gen"><li>In Anbetracht der Kontroverse von PRISM, die mit der US-Regierung verkn&#252;pft werden kann, werden einige Benutzer lieber auf Servern au&#223;erhalb der USA oder ihrem eigenen Land suchen.</li>
+<li>Standardm&#228;&#223;ig wird StartPage Sie mit den n&#228;chstgelegenen Servern verbinden, die die k&#252;rzesten Verbindungszeiten erm&#246;glichen.</li>
+<li>Die Auswahl einer anderen Option kann die Verbindungszeit verl&#228;ngern.</li>
+<li>Beachten Sie, dass alle Verbindungen zu allen Servern - egal wo sie sich befinden - <a class='blue_link' href ="https://support.ixquick.com/index.php?/Knowledgebase/Article/View/263/0/what-is-perfect-forward-secrecy-and-does-ixquick-use-this" target="_blank">High Quality-Verschl&#252;sselung</a> mit HTTPS verwenden, um zu vermeiden, dass Dritte im Inhalt Ihrer Suche herumschn&#252;ffeln.</li>
+</ul></td></tr></table><input type="hidden" id="query_top" height="10"></div></div></div>
+<div class="about-page-popup" id="search-suggestions-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5">
+<tr height='40'><td colspan='2' nowrap="nowrap" align="center" width="100%"><h1>Erkl&#228;rung zu unseren Suchvorschl&#228;gen</h1></td></tr><tr height='10'><td colspan='1'>&nbsp;</td></tr><tr><td align="left" >
+<b>Q:&nbsp;Wie kann ich die Suchvorschl&#228;ge aktivieren?</b><br><b>A:&nbsp;</b>Sie k&#246;nnen Suchvorschl&#228;ge aktivieren, indem Sie sich auf die <a target='_blank' href='preferences.pl-language_ui=deutsch.html' class='blue_link'>Einstellungen</a>-Seite begeben. Diese wird auf allen Ixquick Seiten als Link angezeigt.</td><td valign='top' rowspan=3><img src='../graphics/deu/search_suggestions_preview.jpg' width="340px" /></td></tr>
+<tr><td align="left" >
+<b>Q:&nbsp;Wie funktionieren die Suchvorg&#228;nge von Ixquick?</b><br><b>A:&nbsp;</b>Wenn Sie eine Suchanfrage eingeben, wird diese in einer gro&#223;en Datenbank mit den wichtigsten Ergebnisparametern abgeglichen und diverse Vorschl&#228;ge werden nach Relevanz sortiert angezeigt.</td><tr><td align="left" >
+<b>Q:&nbsp;Wodurch unterscheiden sich die Suchvorschl&#228;ge von Ixquick von denen anderer Suchmaschinen?</b><br><b>A:&nbsp;</b>Die meisten Suchmaschinen beziehen sich bei den Suchvorschl&#228;gen auf das Suchverhalten der User. Sie erhalten also Vorschl&#228;ge, die auf dem Suchverhalten anderer User beruhen. Da Ixquick ein Pionier f&#252;r den Schutz  der Privatsph&#228;re im Internet ist, greifen wir nicht auf das Suchverhalten zur&#252;ck. Vielmehr zeigen wir die allgemein relevanten Vorschl&#228;ge zu Ihrer Suchanfrage an.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Woher stammen die Vorschl&#228;ge bei Anfragen an Ixquick?</b><br><b>A:&nbsp;</b>Unsere Suchvorschl&#228;ge beruhen auf einer Vielzahl von Quellen, vom W&#246;rterbuch bis zu Websites des allgemeinen Interesses wie etwa Wikipedia.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Sind die Vorschl&#228;ge in allen Sprachen verf&#252;gbar?</b><br><b>A:&nbsp;</b>Ja, die Vorschl&#228;ge sind in allen Sprachen verf&#252;gbar.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Zeigt Ixquick auch bezahlte Vorschl&#228;ge an?</b><br><b>A:&nbsp;</b>Nein. Die Vorschl&#228;ge basieren ausschlie&#223;lich auf relativer Relevanz. Werbung ist nicht inkludiert.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ich erhalte teilweise englische Suchvorschl&#228;ge, obwohl ich mich in der deutschsprachigen Version von Ixquick befinde. Warum ist das so?</b><br><b>A:&nbsp;</b>Englisch ist die Hauptsprache im Web. Ixquick liefert Suchvorschl&#228;ge aber vorzugsweise in Ihrer Sprache. Wenn allerdings in Ihrer Sprache nicht ausreichend Suchvorschl&#228;ge vorhanden sind, dann bieten wir erg&#228;nzend Vorschl&#228;ge in englischer Sprache. Die Vorschl&#228;ge in Ihrer Sprache werden selbstverst&#228;ndlich zuerst angezeigt.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Wird es in Zukunft personalisierte Vorschl&#228;ge geben?</b><br><b>A:&nbsp;</b>Da wir zu keinem Zeitpunkt in Ihre Privatsph&#228;re eingreifen, also auch keinerlei Daten &#252;ber Ihr Suchverhalten speichern, wird es auch in Zukunft keine personalisierten Vorschl&#228;ge geben.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ich m&#246;chte nicht, dass mein Kind Vorschl&#228;ge erh&#228;lt, die nicht f&#252;r sein Alter vorgesehen sind. Kann ich mich hier absichern?</b><br><b>A:&nbsp;</b>Selbstverst&#228;ndlich. Die Vorschl&#228;ge richten sich nach Ihren Filtereinstellungen. Wenn diese Einstellungen entsprechend gesetzt sind, so ber&#252;cksichtigt unser Algorithmus dies und zeigt keine nicht jugendfreien Vorschl&#228;ge an.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ich habe die Suchvorschl&#228;ge aktiviert. Mir werden aber trotzdem keine Vorschl&#228;ge gemacht. Wo k&#246;nnte der Fehler sein?</b><br><b>A:&nbsp;</b>Bitte sehen Sie nach, ob Javascript in Ihrem Browser aktiviert ist.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ich verwende keine 'Cookies', bzw. l&#246;sche ich diese regelm&#228;&#223;ig. Kann ich die Suchvorschl&#228;ge trotzdem nutzen?</b><br><b>A:&nbsp;</b>Ja, das k&#246;nnen Sie. Da wir Ihre Privatsph&#228;re sch&#252;tzen, k&#246;nnen Sie unsere &#132;Erzeuge eine URL&#148;-Funktion nutzen. Diese erlaubt es Ihnen, Ihre Ergebnisse in einer URL zu speichern. Die Einstellungen k&#246;nnen Sie auf der &#132;Sucheinstellungen&#148;-Seite vornehmen.</td>
+</table></br></br>
+</div>
+<div class="about-page-popup" id="cookie-popup-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<h3><strong>Was sind &#132;Cookies&#147; und verwendet Ixquick Cookies?</strong></h3><br>Ein Cookie ist ein kleines Datenpaket das auf der Festplatte Ihres Computers abgelegt wird, wenn Sie eine Website aufrufen. Ixquick verwendet nur einen Cookie mit der Bezeichnung &#132;preferences&#147;. Der Cookie dient dazu, sich die von Ihnen gespeicherten Sucheinstellungen f&#252;r Ihren n&#228;chsten Besuch zu merken. Er verf&#228;llt, wenn Sie Ixquick 90 Tage lang nicht besucht haben, und ist anonym.</div>
+<div class="about-page-popup" id="home-popup-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<div id="home-popup-div-inner"></div></div>
+<div id="loadingId"></div>
+<script>
+        jQuery(window).load(function () { 
+            /* remove the no-js class added when the JS is enabled. */
+            jQuery('#preferences-form').removeClass('settings-no-js');
+ 
+            jQuery('#url_gen_link').click(function () {                                                                                                                                          
+                jQuery('#url-generator-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('url-generator-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {
+                jQuery('#url-generator-div').hide();
+                jQuery('#loadingId').hide();
+                blockPageScrolling('url-generator-div');
+            });
+            jQuery('#search-suggestions-link').click(function () {                                                                                                                                          
+                jQuery('#search-suggestions-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('search-suggestions-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#search-suggestions-div').hide();
+                jQuery('#loadingId').hide();
+                blockPageScrolling('search-suggestions-div'); 
+            });
+            jQuery('#server_select_link').click(function () {                                                                                                                                          
+                jQuery('#server-select-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('server-select-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#server-select-div').hide();
+                 jQuery('#loadingId').hide();
+                 blockPageScrolling('server-select-div'); 
+            });
+            jQuery('#cookie_popup').click(function () {                                                                                                                                         
+                jQuery('#cookie-popup-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('cookie-popup-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#cookie-popup-div').hide();
+                 jQuery('#loadingId').hide();
+                 blockPageScrolling('cookie-popup-div');
+            });
+            jQuery('#make_homepage_link').click(function () {                                                                                                                                          
+                jQuery('#home-popup-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('home-popup-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#home-popup-div').hide();
+                 jQuery('#loadingId').hide();
+                 blockPageScrolling('home-popup-div');
+            });
+            jQuery(document).keyup(function(e) {                                                                                                                                                         
+                    if (e.keyCode == 27) { 
+                        jQuery('#url-generator-div').hide(); 
+                        jQuery('#info-sharing-div').hide(); 
+                        jQuery('#search-suggestions-div').hide();
+                        jQuery('#server-select-div').hide();
+                        jQuery('#cookie-popup-div').hide();
+                        jQuery('#home-popup-div').hide();
+                        jQuery('#loadingId').hide(); 
+                        blockPageScrolling('url-generator-div');
+                        blockPageScrolling('info-sharing-div');
+                        blockPageScrolling('search-suggestions-div');
+                        blockPageScrolling('server-select-div');
+                        blockPageScrolling('cookie-popup-div');
+                        blockPageScrolling('home-popup-div');
+                    }
+            });
+            jQuery('#loadingId').doubletap(
+                /** doubletap-dblclick callback */
+                function(event){
+                    event.preventDefault();
+                },
+                /** touch-click callback (touch) */
+                function(event){
+                    jQuery('#url-generator-div').hide(); 
+                    jQuery('#info-sharing-div').hide(); 
+                    jQuery('#search-suggestions-div').hide();
+                    jQuery('#server-select-div').hide();
+                    jQuery('#cookie-popup-div').hide();
+                    jQuery('#home-popup-div').hide();
+                    jQuery('#loadingId').hide(); 
+                    blockPageScrolling('url-generator-div');
+                    blockPageScrolling('info-sharing-div');
+                    blockPageScrolling('search-suggestions-div');
+                    blockPageScrolling('server-select-div');
+                    blockPageScrolling('cookie-popup-div');
+                    blockPageScrolling('home-popup-div');
+                },
+                /** doubletap-dblclick delay (default is 500 ms) */
+                250
+            );
+    
+        });  
+    </script></div>
+    </div></div>
+    <div class="clear"></div>
+    </td>
+    </tr>
+</tbody>
+</table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    </div></td></tr></tbody></table></div></div></div></div>
+	<div class="footer" id="footer">
+ 	<div class="copyright">
+  	&copy; 2015 Ixquick
+ 	</div>
+		
+ 	<div class="right_links"><a id="startmail" href="https://live.startmail.com/deu/" style="text-decoration: none;">
+    <!--<span class="icon icon-small"><span class="icon-mail"></span></span>&nbsp;-->
+  	<span style="text-decoration: underline;">StartMail</span></a>
+  	<a id="privacy_policy" href="../deu/privacy-policy-.html">Datenschutzrichtlinie</a>
+ 	</div>
+    <div class='imgavt'> </div>
+    </div>
+    <script type="text/javascript" charset="utf-8"> $(function() { $('body').hide().show(); });</script>
+    </body>
+    </html>

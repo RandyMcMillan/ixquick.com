@@ -1,0 +1,1245 @@
+<!DOCTYPE HTML>
+    <!--[if lt IE 7 ]> <html class='ie6 ie'> <![endif]-->                                                                         
+    <!--[if IE 7 ]> <html class='ie7 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 8 ]> <html class='ie8 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 9 ]> <html class='ie9 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if (gt IE 9)|!(IE)]><!-->                                                                                                                                                                          
+    <html>                                                                                                                                                                                                  
+    <!--<![endif]-->
+     <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">     
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title> Ayarlar </title>
+    
+<link rel="icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../graphics/favicon/ix-apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../graphics/favicon/ix-apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../graphics/favicon/ix-apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../graphics/favicon/ix-apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../graphics/favicon/ix-apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../graphics/favicon/ix-apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../graphics/favicon/ix-apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../graphics/favicon/ix-apple-touch-icon-152x152.png">
+<link rel="icon" sizes="196x196" href="../graphics/favicon/ix-favicon-196x196.png" type="images/png">
+<link rel="icon" sizes="160x160" href="../graphics/favicon/ix-favicon-160x160.png" type="images/png">
+<link rel="icon" sizes="96x96" href="../graphics/favicon/ix-favicon-96x96.png" type="images/png">
+<link rel="icon" sizes="16x16" href="../graphics/favicon/ix-favicon-16x16.png" type="images/png">
+<link rel="icon" sizes="32x32" href="../graphics/favicon/ix-favicon-32x32.png" type="images/png">
+<link href="../graphics/favicon/ix-favicon-16x16.png" type="images/png" rel="shortcut icon">
+<meta name="msapplication-TileColor" content="#6589c7">
+<meta name="msapplication-TileColor" content="/graphics/favicon/ix-mstile-144x144.png">
+
+    
+    <link href='../css/retina_about_pages-v=5.css' type='text/css' media="all"  rel='StyleSheet' />
+    <!--[if lt IE 9]><link href='../css/lt_ie9-v=5.css' type='text/css' media="all"  rel='StyleSheet' /><![endif]-->
+    
+    <script language='javascript' type='text/javascript' src='../js/retina_about_pages-v=5.js'></script>            
+    <!--[if lt IE 9]><script language='javascript' type='text/javascript' src='../js/less_than_ie9-v=5.js'></script><![endif]-->
+    <script>function setFocus() { var pageUrl = window.location.href; if (!pageUrl.match(/jump_to/)) { document.getElementById("query_top").focus(); } }</script>
+    
+	<script>
+   	jQuery(window).load(function() {
+		jQuery('.accordionButton').click(function(e){
+			e.preventDefault();
+            var div_display = jQuery(this).next('.accordionContent').css('display');
+            if (div_display == 'block') {
+                jQuery(this).next('.accordionContent').slideUp();
+            } else {
+                jQuery('div.accordionContent').slideUp();
+                jQuery(this).next('.accordionContent').slideToggle();
+            }
+    	});
+    });
+
+jQuery(window).load(function () {
+    jQuery('div[id^=tOoLtIp]').each(function() {
+        var obj = jQuery(this);
+        jQuery(this).addClass('sb-tooltip');
+        jQuery(this).find('*').removeAttr('bgcolor color face style');
+    });
+});
+
+function verifyChecked (form_obj) { 
+    var formname = form_obj.name; 
+    var orig_query = document[formname].query.value; 
+    if (orig_query == "") { 
+        return false; 
+    } 
+    form_obj.submit(); 
+
+    return false; 
+}
+      
+    </script>
+	
+    <script type='text/javascript'>
+    jQuery(window).load(function() {         
+                                    concatParamToAllUrls(); 
+jQuery('.external').click(function(){
+        var link = jQuery(this).attr('data-link');
+        var str;
+        if(link.match(/facebook/i)) {
+           str = "";
+        } else if(link.match(/twitter/i)) {
+           str = "";
+        }
+
+        r = confirm(str);
+        if(r==true) { 
+            document.location = link;
+        } 
+        return false;
+    });
+jQuery(window).load(function () {
+    var page_url = document.URL;
+    if( page_url.match("company-faq") || 
+        page_url.match("protect-privacy-qa") || 
+        page_url.match("preferences.pl") ) {
+        if (page_url.match(/.html#q/) || page_url.match("jump_to")) {
+        } else { 
+          document.getElementById('query_top').focus();
+        }
+    } else { 
+        document.getElementById('query_top').focus();
+    }
+});
+
+jQuery(function() {     
+//if(jQuery('.rightContent').height()<jQuery('.leftContent').height()){
+//jQuery('.leftContent').css("border-right","none");
+    //jQuery('#borderLR').hide();
+//}else{
+    //jQuery('.leftContent').css("border-right","none");
+//jQuery('#borderLR').show();
+//jQuery('#borderLR').height(jQuery('.bodyContent').height()-40);
+//}
+});
+});
+function newImage(arg) {
+  if (document.images) {
+        rslt = new Image();
+        rslt.src = arg;
+        return rslt;
+  }
+}
+
+function loadImage() {
+    img1 = newImage("/graphics/selectedMenuBack.png");
+    img2 = newImage("/graphics/hoverMenuBack.png");
+    img2 = newImage("/graphics/separator.gif");
+}
+
+loadImage();
+		function concatParamToAllUrls (referenceUrlId) {
+			/* Get current url */
+			var currentUrl = window.location.href;
+			currentUrl = unescape(currentUrl);
+			var isParamPresentInFormField = false; /* flag to check if prf OR prfh param is present in form field */
+			var isParamPresentInUrl = false;  /* flag to check if prf OR prfh param is present in url */
+            var isValidParam = false;  /*flag to check if prf OR prfh parameter is valid or not.*/
+            var alreadyHiddenPrfBlankPresent = false;
+			var paramName = "";
+			var paramValue = "";
+
+			/* Loop through each input type element and check if prf OR prfh is present or not. If yes mark flag as true */
+			jQuery(":input").each(function(i){
+					
+				if( (jQuery(this).attr("name") == "prfh") || (jQuery(this).attr("name") == "prf") ){
+					//isParamPresentInFormField = true;
+					paramName  = jQuery(this).attr("name") + "=";
+					paramValue = jQuery(this).attr("value");
+                    if (paramValue != "") {
+                         isParamPresentInFormField = true;
+                    } else {
+                       alreadyHiddenPrfBlankPresent = true;
+
+                    }
+				}
+				
+			});
+
+			/* Is prf OR prfh present in Url. If yes then set flag as true */
+			if( (currentUrl.match(/(.*?)(&|\?)(prfh)(=)(.*?)($|&)/g)) || (currentUrl.match(/(.*?)(&|\?)(prf)(=)(.*?)($|&)/g)) ){
+				isParamPresentInUrl = true;
+			}
+            var param_name = RegExp.$3;
+            var parm_opt = RegExp.$4;
+            var prm_value = RegExp.$5;
+            if (/^[a-zA-Z0-9/_]+$/.test(prm_value)) {
+                isValidParam = true;
+            }
+
+			//alert('isParamPresentInFormField ' + isParamPresentInFormField + ' isParamPresentInUrl ' + isParamPresentInUrl);
+			if( isValidParam && ((isParamPresentInUrl) || (isParamPresentInFormField)) ){
+				var concatThisParam = "";
+
+				/* Prepare param to be concatenated */
+				if (isParamPresentInUrl) {
+					concatThisParam = param_name + parm_opt + prm_value;
+				} else if(isParamPresentInFormField){
+					concatThisParam = paramName + paramValue ;
+					
+				}
+
+				/* If advance search url is calling this method then concat prf OR prfh param to this url only. Else concat to all the urls */
+				if (typeof referenceUrlId != "undefined") {
+					jQuery('#' + referenceUrlId).attr('href', jQuery('#' + referenceUrlId).attr('href') + '&' + concatThisParam);
+					
+				} else {
+				   /* Add prf OR prfh as form field as well if not already present. */
+				   if (!isParamPresentInFormField) {
+                       if (alreadyHiddenPrfBlankPresent) {
+                           var myParam = concatThisParam;
+                           var param_elements = myParam.split('=');
+                          jQuery('input[name='+param_elements[0]+']').val(param_elements[1]);
+                       } else {
+					      jQuery("<input type='hidden' value='" + prm_value + "' name='" + param_name + "' id='" + param_name + "' />").prependTo(jQuery('#input_p'));
+                       }
+                   }
+				   jQuery('.addsettings').each(function(index){ 
+					   var originalUrl = jQuery(this).attr('href');
+                       if (originalUrl) {
+					   if ( originalUrl.match( /(.*?)(\?)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '&' + concatThisParam);
+					   } else if( originalUrl.match( /(.*?)(\/)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   } else if(originalUrl.match( /(.*)(\/)(.*?)$/g ) ){
+						   jQuery(this).attr('href', originalUrl + '?' + concatThisParam);
+					   }
+                       }
+					   
+				   });
+			   }
+			}
+		} function eId(item) { 
+        return document.getElementById(item);                                                                                                                                                                    
+    }                                                                                                                                                                                                          
+    var allCats = new Array('web','pics','video');                                                                                                                                          
+                                                                                                                                                                                                               
+    function hasClass(ele,cls) {                                                                                                                                                                                
+        return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));                                                                                                                             
+    }                                                                                                                                                                                       
+                                                                                                                                                                                                     
+    function addClass(ele,cls) {                                                                                                                                                            
+        if (!this.hasClass(ele,cls)) {                                                                                                                                                       
+            ele.className += ' ' + cls;                                                                                                                                                   
+        }                                                                                                                                                                                           
+    }                                                                                                                                                                                            
+                                                                                                                                                                                                    
+    function removeClass(ele,cls) {                                                                                                                                               
+        if (hasClass(ele,cls)) {                                                                                                                                                          
+            var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');                                                                                                                                   
+            ele.className=ele.className.replace(reg," ");                                                                                                                                       
+        }                                                                                                                                                                                       
+    }                                                                                                                                                                                              
+                                                                                                                                                                                                         
+    function passQueryAdv(url) {                                                                                                                                                                                 
+        url += '?&cat=' + document.blah1.cat.value;                                                                                                                                                              
+        url += '&query=' + escape(document.blah1.query.value);
+        eId('xsearch').href = url; concatParamToAllUrls('xsearch');
+    }
+    
+    function setCat(catr) { 
+        document.blah1.cat.value = catr;
+        for(var i = 0; i < allCats.length; i++) {
+            removeClass(eId(allCats[i]), 'active');
+        }
+        addClass(eId(catr), 'active');
+        eId('query_top').focus();
+        if (catr != 'web') {
+            //eId('enhanced').style.visibility = 'hidden';
+            //eId('detail').style.visibility = 'hidden';
+        } else {
+            //eId('enhanced').style.visibility = 'visible';
+            //eId('detail').style.visibility = 'visible';
+        }
+        return false;
+    }
+ 
+    function trim(str) {
+       return str.replace(/^\s+|\s+$/g, '');
+    }
+
+    function get_value(c_name) {
+       var current_url = location.href;
+      if ( (current_url.indexOf('prfh') != -1) && (current_url.indexOf(c_name) != -1) ) {
+           c_start= current_url.indexOf(c_name + "EEE");
+           if (c_start!=-1)
+              {
+                c_start=c_start + c_name.length+3;
+                c_end=current_url.indexOf("N1N",c_start);
+                if (c_end==-1) c_end = current_url.length;
+                return unescape(current_url.substring(c_start,c_end));
+              }
+         } else {
+            if (document.cookie.length>0)
+               {
+                 c_start=document.cookie.indexOf(c_name + "EEE");
+                 if (c_start!=-1)
+                    {
+                      c_start=c_start + c_name.length+3;
+                      c_end=document.cookie.indexOf("N1N",c_start);
+                      if (c_end==-1) c_end=document.cookie.length;
+                      return unescape(document.cookie.substring(c_start,c_end));
+                     }
+                  }
+
+         }
+       return "";
+     }
+
+    function change_form_method() {
+       if(get_value('enable_post_method') == '0') {
+          document.blah1.method = 'GET';
+       }
+    }
+
+    function verifyChecked (form_obj) {
+        var formname = form_obj.name;
+        var orig_query = document[formname].query.value; 
+        if (orig_query == '') {
+           return false;
+        }
+        form_obj.submit();
+        return false;
+    } 
+
+
+        $(document).ready(function() {
+
+            if((BrowserDetect.OS.indexOf("BB10") != -1) && (navigator.userAgent.indexOf("Mobile Safari") != -1)) MY_BROWSER = "Browser";
+            if ( ((MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium')) && (MY_BROWSER_VERSION > 31) ) {
+
+            actionUrl = document.blah1.action;
+            document.blah1.action = actionUrl.replace(/\/search$/, '/metasearch.pl'); }
+ });
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+    
+    var message_array = new Array('polski', 'Uwaga:\nje&#380;eli ustawienia wyszukiwarki Ixquick zosta&#322;y utracone po jej ponownym uruchomieniu, prawdopodobnie nale&#380;y zmieni&#263; preferencje prywatno&#347;ci w przegl&#261;darce.\nWi&#281;cej informacji na ten temat mo&#380;na znale&#378;&#263; w wykazie cz&#281;sto zadawanych pyta&#324;. \n', 'norsk', 'Note:\nHvis du har mistet innstillingene for Ixquick etter at du starter nettleseren p&#229; nytt, er det mulig at dine personvernpreferanser m&#229; stilles inn igjen.\nDu kan finne flere opplysninger p&#229; siden \'La oss f&#229; vite om det\' under FAQ.\n', 'deutsch', 'Hinweis:\nFalls Ihre Ixquick-Einstellungen nach dem Neustart Ihres Browsers verloren gehen, m&#252;ssen Sie gegebenenfalls die Datenschutzeinstellungen Ihres Browsers anpassen.\nWeitere Informationen dazu finden Sie unter den h&#228;ufig gestellten Fragen. \n', 'dansk', 'Bem&#230;rk:\nHvis dine Ixquick-indstillinger g&#229;r tabt, efter at du har genstartet din browser, skal browserens indstillinger for beskyttelse af personlige oplysninger muligvis &#230;ndres.\nDu kan finde yderligere oplysninger under "Ofte stillede sp&#248;rgsm&#229;l". \n', 'hangul', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'turkce', 'Not:\nTaray&#305;c&#305;n&#305;z&#305; yeniden ba&#351;latt&#305;ktan sonra Ixquick ayarlar&#305;n&#305;z kaybolduysa, taray&#305;c&#305;n&#305;z&#305;n gizlilik tercihlerinin ayarlanmas&#305; gerekiyor olabilir.\nDaha fazla bilgi edinmek i&#231;in SSS b&#246;l&#252;m&#252;ne bak&#305;n.\n', 'english', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted.\nFurther information can be found on the FAQ.\n', 'francais', 'Remarque&#160;:\nSi, au red&#233;marrage de votre navigateur, vous constatez que vos param&#232;tres Ixquick n&#146;ont pas &#233;t&#233; sauvegard&#233;s, v&#233;rifiez les options de votre navigateur portant sur la vie priv&#233;e.\nConsultez la rubrique FAQ pour en savoir plus.\n', 'espanol', 'Nota:\nSi no encuentra la configuraci&#243;n de Ixquick despu&#233;s de reiniciar el explorador, es posible que deban ajustarse las preferencias de privacidad del explorador.\nPuede encontrar m&#225;s informaci&#243;n en las Preguntas frecuentes. \n', 'english_uk', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s privacy preferences may need to be adjusted.\nFurther information can be found on the FAQ.\n', 'nederlands', 'Noot:\nAls uw Ixquick instellingen verloren gaan na het herstarten van uw browser, ligt dat waarschijnlijk aan de privacy instellingen van uw browser.\nMeer informatie vindt u op de "Laat het ons weten" pagina onder "veelgestelde vragen".\n', 'portugues', 'Nota:\nCaso suas configura&#231;&#245;es do Ixquick sejam perdidas ap&#243;s a reinicializa&#231;&#227;o do navegador, talvez seja necess&#225;rio ajustar as prefer&#234;ncias de privacidade do navegador.\nMais informa&#231;&#245;es podem ser encontradas nas Perguntas frequentes.\n', 'suomi', 'Huomaa:\nJos Ixquickin asetuksiin tekem&#228;si muutokset h&#228;vi&#228;v&#228;t selaimesi uudelleen k&#228;ynnist&#228;misen yhteydess&#228;, voi olla tarpeen s&#228;&#228;t&#228;&#228; selaimesi tietosuoja-asetuksia.\nLis&#228;tietoa l&#246;yd&#228;t Usein kysytyt kysymykset -osiosta.\n', 'svenska', 'Obs!\nOm dina inst&#228;llningar f&#246;r Ixquick &#228;r borta n&#228;r du startat om webbl&#228;saren kan du beh&#246;va justera webbl&#228;sarens sekretessinst&#228;llningar.\nMer information finns i v&#229;ra vanliga fr&#229;gor och svar.\n', 'nihongo', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'jiantizhongwen', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'fantizhengwen', 'Note:\nIf your Ixquick settings are lost after re-starting your browser, your browser\'s  privacy preferences may need to be adjusted. Further information can be found on the \'Let Us Know\' page under the FAQ.\n', 'italiano', 'Nota bene:\nse le impostazioni di Ixquick vanno perse dopo avere riavviato il browser, potrebbe essere necessario modificare le preferenze della privacy del browser.\nMaggiori informazioni sono disponibili nelle FAQ.\n');
+
+    function hide () {
+        for (var i=0; i<hide.arguments.length; i++) {
+            document.getElementById(hide.arguments[i]).style.display = 'none';
+        }
+    }
+    function show () {
+        for (var i=0; i<show.arguments.length; i++) {
+            document.getElementById(show.arguments[i]).style.display = '';
+        }
+    }
+  function showMessage (enable_retina_design) {
+
+    var language_selected = '';
+    if (document.settings.pref_language_ui) {
+      if (!enable_retina_design) {
+        var disp_lang_obj = document.settings.pref_language_ui; 
+        language_selected = disp_lang_obj.options[disp_lang_obj.selectedIndex].value;
+      } else {
+        language_selected = $('[name=pref_language_ui]').val();
+      }
+    }
+
+   if (language_selected == '') {
+        language_selected = 'english';
+    } 
+    for (var i = 0; i < message_array.length; i += 2) {
+        if (message_array[i] == language_selected) {
+            var text = document.createElement('span');
+            text.innerHTML = message_array[i+1];
+            //alert(text.innerHTML);
+            break;
+        }
+    }
+    return true;
+}
+    function show_plugin_install (obj_id, do_display) {
+        if ( (MY_BROWSER == 'Firefox') || (MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium') || (MY_BROWSER == 'SeaMonkey') ||
+             ((MY_BROWSER == 'Explorer') && (MY_BROWSER_VERSION >= 7) && (MY_BROWSER_VERSION < 9))) {
+            /* 2015-04-30 [Krishna] Don't show the 'Install Custom Plugin' button in mobile devices. */
+            if (do_display == 1 && !BrowserDetect.OS.match(/Android|iOS|Blackberry|Windows\s+Phone\s+8/i)) {
+                show(obj_id);
+            }
+        }
+}
+    function get_http_host() {
+    var http_host = '';
+    var page_url = document.URL;
+    var url_parts = page_url.split('://');
+    var protocol = url_parts[0];
+
+    if (url_parts[1].indexOf('/') != -1) {
+       var slash_pos = url_parts[1].indexOf('/');
+       http_host = protocol + '://' + url_parts[1].substr(0, slash_pos);
+    } else {
+       http_host = protocol + '://' + url_parts[1];
+    }
+    
+    return http_host;
+}
+    
+    function add_plugin (plugin_url, favicon_url, brand, custom_text) {
+        plugin_url += '&browser=' + MY_BROWSER + '&version=' + MY_BROWSER_VERSION;
+
+        if ((MY_BROWSER == 'Explorer') && (MY_BROWSER_VERSION >= 7) && (MY_BROWSER_VERSION < 9)) {
+            window.external.AddSearchProvider(plugin_url);
+
+        } else if (MY_BROWSER == 'Firefox') {
+            window.sidebar.addSearchEngine(plugin_url+'&a=b.src', favicon_url, brand, custom_text);
+
+        } else if (MY_BROWSER == 'Chrome' || MY_BROWSER == 'Chromium') {
+            window.external.AddSearchProvider(plugin_url);
+
+        } else if (MY_BROWSER == 'SeaMonkey') {
+            window.sidebar.addSearchEngine(plugin_url+'&a=b.src', favicon_url, brand, custom_text);
+        }
+    }
+function bookmarkUrl(title, url){
+    if (window.sidebar) {// firefox
+    //    window.sidebar.addPanel(title, url, '');
+    }
+    else if(window.opera && window.print){ // opera
+        var elem = document.createElement('a');
+        elem.setAttribute('href',url);
+        elem.setAttribute('title',title);
+        elem.setAttribute('rel','sidebar');
+        elem.click();
+    }
+    else if(document.all)// ie
+        window.external.AddFavorite(url, title);
+}
+                    function makeHomePage(obj, page_url) {
+			            enable_retina_design = 1;
+                        load_img('/do/adviewtrack.pl?a=10&g=357&l=turkce');
+                        var ua = navigator.userAgent;
+                        var ff = 0;
+                        if (ua.indexOf('Firefox') != -1) {
+                            ff = 1;
+                        }
+                        var homepage_url = page_url;
+                        var http_host = get_http_host();if ((http_host.indexOf('ixquick.') != -1) && (page_url.indexOf('http') != 0)) {homepage_url = http_host + page_url;
+                        }
+                        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome');
+                        var is_edge = navigator.userAgent.indexOf('Edge');
+                            var agentname = navigator.userAgent;  var out_str = '';if (is_edge != -1 || (agentname.toLowerCase().indexOf('netscape') != -1) || (agentname.toLowerCase().indexOf('navigator') != -1)) {
+                            out_str += '&#214;z&#252;r dileriz, bu taray&#305;c&#305;n&#305;n giri&#351; sayfas&#305; otomatik olarak yap&#305;land&#305;r&#305;lam&#305;yor. Ancak, b&#252;y&#252;k olas&#305;l&#305;kla elle yap&#305;land&#305;rabilirsiniz. Bunu yaparsan&#305;z, giri&#351; sayfas&#305; ayarlar&#305;nda girilecek URL &#351;udur: <!--HOME-->/tur/<!--/HOME-->';
+                            } else if (agentname.toLowerCase().indexOf('firefox') != -1) {
+                                
+                                out_str += 'Firefox taray&#305;c&#305;s&#305;nda giri&#351; sayfan&#305;z&#305; belirlemek i&#231;in a&#351;a&#287;&#305;daki ad&#305;mlar&#305; izleyin:<ul class="check_green_l_16">';
+                                if (BrowserDetect.OS.indexOf('Linux') != -1) {
+                                out_str += '<li>Edit (D&#252;zen) Men&#252;s&#252;\'n&#252; t&#305;klat&#305;n.</li>';
+                                out_str += '<li>Preferences\'i (Tercihler) se&#231;in.</li>';
+                                }
+                                else if (BrowserDetect.OS.indexOf('Mac') != -1) {
+                                    out_str += '<li>Firefox Men&#252;s&#252;\'n&#252; t&#305;klat&#305;n.</li>';
+                                    out_str += '<li>Preferences\'i (Tercihler) se&#231;in.</li>';
+                                }
+                                else if (BrowserDetect.OS.indexOf('Window') != -1) {
+                                    out_str += '<li>Tools (Ara&#231;lar) Men&#252;s&#252;\'n&#252; t&#305;klat&#305;n.</li>';
+                                    out_str += '<li>Options\'&#305; (Se&#231;enekler) t&#305;klat&#305;n.</li>';
+                                }
+                                out_str += '<li>Genel sekmesine t&#305;klay&#305;n</li>';
+                                out_str += '<li>Ana sayfa kutusundaki mevcut adresi silin ve yerine &#351;unu kullan&#305;n <!--HOME-->/tur/<!--/HOME--></li>';
+                                out_str += '<li>Ayr&#305;ca, giri&#351; sayfas&#305; olarak kullanmak istedi&#287;iniz sekmeleri a&#231;abilir ve Home Page (Giri&#351; Sayfas&#305;) kutusu alt&#305;ndaki Use Current Pages (&#350;u Anki Sayfalar&#305; Kullan) d&#252;&#287;mesini t&#305;klatabilirsiniz.</li></ul>';
+                                
+                            } else if (BrowserDetect.browser.toLowerCase().indexOf('chrome') != -1) { /* (for retina) So that Instructions for chrome are not displayed for other browsers */
+                                
+                                out_str += 'Chrome taray&#305;c&#305;s&#305;nda giri&#351; sayfan&#305;z&#305; belirlemek i&#231;in a&#351;a&#287;&#305;daki ad&#305;mlar&#305; izleyin:';
+                                    // checking for mac OS
+                                    if (BrowserDetect.OS.indexOf('Mac') != -1) {
+                                        // if version is beetween 3 and 18
+                                        if (BrowserDetect.version >= 3 && BrowserDetect.version <= 18) {
+                                            out_str += '<ul class="check_green_l_16"><li>&#304;ngiliz anahtar&#305; simgesine t&#305;klay&#305;n <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="margin-top:-5px;" align="absmiddle" /></li>';
+                                            out_str += '<li>Tercihler -> Temel &#214;&#287;eler\'e gidin.</li>';
+                                            out_str += '<li>&#147;Home page&#148; (Ana sayfa) b&#246;l&#252;m&#252;nde &#147;Open this page&#148; (Bu sayfay&#305; a&#231;) se&#231;ene&#287;ini i&#351;aretleyin.</li>';
+                                            out_str += '<li><!--HOME-->/tur/<!--HOME--> "Bu sayfay&#305; a&#231;" metin kutusuna girin.</li>';
+                                            out_str += '<li>Google Chrome her &#231;al&#305;&#351;t&#305;r&#305;ld&#305;&#287;&#305;nda ana sayfan&#305;z&#305; g&#246;r&#252;nt&#252;lemek i&#231;in &#147;On startup&#148; (Ba&#351;larken) b&#246;l&#252;m&#252;nde &#147;Open the home page&#148; (Ana sayfay&#305; a&#231;) se&#231;ene&#287;ini i&#351;aretleyin.</li>';
+                                            if (BrowserDetect.version <= 9) {
+                                                out_str += '<li>Tercihleri kapat&#305;n.</li>';
+                                            } else {
+                                                out_str += '<li>Se&#231;enekler sekmesini kapat&#305;n.</li>';
+                                            }
+                                        } else {
+                                            // for version greater than or equal to 19
+                                            if ((BrowserDetect.version >= 19) && (BrowserDetect.version < 23)) {
+                                                out_str += '<ul class="check_green_l_16"><li>&#304;ngiliz anahtar&#305; simgesi <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="position:absolute;"/> <span> -> Ayarlar </span> b&#246;l&#252;m&#252;ne gidin.</li>';
+                                            } else {
+                                                if (BrowserDetect.version >= 23) {
+                                                    out_str += '<ul class="check_green_l_16"><li>Ayarlar simgesine gidin <img src=\'/graphics/chrome_settingMenu.gif\' height="25" style="margin-top:-1px;"/> -> Ayarlar<span>. </li>';
+                                                }
+                                            }
+                                            out_str += '<li>"Ba&#351;lang&#305;&#231;ta" b&#246;l&#252;m&#252;ndeki "Sayfalar&#305; ayarla" d&#252;&#287;mesine t&#305;klay&#305;n.</li>';
+                                            out_str += '<li>/tur/ "Yeni bir sayfa ekle" metin alan&#305;na girin.</li>';
+                                            out_str += '<li>Tamam\'a t&#305;klay&#305;n.</li>';
+                                        }
+                                    } else {
+                                        //  check for windows OS
+                                        if (BrowserDetect.OS.indexOf('Window') != -1) {
+                                            // for version beetween 3 and 18
+                                            if (BrowserDetect.version >= 3 && BrowserDetect.version <= 18) {
+                                                out_str += '<ul class="check_green_l_16"><li>&#304;ngiliz anahtar&#305; simgesine t&#305;klay&#305;n <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="margin-top:-5px;" align="absmiddle" /></li>';
+                                                out_str += '<li>Se&#231;enekler -> Temel &#214;&#287;eler\'e gidin.</li>';
+                                                out_str += '<li>&#147;Home page&#148; (Ana sayfa) b&#246;l&#252;m&#252;nde &#147;Open this page&#148; (Bu sayfay&#305; a&#231;) se&#231;ene&#287;ini i&#351;aretleyin.</li>';
+                                                out_str += '<li><!--HOME-->/tur/<!--HOME--> "Bu sayfay&#305; a&#231;" metin kutusuna girin.</li>';
+                                                out_str += '<li>Google Chrome her &#231;al&#305;&#351;t&#305;r&#305;ld&#305;&#287;&#305;nda ana sayfan&#305;z&#305; g&#246;r&#252;nt&#252;lemek i&#231;in &#147;On startup&#148; (Ba&#351;larken) b&#246;l&#252;m&#252;nde &#147;Open the home page&#148; (Ana sayfay&#305; a&#231;) se&#231;ene&#287;ini i&#351;aretleyin.</li>';
+                                                if (BrowserDetect.version <= 9) {
+                                                    out_str += '<li>&#147;Kapat&#148;a t&#305;klay&#305;n.</li>';
+                                                } else {
+                                                    out_str += '<li>Bu Ayarlar sekmesini kapat&#305;n.</li>';
+                                                }
+
+                                            } else {
+                                                // for version greater than 18
+                                                if ((BrowserDetect.version >= 19) && (BrowserDetect.version < 23)) {
+                                                    out_str += '<ul class="check_green_l_16"><li>&#304;ngiliz anahtar&#305; simgesi <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="position:absolute;"/> <span> -> Ayarlar </span> b&#246;l&#252;m&#252;ne gidin.</li>';
+                                                } else {
+                                                    if (BrowserDetect.version >= 23) {
+                                                        out_str += '<ul class="check_green_l_16"><li>Ayarlar simgesine gidin <img src=\'/graphics/chrome_settingMenu.gif\' height="25" style="margin-top:-1px;"/> -> Ayarlar<span>. </li>';} }
+                                                        out_str += '<li>"Ba&#351;lang&#305;&#231;ta" b&#246;l&#252;m&#252;ndeki "Sayfalar&#305; ayarla" d&#252;&#287;mesine t&#305;klay&#305;n.</li>';
+                                                        out_str += '<li>/tur/ "Yeni bir sayfa ekle" metin alan&#305;na girin.</li>';
+                                                        out_str += '<li>Tamam\'a t&#305;klay&#305;n.</li>';
+                                            }
+                                        } else {
+                                            // checking for Linux OS
+                                            if (BrowserDetect.version >= 3 && BrowserDetect.version <= 18) {
+                                                out_str += '<ul class="check_green_l_16"><li>&#304;ngiliz anahtar&#305; simgesine t&#305;klay&#305;n <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="margin-top:-5px;" align="absmiddle" /></li>';
+                                                if (BrowserDetect.version <= 9) {
+                                                    out_str += '<li>Ayarlar -> Temel &#214;&#287;eler\'e gidin.</li>';
+                                                } else {
+                                                    out_str += '<li>Tercihler -> Temel &#214;&#287;eler\'e gidin.</li>';
+                                                }
+                                                out_str += '<li>&#147;Home page&#148; (Ana sayfa) b&#246;l&#252;m&#252;nde &#147;Open this page&#148; (Bu sayfay&#305; a&#231;) se&#231;ene&#287;ini i&#351;aretleyin.</li>';
+                                                out_str += '<li><!--HOME-->/tur/<!--HOME--> "Bu sayfay&#305; a&#231;" metin kutusuna girin.</li>';
+                                                out_str += '<li>Google Chrome her &#231;al&#305;&#351;t&#305;r&#305;ld&#305;&#287;&#305;nda ana sayfan&#305;z&#305; g&#246;r&#252;nt&#252;lemek i&#231;in &#147;On startup&#148; (Ba&#351;larken) b&#246;l&#252;m&#252;nde &#147;Open the home page&#148; (Ana sayfay&#305; a&#231;) se&#231;ene&#287;ini i&#351;aretleyin.</li>';
+                                                if (BrowserDetect.version <= 9) {
+                                                    out_str += '<li>&#147;Kapat&#148;a t&#305;klay&#305;n.</li>';
+                                                } else {
+                                                    out_str += '<li>Se&#231;enekler sekmesini kapat&#305;n.</li>';
+                                                }
+                                            } else {
+                                                if ((BrowserDetect.version >= 19) && (BrowserDetect.version < 23)) {
+                                                    out_str += '<ul class="check_green_l_16"><li>&#304;ngiliz anahtar&#305; simgesi <img src=\'/graphics/chrome_toolsmenu.gif\' height="25" style="position:absolute;"/> <span> -> Ayarlar </span> b&#246;l&#252;m&#252;ne gidin.</li>';
+                                                } else {
+                                                    if (BrowserDetect.version >= 23) {
+                                                        out_str += '<ul class="check_green_l_16"><li>Ayarlar simgesine gidin <img src=\'/graphics/chrome_settingMenu.gif\' height="25" style="margin-top:-1px;"/> -> Ayarlar<span>. </li>';
+                                                    }
+                                                }
+                                                out_str += '<li>"Ba&#351;lang&#305;&#231;ta" b&#246;l&#252;m&#252;ndeki "Sayfalar&#305; ayarla" d&#252;&#287;mesine t&#305;klay&#305;n.</li>';
+                                                out_str += '<li>/tur/ "Yeni bir sayfa ekle" metin alan&#305;na girin.</li>';
+                                                out_str += '<li>Tamam\'a t&#305;klay&#305;n.</li>';
+                                            }
+                                    }
+                                }
+                                            out_str += '</ul>'; 
+                                            
+                                        } else if ((agentname.toLowerCase().indexOf('seamonkey') != -1) && (BrowserDetect.OS.indexOf('Mac') != -1)) {
+                                            out_str += 'Taray&#305;c&#305;n&#305;z&#305;n Mozilla men&#252;s&#252;nde Preferences (Tercihler) se&#231;ene&#287;ine gidin.<br>Category Navigator (Kategori K&#305;lavuzu) &#351;&#305;kk&#305;n&#305; se&#231;in.<br>Homepage Location: (Giri&#351; Sayfas&#305; Konumu:) alan&#305;na <!--HOME-->/tur/<!--/HOME--> girin.<br>OK (Tamam) d&#252;&#287;mesini t&#305;klat&#305;p pencereyi kapat&#305;n.';
+                                            
+                                        } else if ((agentname.toLowerCase().indexOf('seamonkey') != -1) && (BrowserDetect.OS.indexOf('Linux') != -1)) {
+                                            out_str += 'Taray&#305;c&#305;n&#305;z&#305;n Edit (D&#252;zen) men&#252;s&#252;nde Preferences (Tercihler) se&#231;ene&#287;ine gidin.<br>Category Navigator (Kategori K&#305;lavuzu) &#351;&#305;kk&#305;n&#305; se&#231;in.<br>Homepage Location: (Giri&#351; Sayfas&#305; Konumu:) alan&#305;na <!--HOME-->/tur/<!--/HOME--> girin.<br>OK (Tamam) d&#252;&#287;mesini t&#305;klat&#305;p pencereyi kapat&#305;n.';
+                                            
+                                    } else if (((agentname.toLowerCase().indexOf('opera') != -1) || (agentname.indexOf('OPR') != -1)) && (BrowserDetect.OS.indexOf('Mac') != -1)) { /* (for retina)To detect newer versions of opera having different useragent*/
+                                        out_str += 'Taray&#305;c&#305;n&#305;z&#305;n Opera men&#252;s&#252;nde Preferences (Tercihler) se&#231;ene&#287;ine gidin.<br>Genel sekmesini se&#231;in.<br>Homepage Location: (Giri&#351; Sayfas&#305; Konumu:) alan&#305;na <!--HOME-->/tur/<!--/HOME--> girin.<br>OK (Tamam) d&#252;&#287;mesini t&#305;klat&#305;p pencereyi kapat&#305;n.</font><br></body></html>';
+                                        
+                                    } else if ((((agentname.toLowerCase().indexOf('opera') != -1)  || (agentname.indexOf('OPR') != -1)) && (BrowserDetect.OS.indexOf('Linux') != -1)) || (((agentname.toLowerCase().indexOf('opera') != -1) || (agentname.indexOf('OPR') != -1)) && (BrowserDetect.OS.indexOf('Window') != -1))) { /* (for retina)To detect newer versions of opera having different useragent*/
+                                        out_str += '<ul class="check_green_l_16"><li>Taray&#305;c&#305;n&#305;z&#305;n Ara&#231;lar men&#252;s&#252;nde Preferences (Tercihler) se&#231;ene&#287;ine gidin.</li><li>Genel sekmesini se&#231;in.</li><li>Home page (Giri&#351; sayfas&#305;) alan&#305;na <!--HOME-->/tur/<!--/HOME--> girin.</li><li>OK (Tamam) d&#252;&#287;mesini t&#305;klat&#305;p pencereyi kapat&#305;n.</li></ul>';
+                                        
+                                    }
+                                    else if ((agentname.toLowerCase().indexOf('safari') != - 1)) {
+                                        out_str += '<ul class="check_green_l_16"><li>Taray&#305;c&#305;n&#305;z&#305;n Safari men&#252;s&#252;nde Preferences (Tercihler) se&#231;ene&#287;ine gidin.</li><li>Genel sekmesini se&#231;in.</li><li>Home page (Giri&#351; sayfas&#305;) alan&#305;na <!--HOME-->/tur/<!--/HOME--> girin.</li><li>Pencereyi kapat&#305;n.</li></ul>';
+                                        
+                                    } else {
+                                        out_str += '&#214;z&#252;r dileriz, bu taray&#305;c&#305;n&#305;n giri&#351; sayfas&#305; otomatik olarak yap&#305;land&#305;r&#305;lam&#305;yor. Ancak, b&#252;y&#252;k olas&#305;l&#305;kla elle yap&#305;land&#305;rabilirsiniz. Bunu yaparsan&#305;z, giri&#351; sayfas&#305; ayarlar&#305;nda girilecek URL &#351;udur: <!--HOME-->/tur/<!--/HOME-->';
+                                        
+                                    }
+                                    out_str = out_str.replace(/<!--HOME-->.*?<!--\/HOME-->/g, homepage_url);return out_str;
+ }
+    function load_img (img_url) {
+
+    if (document.images) {
+        var dt = new Date();
+        var arbit_num = dt.getTime(); 
+        img_url += '&anticache=' + arbit_num + '&/filename.gif';
+        var i_ob = new Image(); i_ob.src = img_url;
+    }
+    return true;
+    }function change_the_url (url,text){
+if(document.getElementById('anchor_tag_for_new_ui')) {
+document.getElementById('anchor_tag_for_new_ui').onclick = function(){bookmarkUrl(text,url);};
+}
+if (document.getElementById('anchor_tag_for_new_ui_homepage')) {
+ document.getElementById('anchor_tag_for_new_ui_homepage').onclick = function() {this.style.behavior='url(#default#homepage)'; this.setHomePage(url); return false;};
+}
+}
+var isMapDetailActive = false;
+var MapDetailTimeoutId;
+function showMapDetail() {
+clearTimeout(MapDetailTimeoutId);
+var offset = findPos(document.getElementById('mapd'));
+var mapdl = document.getElementById('map-detail');
+mapdl.style.left = (offset[0] - 10) + 'px';
+mapdl.style.top = (offset[1] + 30) + 'px';
+mapdl.style.display = 'block';
+isMapDetailActive = true;
+
+jQuery('#mapd').click( function(){
+isMapDetailActive = true;
+jQuery('#mapd').removeAttr("onmouseout").removeAttr("onmouseover");
+jQuery('#map-detail').removeAttr("onmouseout").removeAttr("onmouseover");
+});
+jQuery('#map-detail a.popup_close').click( function(){
+isMapDetailActive = false;
+jQuery('#map-detail').hide();
+document.getElementById('mapd').onmouseover = function(){showMapDetail()};
+document.getElementById('mapd').onmouseout = function(){hideMapDetail()};
+document.getElementById('map-detail').onmouseover = function(){isMapDetailActive = true; clearTimeout(MapDetailTimeoutId);};
+document.getElementById('map-detail').onmouseout = function(){hideMapDetail()};
+});
+
+}
+function checkAndHideMapDetail() {
+if(!isMapDetailActive) {
+document.getElementById('map-detail').style.display = 'none';
+isMapDetailActive = false;
+}
+}
+function hideMapDetail() { isMapDetailActive = false; MapDetailTimeoutId = setTimeout('checkAndHideMapDetail()', 10); }
+
+    function findPos(obj) {
+        var curleft = curtop = 0;
+        if (obj.offsetParent) {
+            curleft = obj.offsetLeft;
+            curtop = obj.offsetTop;
+            while (obj = obj.offsetParent) {
+                curleft += obj.offsetLeft; curtop += obj.offsetTop;
+            }
+        }
+        return [curleft,curtop];
+    }
+  $(window).load(function () {
+        if (jQuery('#lang').length && jQuery('#lang_div').length) {
+    		$('#lang').hammer({
+		         prevent_default: true
+     		  }).on("tap", function(ev) {
+          			  ev.gesture.preventDefault();
+		         	  ev.gesture.stopPropagation();
+			          showLang();
+    			      setTimeout('hideLang()', 400);
+		    });
+    		$('#lang_div').hammer().on("tap", function(ev) {
+    			ev.gesture.preventDefault();
+	    		ev.gesture.stopPropagation();
+		        isLangActive = true; clearTimeout(langTimeoutId);
+    			showLang();
+	    	});
+		    $('#lang_div').hammer().on("tap", '.addsettings', function(ev) {
+			    ev.gesture.preventDefault();
+    			ev.gesture.stopPropagation();
+    			setTimeout('hideLang()', 100);
+	    	});
+        }
+    });
+
+
+           jQuery(window).load(function () {
+                jQuery('select option').each(function () {
+                   var any_text = 'Herhangi bir'; 
+                   var option_value = jQuery(this).attr('value');
+                   if (option_value == "") {
+                       jQuery(this).attr('data-html-text', any_text);
+                   } else {
+                       jQuery(this).attr('data-html-text', option_value);
+                   }
+                });
+
+                var lang_dropdown = jQuery('[name="pref_language"]').retinaSelect();
+                var lang_ui_dropdown = jQuery('[name="pref_language_ui"]').retinaSelect();
+                var home_theme_dropdown = jQuery('[name="pref_homepage_theme"]').retinaSelect();
+                var home_dropdown = jQuery('[name="pref_homepage"]').retinaSelect();
+                var num_results_dropdown = jQuery('[name="pref_num_of_results"]').retinaSelect();
+                var suggestions_dropdown = jQuery('[name="pref_suggestions"]').retinaSelect();
+                var pic_privacy_dropdown = jQuery('[name="pref_picture_privacy"]').retinaSelect();
+                var calculator_dropdown = jQuery('[name="pref_calculator_decimal"]').retinaSelect();
+
+                jQuery('.select-style').replaceWith(function() {
+                    return jQuery('select, div', this);
+                });
+
+                jQuery('[name="pref_language"]').next('.wrapper-dropdown').attr('id', 'dd_pref_language');
+                jQuery('[name="pref_language_ui"]').next('.wrapper-dropdown').attr('id', 'dd_pref_language_ui');
+                jQuery('[name="pref_homepage_theme"]').next('.wrapper-dropdown').attr('id', 'dd_homepage_theme');
+                jQuery('[name="pref_homepage"]').next('.wrapper-dropdown').attr('id', 'dd_homepage');
+                jQuery('[name="pref_num_of_results"]').next('.wrapper-dropdown').attr('id', 'dd_num_results');
+                jQuery('[name="pref_suggestions"]').next('.wrapper-dropdown').attr('id', 'dd_text_suggestions');
+                jQuery('[name="pref_calculator_decimal"]').next('.wrapper-dropdown').attr('id', 'dd_calculator');
+                jQuery('[name="pref_picture_privacy"]').next('.wrapper-dropdown').attr('id', 'dd_picture_privacy');
+
+                jQuery('.wrapper-dropdown').click(function() {
+                    var scroll_result  = jQuery('.wrapper-dropdown.active .dropdown').css('overflow-y');
+                    if (scroll_result == 'scroll') {
+                        jQuery('.wrapper-dropdown.active .dropdown').css('border-bottom-left-radius', '1px');
+                        jQuery('.wrapper-dropdown.active .dropdown').css('border-bottom-right-radius', '1px');
+                    }
+                });
+
+                jQuery('.wrapper-dropdown').each(function () {
+                    var selected_value = jQuery(this).prev().val();
+                    var selected_id = jQuery(this).attr('id');
+                    var click = ('ontouchstart' in window) ? 'touchend' : 'click';
+                    if (selected_id == 'dd_pref_language' || selected_id == 'dd_pref_language_ui' || selected_id == 'dd_text_suggestions' || selected_id == 'dd_picture_privacy') {
+                        jQuery(this).find('li:first').remove();
+                    }
+                    if (selected_value == "") {
+                        if (selected_id != 'dd_homepage') {
+                            jQuery(this).find('*').removeClass('selected-option');
+                        }
+                    } else {
+                        jQuery(this).find('*').removeClass('selected-option');
+                        jQuery(this).find('.dropdown li a').each(function (){
+                            if (jQuery(this).attr('name') == selected_value) {
+                                jQuery(this).trigger(click);
+                            } 
+                        });                         
+                    }
+                });
+                /*
+                var mode = jQuery(document.documentMode);
+                if (mode[0] == '8' || mode[0] == '9') {
+                    jQuery('*').attr('unselectable', 'on');
+                    jQuery('#new_design_url_needed,#query_top').attr('unselectable', 'off');
+                }
+                */
+            });
+                                               function getMakeHomepageContent(abc, urlgen_url) { 
+                                                   var homepageContent = makeHomePage(abc, urlgen_url);
+                                                   jQuery('#home-popup-div-inner').html(homepageContent);
+                                               }
+    </script>
+    </head>
+
+    <body  >
+    <script language='javascript' type='text/javascript' src='../js/wz_tooltip.js'></script>
+    
+    <div id="wrapper" class="">
+    <div class="navbar navbar-default nav-effect" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+    <a class="navbar-brand ixquick-navbar-brand" tabindex="0" href="../tur/index-.html" target="_top"><img src="../graphics/no_tm_ixquick_retina_results_page_logo.png" width="144" height="41" /></a>
+    <a class="menu_anchor" href="preferences.pl-language=turkce&language_ui=turkce.html" tabindex="0" onClick="return slide_menu_action(event);"><div class="settings_cont inner-pages"><span id="menu-icon-id">Ayarlar</span></div></a>
+    
+    
+	<div id='results_header'>
+	<form action="https://ixquick.com/do/search" class="cpt_prgtr" autocomplete="off" method="POST" name="blah1" id="search_form" onSubmit="return verifyChecked(this);"  target="_top" >
+
+	<div id='search'>
+	<table cellspacing="0" cellpadding="0" border="0" class="search_container">
+	<tbody><tr>
+	<td id='input_p'><!--[if IE 7]><div style="position:relative; width:300px; height:0;"></div><![endif]-->
+	<div class='search-field'>
+	<div class="text-fields">
+    <div>
+    <span class="clear_search"></span>
+    <span class='no_text' style="display: none;">arama terimlerinizi buraya girin</span>
+    <input type="hidden" value="turkce" name="language">
+    <input type="hidden" name="nj" id="nj" value="1" />
+	<input type='text' autocomplete='off' name='query' id='query_top' value="" queryterm="" onChange="checkContent();" onKeyDown="checkContent();" onkeyup="if(!checkNullKeyPressed(event)){}checkContent();">
+	</div>
+    </div>
+    
+    <span class='small-go-btn' title='Ixquick Web Ara'><input type="submit" value="BA&#350;LA" id="submit1"></span>
+    
+    </div>
+	</td>
+    
+    
+    
+	<td></td>
+	<td><noscript></noscript></td>
+	</tr>
+	<tr>
+    <script> 
+    update_form_method('search_form');
+    jQuery('#nj').attr('value', '0');
+    
+	</script>
+        </tr>	
+	</tbody>
+	</table>
+	</div>
+	</form>
+    
+</div>
+</div>
+</div>
+
+<style> ul.slide-menu *:focus,a#menu-icon-id:focus{outline:none;} </style><div class="slide-wrapper" id="menu-id" unselectable="on"><ul class="slide-menu"><li><a href="../tur/protect-privacy-.html" class="single right-arrow">Gizlilik</a></li><li><a href="preferences.pl-_language=turkce&language_ui=turkce&nj=0.html" class="single right-arrow">Ayarlar</a></li><li><a>Topluluk</a><ul class="slide-sub-menu"><li><a href="https://www.facebook.com/ixquick">Facebook</a></li><li><a href="https://twitter.com/#!/ixquick">Twitter</a></li><li><a href='https://blog.startpage.com'>Blog</a></li></ul></li><li><a href="../tur/aboutixquick/index-.html" class="single right-arrow">Hakk&#305;m&#305;zda</a></li><li class="no-mobile"><a>Ixquick&#8217;i Ekle</a><ul class="slide-sub-menu"><li><a href="../tur/download-ixquick-plugin-.html" id="my-browser-name">Taray&#305;c&#305;ya Ekle</a></li><li><a href="../tur/make-ixquick-your-homepage-.html">Anasayfa</a></li><li><a href="../tur/mobile-app-qa-.html">Mobil Cihaz</a></li><li><a href="../tur/download-ixquick-toolbar-.html">Ara&#231; &#231;ubu&#287;unu</a></li></ul></li><li class="list-box-opener"><a class="single open-box">Dil</a><div class="menu-list-box" id="settings_lang_div">
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('dansk', 'dan', 'ixquick.com'); return retina_set_language('dansk', 'dan','ixquick.com');" href='../dan/index-.html'>Dansk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('deutsch', 'deu', 'ixquick.com'); return retina_set_language('deutsch', 'deu','ixquick.com');" href='../deu/index-.html'>Deutsch</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english', 'eng', 'ixquick.com'); return retina_set_language('english', 'eng','ixquick.com');" href='../eng/index-.html'>English</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english_uk', 'uk', 'ixquick.com'); return retina_set_language('english_uk', 'uk','ixquick.com');" href='../uk/index-.html'>English UK</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('espanol', 'esp', 'ixquick.com'); return retina_set_language('espanol', 'esp','ixquick.com');" href='../esp/index-.html'>Espa&ntilde;ol</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('francais', 'fra', 'ixquick.com'); return retina_set_language('francais', 'fra','ixquick.com');" href='../fra/index-.html'>Fran&ccedil;ais</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('italiano', 'ita', 'ixquick.com'); return retina_set_language('italiano', 'ita','ixquick.com');" href='../ita/index-.html'>Italiano</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nederlands', 'ned', 'ixquick.com'); return retina_set_language('nederlands', 'ned','ixquick.com');" href='../ned/index-.html'>Nederlands</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('norsk', 'nor', 'ixquick.com'); return retina_set_language('norsk', 'nor','ixquick.com');" href='../nor/index-.html'>Norsk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('polski', 'pol', 'ixquick.com'); return retina_set_language('polski', 'pol','ixquick.com');" href='../pol/index-.html'>Polski</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('portugues', 'por', 'ixquick.com'); return retina_set_language('portugues', 'por','ixquick.com');" href='../por/index-.html'>Portugu&ecirc;s</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('suomi', 'suo', 'ixquick.com'); return retina_set_language('suomi', 'suo','ixquick.com');" href='../suo/index-.html'>Suomi</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('svenska', 'sve', 'ixquick.com'); return retina_set_language('svenska', 'sve','ixquick.com');" href='../sve/index-.html'>Svenska</a></td>
+<td><strong>T&uuml;rk&ccedil;e</strong></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('jiantizhongwen', 'jia', 'ixquick.com'); return retina_set_language('jiantizhongwen', 'jia','ixquick.com');" href='../jia/index-.html'>&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nihongo', 'nih', 'ixquick.com'); return retina_set_language('nihongo', 'nih','ixquick.com');" href='../nih/index-.html'>&#26085;&#26412;&#35486;</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('fantizhengwen', 'fan', 'ixquick.com'); return retina_set_language('fantizhengwen', 'fan','ixquick.com');" href='../fan/index-.html'>&#32321;&#39636;&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('hangul', 'han', 'ixquick.com'); return retina_set_language('hangul', 'han','ixquick.com');" href='../han/index-.html'>&#54620;&#44544;</a></td>
+</tr>
+</table>
+
+</div></li><li><a href="../tur/spread-the-word-.html" class="single right-arrow">Payla&#351;&#305;n</a></li><li class="list-box-opener"><a class="single open-box">Tema</a><div class="menu-list-box theme-box" id="settings_themes" style="white-space:nowrap;"><table class="slide-sub-menu" cellspacing="0" cellpadding="0"><tr><td><a onClick="change_theme('air', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='air-new'>G&#246;ky&#252;z&#252;</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='night-new'>Gece</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='white-new'>Beyaz</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='black-new'>Siyah</a></td></tr><tr><td><a onClick="change_theme('air', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='air-retro'>G&#246;ky&#252;z&#252; (Classic)</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='night-retro'>Gece (Classic)</a></td></tr><tr><td><a onClick="change_theme('bubbles', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='bubbles-retro'>Kabarcık (Classic)</a></td></tr><tr><td><a onClick="change_theme('day', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='day-retro'>Tan (Classic)</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='white-retro'>Beyaz (Classic)</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='black-retro'>Siyah (Classic)</a></td></tr></table></div></li></ul></div>
+<!--[if IE 9]><style>.ac_results{ width: 476px!important;}</style> <![endif]-->
+<script type="text/javascript">
+    if (typeof getAutoqueryService === 'function') {
+        getAutoqueryService('https://ixquick.com/do', 'turkce', 'query_top', 'jquery.autocomplete.js', 'https://ixquick.com');
+    }
+</script>
+
+
+    <div id="wrapper-inner" class="" style="">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id='inner_content'>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%" class="bodyContent">
+            <tr>
+              <td class="left_column_td" nowrap="nowrap" valign="top">
+                <!--td class="left_column_td" nowrap="nowrap" style="padding-left:30px;"-->
+                <div class="leftContent" style="">
+    
+    <div class="sidebar">
+<div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>GIZLILIK</span></a></div><div class="accordionContent"><ul><li><a href="../tur/protect-privacy.html" >Sizi Nas&#305;l Koruyoruz</a></li><li><a href="../tur/protect-privacy-qa.html" >Soru ve Cevaplar</a></li><li><a href="../tur/privacy-policy.html" >Gizlilik Politikam&#305;z</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; background: #eaf1ff !important;padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="preferences.pl-language_ui=turkce.html">AYARLAR</a></li><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="../tur/company-faq.html">FAQ</a></li><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>TOPLULUK</span></a></div><div class="accordionContent"><ul><li><a href="https://www.facebook.com/ixquick" >Facebook</a></li><li><a href="https://twitter.com/#!/ixquick" >Twitter</a></li><li><a href="https://blog.startpage.com" >Blog</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>&#304;LE ILGILI</span></a></div><div class="accordionContent"><ul><li><a href="../tur/what-makes-ixquick-special.html" >Fark&#305;m&#305;z</a></li><li><a href="../tur/company-background.html" >Ge&#231;mi&#351;imiz</a></li><li><a href="../tur/company-management-bio.html" >&#199;al&#305;&#351;anlar&#305;m&#305;z</a></li><li><a href="../tur/company.html" >&#350;irket</a></li><li><a href="../tur/press-center.html" >Bas&#305;n Merkezi</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>IXQUICK&#8217;I EKLE</span></a></div><div class="accordionContent"><ul><li><a href="../tur/download-ixquick-plugin.html" id="sidebar_browser_name">Taray&#305;c&#305;ya Ekle</a></li><li><a href="../tur/make-ixquick-your-homepage.html" >Anasayfa</a></li><li><a href="../tur/mobile-app-qa.html" >Mobil Cihaz</a></li><li><a href="../tur/download-ixquick-toolbar.html" >Ara&#231; &#231;ubu&#287;unu</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="../tur/spread-the-word.html">PAYLA&#351;&#305;N</a></li></div><br><br><br><br><br><br>
+    </div></div></td>
+    <td>
+    <div class="rightContent" id="content">
+    <script type="text/javascript" src="../js/jquery.hammer.min.js"></script><h1>Ayarlar</h1><div class="pad_t30"><input type='hidden' name='urlgenerator_status' id='urlgenerator_status' value='1' /><form name="settings" method='post' class="settings-no-js" id="preferences-form"><input type='hidden' name='cat' value=""><input type='hidden' name='query' value=""><input type="hidden" value="1" name="nj" id="nj"><script> jQuery('[name="nj"]').each(function () { jQuery(this).attr('value', '0'); }); </script><input type="hidden" value="turkce" name="language_ui"><script> 
+function submitMyForm() {
+     document.settings.submit();
+     return false;
+} </script><table border=0 cellspacing=0 cellpadding=5 style="width: 100%;table-layout: fixed;padding-top:17px;"><tr valign="top" class='td_head'><td width='220' valign="top"  class='td_head'>Arama dili</td><td width='206'class='td_head'><div class="select-style"><select name=pref_language style='width:155px;'>
+<option  value=""></option>
+<option value=dansk>Dansk</option>
+<option value=deutsch>Deutsch</option>
+<option value=english>English</option>
+<option value=english_uk>English UK</option>
+<option value=espanol>Espa&ntilde;ol</option>
+<option value=fantizhengwen>&#32321;&#39636;&#20013;&#25991;</option>
+<option value=francais>Fran&ccedil;ais</option>
+<option value=hangul>&#54620;&#44544;</option>
+<option value=italiano>Italiano</option>
+<option value=jiantizhongwen>&#20013;&#25991;</option>
+<option value=nederlands>Nederlands</option>
+<option value=nihongo>&#26085;&#26412;&#35486;</option>
+<option value=norsk>Norsk</option>
+<option value=polski>Polski</option>
+<option value=portugues>Portugu&ecirc;s</option>
+<option value=suomi>Suomi</option>
+<option value=svenska>Svenska</option>
+<option selected value=turkce>T&uuml;rk&ccedil;e</option>
+</select>
+</div></td><td width="20"  class='td_head'></td><td  class='td_head_s'>Bu dilde yaz&#305;lm&#305;&#351; olan sayfalar&#305; tercih et<a name="interface_language"></a></td></tr><tr valign="top" class='td_head'><td width='150' align="top"  class='td_head'>Arabirim dili</td><td class='td_head'><div class="select-style"><select name=pref_language_ui style='width:155px;'>
+<option  value=""></option>
+<option value=dansk>Dansk</option>
+<option value=deutsch>Deutsch</option>
+<option value=english>English</option>
+<option value=english_uk>English UK</option>
+<option value=espanol>Espa&ntilde;ol</option>
+<option value=fantizhengwen>&#32321;&#39636;&#20013;&#25991;</option>
+<option value=francais>Fran&ccedil;ais</option>
+<option value=hangul>&#54620;&#44544;</option>
+<option value=italiano>Italiano</option>
+<option value=jiantizhongwen>&#20013;&#25991;</option>
+<option value=nederlands>Nederlands</option>
+<option value=nihongo>&#26085;&#26412;&#35486;</option>
+<option value=norsk>Norsk</option>
+<option value=polski>Polski</option>
+<option value=portugues>Portugu&ecirc;s</option>
+<option value=suomi>Suomi</option>
+<option value=svenska>Svenska</option>
+<option selected value=turkce>T&uuml;rk&ccedil;e</option>
+</select>
+</div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Ixquick ipu&#231;lar&#305;n&#305; ve mesajlar&#305;n&#305; bu dilde g&#246;r&#252;nt&#252;lemeyi tercih et<a name="homepage_theme"></a></td></tr><tr valign="top" class='td_head'><td width='150'  class='td_head'>Bahis konusu ba&#351;lamak sayfa</td><td class='td_head'><div class="select-style"><select name=pref_homepage_theme style='width:155px;'>
+<option selected value="air_new">G&#246;ky&#252;z&#252;</option>
+<option value="night_new">Gece</option>
+<option value="white_new">Beyaz</option>
+<option value="black_new">Siyah</option>
+<option value="air_retro">G&#246;ky&#252;z&#252; (Classic)</option>
+<option value="night_retro">Gece (Classic)</option>
+<option value="bubbles_retro">Kabarcık (Classic)</option>
+<option value="day_retro">Tan (Classic)</option>
+<option value="white_retro">Beyaz (Classic)</option>
+<option value="black_retro">Siyah (Classic)</option>
+</select>
+</div></td><td width="1" class='td_head'></td><td  class='td_head_s'>De&#287;i&#351;tirmek bahis konusu ba&#351;lamak sayfa<a name="homepage_search_mode"></a></td></tr><tr valign="top" class='td_head'><td width='150' valign="top"  class='td_head'>Anasayfa arama modu</td><td class='td_head'><div class="select-style"><select name=pref_homepage style='width:155px;'>
+<option selected value="">Ixquick Arama</option>
+<option value="advanced-search.html">Geli&#351;mi&#351; Arama</option>
+</select>
+</div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Ixquick Anasayfas&#305;n&#305; &#246;zelle&#351;tirin<a name="font_size"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'><a name="results_per_page"></a>Sayfa ba&#351;&#305;na sonu&#231;</td><td class='td_head'><div class="select-style"><select name=pref_num_of_results style='width:155px;'><option selected value=10>10</option><option value=20>20</option><option value=50>50</option><option value=100>100</option></select></div></td><td width="1" class='td_head'></td><td  class='td_head_s'>Sayfada ka&#231; sonu&#231; g&#246;r&#252;nt&#252;lemek istedi&#287;inizi se&#231;in<a name="search_tools"></a></td></tr>
+<tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >H&#305;zl&#305; arama kutusu eri&#351;imi<a name='slide_down_header'></a></td><td align="left" class='td_head'><input id="slide_down_check" value="1" checked name="pref_slide_down_header" class="css-checkbox" type="checkbox" />
+<label for="slide_down_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Yukar&#305; kayd&#305;rd&#305;&#287;&#305;n&#305;zda hemen eri&#351;im i&#231;in arama kutusunu ba&#351;l&#305;k &#231;ubu&#287;unda g&#246;sterir.<a name="cluster_setting"></a></td></tr><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Web sonu&#231;lar&#305;n&#305;n say&#305;s&#305;n&#305; g&#246;ster<a name='results_count'></a></td><td align="left" class='td_head'><input id="results_count_check" name="pref_results_count" value="1" class="css-checkbox" type="checkbox" />
+<label for="results_count_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Her Web aramas&#305; i&#231;in sonu&#231;lar&#305;n yakla&#351;&#305;k toplam say&#305;s&#305;n&#305; g&#246;ster.<a name="cluster_setting"></a></td></tr><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' ><a name='underline_search_results_title'></a>T&#252;m Web sonu&#231;lar&#305;n&#305;n ba&#351;l&#305;klar&#305;n&#305;n alt&#305;n&#305; &#231;iz</td><td align="left" class='td_head'><input id="underline_search_results_title_check" name="pref_underline_title" value="1" class="css-checkbox" type="checkbox" />
+<label for="underline_search_results_title_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Web sonu&#231;lar&#305;n&#305;n ba&#351;l&#305;klar&#305;n&#305;n alt&#305;n&#305; sadece &#252;zerinde gezinildi&#287;inde de&#287;il, her zaman &#231;izer.<a name="cluster_setting"></a></td></tr><tr valign="top" class='td_head'><td class='td_head'>Arama sonucunu ba&#351;ka bir pencerede a&#231;</td><td class='td_head'><input id="new_window_check" value="1" checked name="pref_disable_open_in_new_window" class="css-checkbox" type="checkbox" />
+<label for="new_window_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Sonu&#231; t&#305;kland&#305;&#287;&#305;nda, sayfay&#305; yeni bir pencerede g&#246;r&#252;nt&#252;le<a name="power_refinement"></a></td></tr><tr class='td_head'><td  class='td_head'>G&#252;c&#252; Sadele&#351;tirme</td><td class='td_head'><input id="power_refine_check" name="pref_power_refinement" value="1" class="css-checkbox" type="checkbox" />
+<label for="power_refine_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>G&#246;sterilen Web arama sonu&#231;lar&#305;n&#305;n k&#252;melenmesine olanak verir.<a name="automatic_highlight"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Otomatik vurgulama</td><td class='td_head'><input id="auto_highlight_check" name="pref_automatic_highlight" value="1" class="css-checkbox" type="checkbox" />
+<label for="auto_highlight_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Sonu&#231;lar t&#305;kland&#305;&#287;&#305;nda, sayfadaki arama terimlerini vurgula<a name="exact_phrase"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Tam metin</td><td class='td_head'><input id="exact_phrase_check" checked name="pref_enable_exact_phrase" value="1" class="css-checkbox" type="checkbox" />
+<label for="exact_phrase_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td class="td_head_s" class='td_head_s'>Tam bir metni ("") ararken - &#231;ok az sonu&#231; bulundu&#287;unda, al&#305;nt&#305; yap&#305;lmadan verilen sonu&#231;lar&#305; i&#231;erir.<a name="post_setting"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Co&#287;rafi haritalar</td><td class='td_head'><input id="geo_map_check" value="1" name="pref_geo_map" class="css-checkbox" type="checkbox" />
+<label for="geo_map_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Gizlili&#287;inizi korurken, aramalarda Google statik haritalar&#305;n&#305;n g&#246;sterilmesini sa&#287;lar. <a href='javascript:void(0);' id='mapd' onMouseOver="retinaToolTip('map-detail',WIDTH, 368,PADDING,15,FOLLOWMOUSE,false, FONTFACE,'Proxima Nova', FONTSIZE,'13.5px', FONTCOLOR,'#023a9c',RETINAPOPUP,true,BGCOLOR,'#F7FAFF',BORDERCOLOR,'#dee8f9',BODYCLASS,'map-detail-tooltip',MAINDIVCLASS,'geo-map-tooltip-div');" onmouseout="UnTip();" class='blue_link'>Daha fazla</a><div id='map-detail'><a href="javascript:void(0);" class="popup_close"></a>
+									<p class="font_bold">Ixquick, Google Haritalar&#8217;daki sonu&#231;lar&#305; tam ki&#351;isel gizlilik i&#231;inde size sunar!</p>
+									<p>Ixquick ile bir yeri arad&#305;&#287;&#305;n&#305;zda, Google Haritalar&#8217;dan sonu&#231;lar&#305; al&#305;r ve anonim olarak size sunar&#305;z. Her zamanki gibi, IP adresiniz kaydedilmez, ziyaretiniz g&#252;nl&#252;&#287;e i&#351;lenmez ve taray&#305;c&#305;n&#305;za izleme &#231;erezleri konmaz.</p> 
+									<p>Harita arabirimimizi kullanarak haritay&#305; yak&#305;nla&#351;t&#305;r&#305;p uzakla&#351;t&#305;rabilirsiniz. Ancak, taray&#305;c&#305;n&#305;zla Google aras&#305;nda asla do&#287;rudan ba&#287;lant&#305; kurmad&#305;&#287;&#305;m&#305;z i&#231;in JavaScript tabanl&#305; kayd&#305;rma ve s&#252;r&#252;kleme &#246;zellikleri, ki&#351;isel gizlili&#287;inizi korumak amac&#305;yla devre d&#305;&#351;&#305; b&#305;rak&#305;lm&#305;&#351;t&#305;r.</p></div>
+<a name="post_setting"></a></td></tr><style>tr.jump_filter td input { vertical-align : bottom; }  .jump_filter td.border {border-bottom:1px solid #C30000; border-top:1px solid #C30000; margin:4px; padding:4px;} .jump_filter td.border-left {-moz-border-radius-topleft:8px; -webkit-border-top-left-radius:8px; -moz-border-radius-bottomleft:8px; -webkit-border-bottom-left-radius:8px; border-top-left-radius:8px; border-bottom-left-radius:8px; border-left:1px solid #C30000; margin:6px; padding:6px;} .jump_filter td.border-right {-moz-border-radius-topright:8px; -webkit-border-top-right-radius:8px; -moz-border-radius-bottomright:8px; -webkit-border-bottom-right-radius:8px; border-top-right-radius:8px; border-bottom-right-radius:8px; border-right:1px solid #C30000;} .jump_filter input{margin-right:7px}</style><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >POST (YAYINLA) ve GET (AL) kullan</td><td align="left" class='td_head'><input id="post_method_check" checked name="pref_enable_post_method" value="1" class="css-checkbox" type="checkbox" />
+<label for="post_method_check" name="" class="css-label"><span></span>POSTALA</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Daha fazla g&#252;venlik i&#231;in - arama terimlerinizi, sonu&#231;lar&#305;m&#305;zdan ula&#351;t&#305;&#287;&#305;n&#305;z sitelerin a&#287; y&#246;neticilerinin g&#252;nl&#252;klerinden uzak tutar.<a name="cluster_setting"></a><tr valign='top' class='td_head'><td valign='top' align='left'  class='td_head'> Sadece &#351;u sunuculara ba&#287;lan:  </td><td align='left' class='td_head'><table border=0 cellspacing=0 cellpadding=0><tr valign="top"><td><input id="cluster_radio_1" value="default" class="css-radio" type="radio" name ="pref_connect_to_server" checked>
+<label for="cluster_radio_1" name="" class="css-label"><span></span>closest / fastest</label></td></tr><tr valign="top">
+<td><input id="cluster_radio_2" value="eu" class="css-radio" type="radio" name ="pref_connect_to_server" >
+<label for="cluster_radio_2" name="" class="css-label"><span></span>EUsunucular&#305;</label></td></tr><tr valign="top">
+<td><input id="cluster_radio_3" value="us" class="css-radio" type="radio" name ="pref_connect_to_server" >
+<label for="cluster_radio_3" name="" class="css-label"><span></span>USsunucular&#305;</label></td></tr></table>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>(<a href="../tur/server-select.html" target='_blank' onclick="return false;" id="server_select_link" class="blue_link">Ayr&#305;nt&#305;lar i&#231;in buraya t&#305;klay&#305;n <a href="../tur/server-select.html" target='_blank' onclick="return false;" id="server_select_link" class="blue_link">)<a name="family_filter"></a></td></tr><tr valign='top' class='td_head'><td valign='top' align='left'  class='td_head'>Aile filtresi</td><td align='left' class='td_head'><table border=0 cellspacing=0 cellpadding=0><tr valign="top"><td><input id="family_filter_radio_1" class="css-radio" type="radio" value="0" name="pref_disable_family_filter"  style='vertical-align:middle;'  ><label for="family_filter_radio_1" name="" class="css-label"><span></span>T&#252;m sonu&#231;lar&#305; filtrele</label>
+</td></tr><tr valign="top"><td><input id="family_filter_radio_2" class="css-radio" type="radio" value="" name="pref_disable_family_filter"  style='vertical-align:middle;'  checked><label for="family_filter_radio_2" name="" class="css-label"><span></span>Aramaya ba&#287;l&#305; filtreleme</label>
+</td></tr><tr valign="top"><td><input id="family_filter_radio_3" class="css-radio" type="radio" value="1" name="pref_disable_family_filter"  style='vertical-align:middle;'  ><label for="family_filter_radio_3" name="" class="css-label"><span></span>Sonu&#231;lar&#305;m&#305; filtreleme</label>
+</td></tr></table></td><td width="1" class='td_head'></td><td  class='td_head_s'>&#199;ocuklar i&#231;in sak&#305;ncal&#305; bir dil i&#231;eren sonu&#231;lar&#305; g&#246;sterme<a name="video_family_filter"></a></td></tr><tr valign="top" class='td_head'><td  class='td_head'>Video Aile filtresi</td><td class='td_head'><input id="video_filter_check" value="1" checked name="vf_disable_video_family_filter" class="css-checkbox" type="checkbox" />
+<label for="video_filter_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td  class='td_head_s'>Erotik i&#231;erikli video arama sonu&#231;lar&#305; g&#246;r&#252;nt&#252;leme<a name="video_preferences"></a></td></tr><tr valign="top" class='td_head'>
+<td valign="top" align="left" class='td_head'>Videolar oynat&#305;l&#305;rken</td>
+<td align="left" class='td_head'>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr valign="top">
+<td><input id="video_control_radio_1" class="css-radio" type="radio" value="0" name="pref_enable_video_settings"><label for="video_control_radio_1" name="" class="css-label"><span></span>Ixquick&#8217;te kal</label>
+</td></tr><tr valign="top">
+<td><input id="video_control_radio_2" class="css-radio" type="radio" value="1" name="pref_enable_video_settings"><label for="video_control_radio_2" name="" class="css-label"><span></span>&#220;&#231;&#252;nc&#252; taraf siteye git</label>
+</td></tr><tr valign="top"> 
+<td><input id="video_control_radio_3" class="css-radio" type="radio" value="" name="pref_enable_video_settings"checked><label for="video_control_radio_3" name="" class="css-label"><span></span>Her seferinde sor</label>
+</td></tr>
+</tbody>
+</table>
+</td>
+<td width="1" class='td_head'></td>
+<td class='td_head_s'>Videolar&#305; do&#287;rudan Ixquick&#8217;in sonu&#231;lar sayfas&#305;nda m&#305; izlemek istiyorsunuz yoksa &#252;&#231;&#252;nc&#252; taraf Web sitesinde mi a&#231;mak istiyorsunuz?<a name="ssl_setting"></a></td>
+</tr><input type='hidden' name='pref_ssl' value='1'/><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Proxy g&#252;venlik &#246;nerilerini g&#246;ster</td><td align="left" class='td_head'><input id="proxy_safety_check" value="1" name="pref_enable_proxy_safety_suggest" checked class="css-checkbox" type="checkbox" />
+<label for="proxy_safety_check" name="" class="css-label"><span></span>Etkinle&#351;tir</label>
+</td><td width="1" class='td_head'></td><td class='td_head_s' >Vekil sunucu arac&#305;l&#305;&#287;&#305;yla bir sayfay&#305; g&#246;r&#252;nt&#252;lerken, vekil kullan&#305;lmayan sayfada k&#246;t&#252;c&#252;l yaz&#305;l&#305;m ku&#351;kusu olup olmad&#305;&#287;&#305;n&#305; belirlemek &#252;zere bir g&#252;venli arama veri taban&#305;n&#305; kontrol edin. Daha fazla bilgi i&#231;in <a href="https://support.ixquick.com/index.php?/Knowledgebase/Article/View/1181/34/the-show-proxy-safety-suggestions-feature" target='_blank' class="blue_link">buraya</a> t&#305;klay&#305;n. </td></tr><tr valign="top" class='td_head'><td valign="top" align="left" class='td_head' >Arama &#214;nerileri</td><td align="left" class='td_head'><div class="select-style"><select name=pref_suggestions style='width:155px;'>
+<option value=""></option>
+<option value="off">KAPALI</option>
+<option value="on">A&#231;&#305;k</option>
+</select></div></td><td width="1" class='td_head'></td><td class='td_head_s' >Arama kutusunda soru &#246;nerileri g&#246;r&#252;nt&#252;lenmesi. Ayr&#305;nt&#305;lar i&#231;in <a href='../tur/search-suggestions-explained.html' target='_blank' onclick='return false;' id="search-suggestions-link" class='blue_link'>buraya</a> t&#305;klay&#305;n.<a name="anonymous_search"></a></td></tr><tr valign='top' class='td_head'><td valign='top' align='left'  class='td_head'>Arama Motoru Kaynaklar&#305;</td><td align='left' class='td_head'><table border=0 cellspacing=0 cellpadding=0><tr valign="top"><td><input type="radio" value="0" name="pref_search_engine_sources"  style='vertical-align:middle;'   id="search_engine_radio_1" class="css-radio"><label for="search_engine_radio_1"name="" class="css-label"><span></span>Avrupa ve Kuzey Amerika&#146;daki arama motorlar&#305;</td></tr><td><input type="radio" value="1" name="pref_search_engine_sources"  style='vertical-align:middle;'  checked id="search_engine_radio_2" class="css-radio"><label for="search_engine_radio_2"name="" class="css-label"><span></span>Di&#287;er b&#246;lgelerdeki arama motorlar&#305;n&#305; da dahil edin</td></tr></table></td><td width="1" class='td_head'></td><td  class='td_head_s'>Avrupa ve Kuzey Amerika d&#305;&#351;&#305;ndaki y&#252;ksek kaliteli kaynaklar&#305;n dahil edilip edilmeyece&#287;ini se&#231;in. Arama sorgunuz sonu&#231;lar&#305; al&#305;nmak &#252;zere kaynaklara anonim olarak g&#246;nderildi.<a name="search_engine_sources"></a></td></tr><tr><td align='left' style="vertical-align:bottom;padding-bottom: 10px;margin: 0;"><input type=hidden name=save value=1><br><input type=hidden name="clear" value=""><input type=submit value="" style="height:0px;" class="invisible"><input type="hidden" name="cvt" value="08f1563a40eca4b111a838532a71cc8ed11bfe52,625538796169376c44626641437355366a4a3132,1443553047"><script>
+jQuery(window).load(function () {
+ jQuery('#generate_url_button').hammer({prevent_default: true}).on("tap", function(ev) {
+   ev.gesture.preventDefault();
+   ev.gesture.stopPropagation();
+   settings.generateurl.value='1';
+   settings.submit();
+  });
+});                                                                                                                                                                                                         
+</script><style>a.btn_blue:link, a.btn_blue:visited { text-decoration: none; } a.btn_green:link, a.btn_green:visited { text-decoration: none; }</style><table cellpadding="0" border="0" cellspacing="0" id="urlgen" style="visibility: hidden; height: 0px;display:none;"><tbody><tr><td nowrap="" onClick=" settings.generateurl.value='1'; settings.submit(); " nowrap><a onMouseOver="retinaToolTip('Ayarlar&#305;n&#305;z&#305; i&#231;eren direkt bir URL olu&#351;turur.', BGCOLOR, '#f2f6fc', BORDERWIDTH, 0, BORDERCOLOR, '#668bc4', FONTCOLOR, '#5e6c8c', FONTSIZE, 12, FONTFACE,'Proxima Nova', PADDING, 8,MAINDIVCLASS,'nowrap');" onMouseOut="" id="generate_url_button" href="javascript:void(0);" style="padding-bottom:0px;margin-top:-22px;position:relative;top:-13px;" class="btn_green  btn_green_tur"><span>URL OLU&#350;TUR</span></a></td></tr></tbody></table><script type="text/javascript">document.getElementById('urlgen').style.display='block';document.getElementById('urlgen').style.visibility='visible'; document.getElementById('urlgen').style.height='auto';</script> <noscript> <span class="button button_green"><button title="Ayarlar&#305;n&#305;z&#305; i&#231;eren direkt bir URL olu&#351;turur" type="submit" name="generateurl" value="URL OLU&#350;TUR">URL OLU&#350;TUR</button></span> </noscript></td><td style="vertical-align:bottom;padding-bottom: 10px;margin: 0;"><table cellpadding="0" border="0" cellspacing="0" class="width_adjust" style="display: none; visibility: hidden; height: 0px;" id="install_plugin"><body><tr><td nowrap=""  style="margin-bottom:-15px"><a href="javascript:void(0);" style="margin-top:-1px; *margin-top:0px;" class="btn_green_b  btn_green_b_tur"><span>&#214;ZEL EKLENTI Y&#220;KLE</span></a></td></tr></tbody></table><script type="text/javascript">show_plugin_install('install_plugin', 0); </script></td><td style="padding-bottom:0px;padding-right:15px;">&nbsp;</td><td nowrap="" style="padding-top:0px; " class="td_head_s" ><div style="margin-top:0px;"><br>Ayarlar&#305;n&#305;z&#305;n tan&#305;mlama olmadan kaydedilebilmesini sa&#287;lar<br>(<a id="url_gen_link" class="blue_link" href="../tur/urlgenerator-details.html" target='_blank' onclick='return false;'>Ayr&#305;nt&#305;lar i&#231;in buraya t&#305;klay&#305;n <a id="url_gen_link" class="blue_link" href="../tur/urlgenerator-details.html" target='_blank' onclick='return false;'>)</div></td></tr><tr><td colspan="4"><a name="urlgenbutton" style='top:-4px;position:relative;'>veya</a> <input type=hidden name="generateurl" value=""><br></td></tr><tr><td class="td_head" style="padding-right:24px;"><table cellpadding="0" border="0" cellspacing="0" style="visibility: hidden; display:none; height: 0px;" id="save_pref"><tbody><tr><td nowrap="" onclick="if (showMessage(1)) { submitMyForm();} else { var newlhref = location.href.replace('#nocookiesmsg', '');location.href = newlhref+'#nocookiesmsg'; return false; }"><a class="btn_blue btn_blue_big_tur" href="javascript:void(0);"><span>AYARLAR&#73; KAYDET</span></a></td></tr></tbody></table><script type="text/javascript">document.getElementById('save_pref').style.visibility='visible';document.getElementById('save_pref').style.display='block';document.getElementById('save_pref').style.height='auto';</script><noscript><span class="button button_blue"><button type="submit" value="AYARLAR&#73; KAYDET">AYARLAR&#73; KAYDET</button></span></noscript></td><noscript><style>@media all {.select-style select{-webkit-appearance:none;height:23px;overflow:visible; width:115% !important} .select-style{height:22px;}}</style></noscript><td><table cellpadding="0" border="0" cellspacing="0" style="visibility: hidden; display:none;height: 0px;" id="clear_pref"><tbody><tr><td nowrap="" onclick="settings.clear.value='Ayarlar Temizle';settings.submit();"><a class="btn_blue btn_blue_big_tur" href="javascript:void(0);"><span>AYARLAR TEMIZLE</span></a></td></tr></tbody></table><script type="text/javascript">document.getElementById('clear_pref').style.visibility='visible';document.getElementById('clear_pref').style.display='block';document.getElementById('clear_pref').style.height='auto';</script><noscript><span class="button button_blue"><button type="submit" name="clear_button" value="AYARLAR TEMIZLE">AYARLAR TEMIZLE</button></span></noscript></td><td>&nbsp;</td><td class="td_head_s">Ayarlar&#305;n&#305;z&#305; kaydetti&#287;inizde, taray&#305;c&#305;n&#305;za, siteye bir dahaki giri&#351;iniz i&#231;in ayarlar&#305;n&#305;z&#305; hat&#305;rlayan anonim bir <a href="../tur/protect-privacy-qa.html#q11" class='blue_link' target='_blank' onclick='return false;' id="cookie_popup">&#231;erez</a> yerle&#351;tirilir.</td></tr></td> </tr></table></form>
+<div class="about-page-popup" id="url-generator-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><h1>URL Olu&#351;turucusu</h1><div><div class="cont_nor pad_t10"><h3>Ayarlarin &#199;erezs&#304;z olarak kayded&#304;lmes&#304;</h3></div><div class="pad_t25"><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5"><tr><td><ul class="check_green_l_17 url_gen"><li>Ixquick tercihlerinizi, "<a class="blue_link" target='_blank' href='preferences.pl-language_ui=turkce.html'>Ayarlar</a>" sayfas&#305;nda yer alan "Ayarlari Kaydet" d&#252;&#287;mesine t&#305;klayarak kaydedebilirsiniz.<li>Bu d&#252;&#287;me, ayarlar&#305;n&#305;z&#305; 'preferences' (tercihler) adl&#305; bir '&#231;erez' (sabit diskinize kaydedilen k&#252;&#231;&#252;k bir veri par&#231;as&#305;) i&#231;inde bilgisayar&#305;n&#305;za kaydeder.</li><li>Ixquick'in 'preferences' (tercihler) &#231;erezi, kimlik belirleme bilgisi i&#231;ermez ve kabul edilmesi g&#252;venlidir. Ancak, genelde &#231;erezler, ki&#351;isel gizlili&#287;iniz i&#231;in tehdit i&#231;erebilir.</li><li>&#199;erezleri kabul etmemeyi tercih eden veya d&#252;zenli olarak silen ki&#351;iler, tercihlerini bu &#351;ekilde koruyamaz.</li><li>Ixquick bu ki&#351;iler i&#231;in, "<a class="blue_link" target='_blank' href='preferences.pl-language_ui=turkce.html'>Ayarlar</a>" sayfas&#305;n&#305;n alt k&#305;sm&#305;nda "URL Olu&#351;tur" d&#252;&#287;mesini &#246;zellikle sunmaktad&#305;r.<li>Bu d&#252;&#287;meyi t&#305;klatt&#305;&#287;&#305;n&#305;zda, se&#231;ti&#287;iniz ayarlar i&#231;eren &#246;zel bir Ixquick URL'si olu&#351;turulur.</li><li>Okunabilir veya kar&#305;&#351;t&#305;r&#305;lm&#305;&#351; metin bi&#231;iminde &#252;retilebilir.</li><li>&#220;retilen bu URL'yi do&#287;rudan ana sayfan&#305;z olarak kullanabilir veya yer imi olarak kaydedebilirsiniz.</li><li>Bu URL'yi kulland&#305;&#287;&#305;n&#305;zda, Ixquick'i bir dahaki ziyaretinizde tercihleriniz kullan&#305;l&#305;r.</li><li id="customplugin" style="display:none;">Daha da fazla kolayl&#305;k i&#231;in, '&#214;zel Eklenti Y&#252;kle' d&#252;&#287;mesine URL'nizi olu&#351;turduktan sonra da t&#305;klayabilirsiniz. Bu i&#351;lem, ayarlar&#305;n&#305;z&#305; i&#231;eren bir arama &#231;ubu&#287;u eklentisi kuracakt&#305;r.</li><li id="customplugin_ff" style="display:none;">&#304;lk olarak, arama &#231;ubu&#287;unun a&#231;&#305;l&#305;r listesinden daha &#246;nce kaydedilmi&#351; versiyonlar&#305; silmeniz gerekebilir.</li><li id="customplugin_chrome" style="display:none;">Girdi&#287;iniz 'Anahtar Kelime'nin, daha &#246;nce kaydetmi&#351; olabilece&#287;iniz anahtar kelimeden farkl&#305; olmas&#305;na dikkat edin.</li></ul><div class="cont_nor pad_t10"><b><b>Ixquick, Web'de g&#252;venli bir &#351;ekilde arama yapabilmeniz i&#231;in, ki&#351;isel gizlili&#287;i art&#305;ran &#246;zellikler sunmaya devam etmektedir!</b></b></div></div><br/></td></tr></table>
+<script type='text/javascript'>
+    var agent = navigator.userAgent;
+    if ( (agent.indexOf('Firefox/') != -1) || (agent.indexOf('Chrome/') != -1) ||
+         (agent.indexOf('SeaMonkey/') != -1) || (agent.indexOf('MSIE 7') != -1) ||
+         (agent.indexOf('MSIE 8') != -1) ) {
+
+        document.getElementById('customplugin').style.display = '';
+        if (agent.indexOf('Firefox/') != -1) {
+            document.getElementById('customplugin_ff').style.display = '';
+        }
+        if (agent.indexOf('Chrome/') != -1) {
+            document.getElementById('customplugin_chrome').style.display = '';
+        }
+    }
+</script><input type="hidden" id="query_top" height="10"></div></div></div>
+<div class="about-page-popup" id="server-select-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><h1 style="margin-top: -20px;">Aramak i&#231;in Sunucunuzu Se&#231;in</h1><div><div style="padding-top: 10px;"><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5" ><tr><td><ul class="check_green_l_17 url_gen"><li>ABD H&#252;k&#252;metine ba&#287;l&#305; olan PRISM uyu&#351;mazl&#305;&#287;&#305; nedeniyle, baz&#305; kullan&#305;c&#305;lar &#246;zellikle ABD veya kendi &#252;lkeleri d&#305;&#351;&#305;ndaki sunucularda arama yapmay&#305; tercih edebilir.</li>
+<li>StartPage standart ayar olarak sizi en k&#305;sa ba&#287;lant&#305; s&#252;relerine imk&#226;n veren en yak&#305;ndaki sunuculara ba&#287;layacakt&#305;r.</li>
+<li>Ba&#351;ka bir se&#231;enek tercih edilirse, ba&#287;lant&#305; s&#252;relerinde biraz art&#305;&#351; ya&#351;anabilir.</li>
+<li>Arama i&#231;eriklerinizin &#252;&#231;&#252;nc&#252; &#351;ah&#305;slarca g&#246;zetlenmesini &#246;nlemek i&#231;in, konumu ne olursa olsun t&#252;m sunuculara yap&#305;lan t&#252;m ba&#287;lant&#305;lar HTTPS ile<a class='blue_link' href ="https://support.ixquick.com/index.php?/Knowledgebase/Article/View/263/0/what-is-perfect-forward-secrecy-and-does-ixquick-use-this" target="_blank">Y&#252;ksek Kaliteli &#350;ifreleme</a> kullanmaktad&#305;r.</li>
+</ul></td></tr></table><input type="hidden" id="query_top" height="10"></div></div></div>
+<div class="about-page-popup" id="search-suggestions-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<br/><table width="100%" border="0" align="left" cellpadding="5" cellspacing="5">
+<tr height='40'><td colspan='2' nowrap="nowrap" align="center" width="100%"><h1>Arama &#214;nerilerinin A&#231;&#305;klamas&#305;</h1></td></tr><tr height='10'><td colspan='1'>&nbsp;</td></tr><tr><td align="left" >
+<b>Q:&nbsp;Arama &#246;nerilerini nas&#305;l etkinle&#351;tiririm?</b><br><b>A:&nbsp;</b>Arama &#246;nerilerini, '<a target='_blank' href='preferences.pl-language_ui=turkce.html' class='blue_link'>Ayarlar</a>' sayfas&#305;nda se&#231;erek etkinle&#351;tirebilirsiniz. 'Ayarlar' sayfas&#305;, herhangi bir Ixquick sayfas&#305;ndan se&#231;ilebilir.</td><td valign='top' rowspan=3><img src='../graphics/tur/search_suggestions_preview.jpg' width="340px" /></td></tr>
+<tr><td align="left" >
+<b>Q:&nbsp;Ixquick'in arama &#246;nerileri nas&#305;l &#231;al&#305;&#351;&#305;r?</b><br><b>A:&nbsp;</b>Bir sorguyu girmeye ba&#351;lad&#305;&#287;&#305;n&#305;zda, arad&#305;&#287;&#305;n&#305;z terimi, genel &#246;nerilerden olu&#351;an b&#252;y&#252;k bir havuzdaki ifadelerle e&#351;le&#351;tiririz. En pop&#252;ler arama terimlerinden e&#351;le&#351;enler, pop&#252;lerlik s&#305;ras&#305;na g&#246;re g&#246;r&#252;nt&#252;lenir.</td><tr><td align="left" >
+<b>Q:&nbsp;Ixquick'in arama &#246;nerileri di&#287;er arama motorlar&#305;n&#305;nkilerden ne a&#231;&#305;dan farkl&#305;d&#305;r?</b><br><b>A:&nbsp;</b>Di&#287;er &#231;o&#287;u arama motoru, arama &#246;nerilerinde ger&#231;ek kullan&#305;c&#305; aramalar&#305;ndan yola &#231;&#305;kar. Dolay&#305;s&#305;yla, sadece araman&#305;z&#305; yazd&#305;&#287;&#305;n&#305;zda, ba&#351;kalar&#305;n&#305;n en &#231;ok neyi arad&#305;&#287;&#305;n&#305; g&#246;r&#252;rs&#252;n&#252;z. Kullan&#305;c&#305;n&#305;n ki&#351;isel gizlili&#287;ini g&#252;vence alt&#305;na almak konusunda &#246;nc&#252; olan Ixquick bu kolayc&#305;l&#305;&#287;a ka&#231;maz. Yazd&#305;&#287;&#305;n&#305;z her sorgu i&#231;in, genel olarak en ilgili &#246;nerileri g&#246;steririz.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;O zaman Ixquick'in &#246;nerileri nereden geliyor?</b><br><b>A:&nbsp;</b>&#214;nerilerimiz, s&#246;zl&#252;k kelimelerinden Internet'te &#252;cretsiz olarak kullan&#305;labilen yayg&#305;n bilgi kaynaklar&#305;na (s&#246;zgelimi Wikipedia sayfalar&#305;) var&#305;ncaya kadar, &#231;ok &#231;e&#351;itli kaynaklardan gelir.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;&#214;neriler b&#252;t&#252;n dillerde var m&#305;?</b><br><b>A:&nbsp;</b>Evet, &#246;neriler, Ixquick'in sundu&#287;u b&#252;t&#252;n dillerde mevcuttur.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ixquick &#252;cretli ba&#287;lant&#305;lara ili&#351;kin &#246;neriler de g&#246;sterir mi?</b><br><b>A:&nbsp;</b>Hay&#305;r. &#214;neriler tamamen g&#246;reli pop&#252;lerli&#287;e dayal&#305;d&#305;r. Reklam ba&#287;lant&#305;lar&#305; verilmez.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ixquick'i s&#246;zgelimi Almanca olarak kulland&#305;&#287;&#305;m halde, baz&#305; anahtar s&#246;zc&#252;kler i&#231;in &#304;ngilizce &#246;neriler ald&#305;&#287;&#305;m&#305; g&#246;r&#252;yorum. Neden b&#246;yle oluyor?</b><br><b>A:&nbsp;</b>Web'deki ba&#351;l&#305;ca dil, tart&#305;&#351;mas&#305;z bir &#351;ekilde &#304;ngilizcedir. Algoritmam&#305;z &#246;nce sizin dilinize &#246;zg&#252; &#246;nerileri getirmekle birlikte, tercih etti&#287;iniz dilde sorgunuza uyan yeterli say&#305;da &#246;neri yoksa, ard&#305;ndan baz&#305; &#304;ngilizce &#246;neriler de sunar&#305;z. Elbette s&#305;ralamada kendi dilinizdeki &#246;neriler ba&#351;ta yer al&#305;r.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;&#304;leride ki&#351;iselle&#351;tirilmi&#351; &#246;neriler g&#246;rme ihtimalim var m&#305;?</b><br><b>A:&nbsp;</b>Bildi&#287;iniz gibi, kullan&#305;c&#305;lar&#305;m&#305;z hakk&#305;nda ki&#351;isel herhangi bir bilgi kaydetmiyoruz. Dolay&#305;s&#305;yla, ki&#351;isel gizlili&#287;inizi ihl&#226;l edece&#287;inden, ki&#351;iselle&#351;tirilmi&#351; &#246;neriler sunmuyoruz.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;&#199;ocu&#287;uma yeti&#351;kinlere uygun terimlerin &#246;nerilmesini istemiyorum. Bunu sa&#287;layabilir miyim?</b><br><b>A:&nbsp;</b>Elbette. &#214;neriler, Web/Resim aile filtresi ayarlar&#305;n&#305;za uygun olarak &#231;al&#305;&#351;&#305;r. Filtre ayarlar&#305;n&#305;z, arama s&#305;ras&#305;nda yeti&#351;kinlere uygun terimlerin filtre edilmesi y&#246;n&#252;nde yap&#305;lm&#305;&#351;sa, algoritmam&#305;z, yeti&#351;kinlere uygun &#246;nerileri g&#246;stermemek i&#231;in elinden geleni yapacakt&#305;r.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;Ayarlar&#305;mda arama &#246;nerilerini etkinle&#351;tirdim, ama herhangi bir &#246;neri g&#246;rm&#252;yorum. Bunun nedeni ne olabilir?</b><br><b>A:&nbsp;</b>L&#252;tfen, taray&#305;c&#305;n&#305;zda Javascript deste&#287;inin etkinle&#351;tirilmi&#351; durumda oldu&#287;undan emin olun. Arama &#214;nerileri'nin &#231;al&#305;&#351;mas&#305; i&#231;in bu zorunludur.</td><tr><td align="left"  colspan='3'>
+<b>Q:&nbsp;'&#199;erezleri' kullanm&#305;yorum veya d&#252;zenli olarak siliyorum. Yine de arama &#246;nerileri se&#231;ene&#287;ini kullanabilir miyim?</b><br><b>A:&nbsp;</b>Evet, kullanabilirsiniz. Ki&#351;isel gizlili&#287;i koruyan bir arama motoru olarak, tercihlerinizi &#231;erez yerine bir URL'ye kaydetmenize olanak veren 'URL Olu&#351;tur' se&#231;ene&#287;ini sunduk. 'URL Olu&#351;tur' se&#231;ene&#287;i, '<a target='_blank' href='preferences.pl-language_ui=turkce.html' class='blue_link'>Ayarlar</a>' sayfas&#305;n&#305;n alt k&#305;sm&#305;nda yer almaktad&#305;r.</td>
+</table></br></br>
+</div>
+<div class="about-page-popup" id="cookie-popup-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<h3><strong>"&#199;erezler" nedir ve Ixquick &#231;erez kullan&#305;r m&#305;? </strong></h3><br>&#199;erez, bir siteye girdi&#287;inizde size g&#246;nderilip bilgisayar&#305;n&#305;z&#305;n sabit disk s&#252;r&#252;c&#252;s&#252;ne kaydedilen, k&#252;&#231;&#252;k bir veri par&#231;as&#305;d&#305;r. Ixquick yaln&#305;zca, "preferences" (tercihler) ad&#305; verilen tek bir &#231;erez kullan&#305;r. Bu &#231;erez, sayfaya bir dahaki giri&#351;inizde, kaydetti&#287;iniz arama tercihlerinin hat&#305;rlanmas&#305; i&#231;indir. Ixquick'e 90 g&#252;n boyunca girmedi&#287;inizde s&#252;resi dolar ve anonimdir.</div>
+<div class="about-page-popup" id="home-popup-div" style='display: none;'><div class="cross_icon"> 
+ <p class="closeArea"><a></a></p> 
+ </div>
+<div id="home-popup-div-inner"></div></div>
+<div id="loadingId"></div>
+<script>
+        jQuery(window).load(function () { 
+            /* remove the no-js class added when the JS is enabled. */
+            jQuery('#preferences-form').removeClass('settings-no-js');
+ 
+            jQuery('#url_gen_link').click(function () {                                                                                                                                          
+                jQuery('#url-generator-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('url-generator-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {
+                jQuery('#url-generator-div').hide();
+                jQuery('#loadingId').hide();
+                blockPageScrolling('url-generator-div');
+            });
+            jQuery('#search-suggestions-link').click(function () {                                                                                                                                          
+                jQuery('#search-suggestions-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('search-suggestions-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#search-suggestions-div').hide();
+                jQuery('#loadingId').hide();
+                blockPageScrolling('search-suggestions-div'); 
+            });
+            jQuery('#server_select_link').click(function () {                                                                                                                                          
+                jQuery('#server-select-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('server-select-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#server-select-div').hide();
+                 jQuery('#loadingId').hide();
+                 blockPageScrolling('server-select-div'); 
+            });
+            jQuery('#cookie_popup').click(function () {                                                                                                                                         
+                jQuery('#cookie-popup-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('cookie-popup-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#cookie-popup-div').hide();
+                 jQuery('#loadingId').hide();
+                 blockPageScrolling('cookie-popup-div');
+            });
+            jQuery('#make_homepage_link').click(function () {                                                                                                                                          
+                jQuery('#home-popup-div').show();
+                jQuery('#loadingId').show();
+                blockPageScrolling('home-popup-div');
+            });
+            jQuery('.closeArea a, #loadingId').click(function () {                                                                                                                                                           jQuery('#home-popup-div').hide();
+                 jQuery('#loadingId').hide();
+                 blockPageScrolling('home-popup-div');
+            });
+            jQuery(document).keyup(function(e) {                                                                                                                                                         
+                    if (e.keyCode == 27) { 
+                        jQuery('#url-generator-div').hide(); 
+                        jQuery('#info-sharing-div').hide(); 
+                        jQuery('#search-suggestions-div').hide();
+                        jQuery('#server-select-div').hide();
+                        jQuery('#cookie-popup-div').hide();
+                        jQuery('#home-popup-div').hide();
+                        jQuery('#loadingId').hide(); 
+                        blockPageScrolling('url-generator-div');
+                        blockPageScrolling('info-sharing-div');
+                        blockPageScrolling('search-suggestions-div');
+                        blockPageScrolling('server-select-div');
+                        blockPageScrolling('cookie-popup-div');
+                        blockPageScrolling('home-popup-div');
+                    }
+            });
+            jQuery('#loadingId').doubletap(
+                /** doubletap-dblclick callback */
+                function(event){
+                    event.preventDefault();
+                },
+                /** touch-click callback (touch) */
+                function(event){
+                    jQuery('#url-generator-div').hide(); 
+                    jQuery('#info-sharing-div').hide(); 
+                    jQuery('#search-suggestions-div').hide();
+                    jQuery('#server-select-div').hide();
+                    jQuery('#cookie-popup-div').hide();
+                    jQuery('#home-popup-div').hide();
+                    jQuery('#loadingId').hide(); 
+                    blockPageScrolling('url-generator-div');
+                    blockPageScrolling('info-sharing-div');
+                    blockPageScrolling('search-suggestions-div');
+                    blockPageScrolling('server-select-div');
+                    blockPageScrolling('cookie-popup-div');
+                    blockPageScrolling('home-popup-div');
+                },
+                /** doubletap-dblclick delay (default is 500 ms) */
+                250
+            );
+    
+        });  
+    </script></div>
+    </div></div>
+    <div class="clear"></div>
+    </td>
+    </tr>
+</tbody>
+</table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    </div></td></tr></tbody></table></div></div></div></div>
+	<div class="footer" id="footer">
+ 	<div class="copyright">
+  	&copy; 2015 Ixquick
+ 	</div>
+		
+ 	<div class="right_links"><a id="startmail" href="https://startmail.com/" style="text-decoration: none;">
+    <!--<span class="icon icon-small"><span class="icon-mail"></span></span>&nbsp;-->
+  	<span style="text-decoration: underline;">StartMail</span></a>
+  	<a id="privacy_policy" href="../tur/privacy-policy-.html">Gizlilik &#304;lkesi</a>
+ 	</div>
+    <div class='imgavt'> </div>
+    </div>
+    <script type="text/javascript" charset="utf-8"> $(function() { $('body').hide().show(); });</script>
+    </body>
+    </html>

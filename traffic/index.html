@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv='X-UA-Compatible' content='IE=EmulateIE7; IE=EmulateIE9'>
+<!--[if IE]><script src='../js/excanvas.js'></script><![endif]-->
+<script type='text/javascript' src='../js/dygraph-combined.js'></script>
+<script type='text/javascript' src='../js/jquery-1.8.0.min.js'></script>
+<script type='text/javascript'>
+   function create_space(){
+     $('#graphdiv2').first().css('padding-top','22px');
+     $('.dygraph-legend').css('left','500px');
+     $('.annotation_check').next().remove();
+ $('.annotation_check').html($('.annotation_check').text());
+   }
+</script>
+<style>div.dygraph-label.dygraph-title {margin-top: -22px;}
+table td, table td * {    vertical-align: top; padding-top:25px; padding-right:25px; text-align:center; }
+table.check_padding td, table td * {    vertical-align: top; padding-top:0px; padding-right:0px; text-align:center; }
+.annotation_check { background-color: #B6D7FE !important;color: #232930 !important;  border: 0px solid #5c5c5c !important; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5; -ms-border-radius: 5px;-o-border-radius: 5px; font-size: 13px !important; }</style>
+</head>
+<body>
+<div id='graphdiv2' style='width:850px; height:600px;'></div>
+<script type='text/javascript'>
+
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "<!--KEEPTEL-->http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+       var base_display_date = new Date('2004/01/01'),base_actual_date = new Date('2008/06/25'),base_actual_date2=new Date(''),SQ=4,first_unsqueezed_date= new Date('2009/12/31');
+base_actual_date2.setDate(base_actual_date.getDate()-1);   var monthNames = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
+var g_annotations =[
+   {
+      series: 'Queries',
+      x: '20080501',
+      shortText: 'A',
+      text: 'Company Founded in 1998',
+      tickHeight: '40',
+   },
+   {
+      series: 'Queries',
+      x: '20090131',
+      shortText: 'B',
+      text: 'Ixquick eliminates "Big Brother"',
+      tickHeight: '20',
+   },
+   {
+      series: 'Queries',
+      x: '20090809',
+      shortText: 'C',
+      text: 'Privacy Seal Awarded',
+      tickHeight: '20',
+   },
+   {
+      series: 'Queries',
+      x: '20091107',
+      shortText: 'D',
+      text: 'StartPage.com Launched',
+      tickHeight: '20',
+   },
+   {
+      series: 'Queries',
+      x: '20100101',
+      shortText: 'E',
+      text: 'Proxy Service Launched',
+      tickHeight: '-20',
+   },
+   {
+      series: 'Queries',
+      x: '20111001',
+      shortText: 'F',
+      text: 'Default Encryption Added on all Searches',
+      tickHeight: '-20',
+   },
+   {
+      series: 'Queries',
+      x: '20120101',
+      shortText: 'G',
+      text: 'Google Privacy Policy Changed',
+      tickHeight: '-40',
+   },
+   {
+      series: 'Queries',
+      x: '20130601',
+      shortText: 'H',
+      text: 'PRISM revelations',
+      tickHeight: '-20',
+   },
+   {
+      series: 'Queries',
+      x: '20130719',
+      shortText: 'I',
+      text: 'Perfect Forward Secrecy enabled',
+      tickHeight: '-40',
+   },
+   {
+      series: 'Queries',
+      x: '20150914',
+      shortText: 'All time high!<br>5,826,230 queries<br>14 Sep 2015',
+      text: 'All time high!<br>5,826,230 queries<br>14 Sep 2015',
+      tickHeight: '1040',
+      cssClass:'annotation_check',
+      width: '120',
+      height: '57px',
+   }];
+g2 = new Dygraph(
+   document.getElementById('graphdiv2'),
+   'traffic.csv',
+   {
+    rollPeriod: 28,
+    title: 'Ixquick/StartPage Direct queries per day (28 Day Average)',
+    showRoller: false,
+    maxNumberWidth: 8,
+    showRangeSelector: false,
+    xRangePad: 30,
+    strokeWidth: 2,
+    fillGraph: true,
+    fillAlpha: 0.5,
+    axes : { 
+         x : { 
+        valueFormatter: function( x ) { 
+            var date  = new Date(x);
+           if(date<first_unsqueezed_date) return get_display_date(date,true) ; 
+           else return get_label_format(date,true) ;
+         }, 
+           axisLabelFormatter: function(d, gran) {
+           var  date = d; 
+           if(date<first_unsqueezed_date) 
+             {   
+               return get_display_date(date); 
+             }    
+           else 
+             return get_label_format(date); 
+         }
+       }  
+     },  
+   drawCallback: function(g, is_initial) {
+if (is_initial) {
+ setTimeout('g2.setAnnotations( g_annotations )',250);
+ setTimeout('create_space()',1);
+ }
+if(g2.isZoomed && !is_initial)
+       {
+ setTimeout('create_space()',1);
+}
+},
+});
+function get_display_date(date,isday) 
+{   
+  if(date>=base_actual_date) 
+   return get_label_format( new Date (( Date.parse( base_display_date) ) + (( Date.parse(date) - Date.parse(base_actual_date) ) * SQ) ) , isday);
+  else if(date>=new Date('2008/06/24'))
+   return 'Jan 04';
+  else if(date<=new Date('2008/01/02'))
+   return '';
+  else
+   return '1998'
+}
+function get_label_format(date,isday) 
+{
+  var year = date.getFullYear() + '';  
+   year     = year.substring(2,4);
+  str      = monthNames[date.getMonth()] + ' ' + year;
+  if((typeof isday !== undefined) && isday)
+    return date.getDate() + ' ' + str;
+  else  
+    return str; 
+}
+</script>
+<pre>
+
+<a href='../eng/privacy-policy.html'>Privacy</a> | <a href='../eng/aboutixquick/index.html'>About Ixquick</a> | <a href='../press/index.html'>Press</a>   
+
+
+Annotations
+A - Company Founded in 1998
+B - <a style='text-decoration:none;' target='_blank' href='../eng/press/pr-big-brother.html'>Ixquick eliminates "Big Brother"</a>
+C - <a style='text-decoration:none;' target='_blank' href='http://www.european-privacy-seal.eu/ws/EPS-en/Ixquick-starpage'>Privacy Seal Awarded</a>
+D - <a style='text-decoration:none;' target='_blank' href='../eng/press/pr-startpage-announcement.html'>StartPage.com Launched</a>
+E - <a style='text-decoration:none;' target='_blank' href='../eng/press/proxy-anonymous-browsing.html'>Proxy Service Launched</a>
+F - <a style='text-decoration:none;' target='_blank' href='../eng/press/pr-ixquick-ssl.html'>Default Encryption Added on all Searches</a>
+G - <a style='text-decoration:none;' target='_blank' href='http://arstechnica.com/tech-policy/2012/03/googles-new-privacy-policy-what-has-changed-and-what-you-can-do-about-it/'>Google Privacy Policy Changed</a>
+H - <a style='text-decoration:none;' target='_blank' href='../eng/prism-program-revealed.html'>PRISM revelations</a>
+I - <a style='text-decoration:none;' target='_blank' href='../eng/press/pr-pfs.html'>Perfect Forward Secrecy enabled</a>
+
+
+<table><tr>
+<td>
+Total Queries Sep 2015:<b>146,724,610</b>   <b>5,434,244 avg</b><table  style="margin: 0 auto;" class="check_padding">
+<tr><td>Sun 27 Sep 2015 5,250,215 queries </td></tr>
+<tr><td>Sat 26 Sep 2015 4,856,282 queries </td></tr>
+<tr><td>Fri 25 Sep 2015 5,373,512 queries </td></tr>
+<tr><td>Thu 24 Sep 2015 5,568,965 queries </td></tr>
+<tr><td>Wed 23 Sep 2015 5,726,504 queries </td></tr>
+<tr><td>Tue 22 Sep 2015 5,801,214 queries </td></tr>
+<tr><td>Mon 21 Sep 2015 5,778,080 queries </td></tr>
+<tr><td>Sun 20 Sep 2015 5,283,191 queries </td></tr>
+<tr><td>Sat 19 Sep 2015 4,888,001 queries </td></tr>
+<tr><td>Fri 18 Sep 2015 5,363,811 queries </td></tr>
+<tr><td>Thu 17 Sep 2015 5,569,703 queries </td></tr>
+<tr><td>Wed 16 Sep 2015 5,667,857 queries </td></tr>
+<tr><td>Tue 15 Sep 2015 5,669,936 queries </td></tr>
+<tr><td ><div style=" padding-left: 7px; background:#A6CFFD; border-radius: 8px;-webkit-border-radius: 8px; -moz-border-radius:8px;">Mon 14 Sep 2015 5,826,230 queries </div></td></tr>
+<tr><td>Sun 13 Sep 2015 5,255,384 queries </td></tr>
+<tr><td>Sat 12 Sep 2015 4,733,758 queries </td></tr>
+<tr><td>Fri 11 Sep 2015 5,238,881 queries </td></tr>
+<tr><td>Thu 10 Sep 2015 5,414,733 queries </td></tr>
+<tr><td>Wed  9 Sep 2015 5,589,762 queries </td></tr>
+<tr><td>Tue  8 Sep 2015 5,694,385 queries </td></tr>
+<tr><td>Mon  7 Sep 2015 5,798,176 queries </td></tr>
+<tr><td>Sun  6 Sep 2015 5,201,934 queries </td></tr>
+<tr><td>Sat  5 Sep 2015 4,963,493 queries </td></tr>
+<tr><td>Fri  4 Sep 2015 5,404,520 queries </td></tr>
+<tr><td>Thu  3 Sep 2015 5,466,625 queries </td></tr>
+<tr><td>Wed  2 Sep 2015 5,673,839 queries </td></tr>
+<tr><td>Tue  1 Sep 2015 5,665,619 queries </td></tr>
+</table></td>
+<td>
+Total Queries Aug 2015:<b>159,650,875</b>   <b>5,150,028 avg</b><table  style="margin: 0 auto;" class="check_padding">
+<tr><td>Mon 31 Aug 2015 5,625,830 queries </td></tr>
+<tr><td>Sun 30 Aug 2015 4,991,810 queries </td></tr>
+<tr><td>Sat 29 Aug 2015 4,605,639 queries </td></tr>
+<tr><td>Fri 28 Aug 2015 5,166,167 queries </td></tr>
+<tr><td>Thu 27 Aug 2015 5,468,311 queries </td></tr>
+<tr><td>Wed 26 Aug 2015 5,394,225 queries </td></tr>
+<tr><td>Tue 25 Aug 2015 5,639,150 queries </td></tr>
+<tr><td>Mon 24 Aug 2015 5,745,612 queries </td></tr>
+<tr><td>Sun 23 Aug 2015 4,975,926 queries </td></tr>
+<tr><td>Sat 22 Aug 2015 4,454,319 queries </td></tr>
+<tr><td>Fri 21 Aug 2015 4,996,458 queries </td></tr>
+<tr><td>Thu 20 Aug 2015 5,333,643 queries </td></tr>
+<tr><td>Wed 19 Aug 2015 5,432,681 queries </td></tr>
+<tr><td>Tue 18 Aug 2015 5,540,103 queries </td></tr>
+<tr><td>Mon 17 Aug 2015 5,750,373 queries </td></tr>
+<tr><td>Sun 16 Aug 2015 5,175,604 queries </td></tr>
+<tr><td>Sat 15 Aug 2015 4,774,534 queries </td></tr>
+<tr><td>Fri 14 Aug 2015 5,074,115 queries </td></tr>
+<tr><td>Thu 13 Aug 2015 5,116,252 queries </td></tr>
+<tr><td>Wed 12 Aug 2015 5,217,599 queries </td></tr>
+<tr><td>Tue 11 Aug 2015 5,301,014 queries </td></tr>
+<tr><td>Mon 10 Aug 2015 5,397,893 queries </td></tr>
+<tr><td>Sun  9 Aug 2015 4,755,994 queries </td></tr>
+<tr><td>Sat  8 Aug 2015 4,447,630 queries </td></tr>
+<tr><td>Fri  7 Aug 2015 5,029,844 queries </td></tr>
+<tr><td>Thu  6 Aug 2015 5,118,834 queries </td></tr>
+<tr><td>Wed  5 Aug 2015 5,163,405 queries </td></tr>
+<tr><td>Tue  4 Aug 2015 5,410,131 queries </td></tr>
+<tr><td>Mon  3 Aug 2015 5,295,286 queries </td></tr>
+<tr><td>Sun  2 Aug 2015 4,725,390 queries </td></tr>
+<tr><td>Sat  1 Aug 2015 4,527,103 queries </td></tr>
+</table></td>
+<td>
+Total Queries Jul 2015:<b>157,656,030</b>   <b>5,085,678 avg</b><table  style="margin: 0 auto;" class="check_padding">
+<tr><td>Fri 31 Jul 2015 4,949,445 queries </td></tr>
+<tr><td>Thu 30 Jul 2015 5,234,555 queries </td></tr>
+<tr><td>Wed 29 Jul 2015 5,441,457 queries </td></tr>
+<tr><td>Tue 28 Jul 2015 5,439,393 queries </td></tr>
+<tr><td>Mon 27 Jul 2015 5,645,964 queries </td></tr>
+<tr><td>Sun 26 Jul 2015 4,858,861 queries </td></tr>
+<tr><td>Sat 25 Jul 2015 4,767,233 queries </td></tr>
+<tr><td>Fri 24 Jul 2015 4,951,005 queries </td></tr>
+<tr><td>Thu 23 Jul 2015 4,862,613 queries </td></tr>
+<tr><td>Wed 22 Jul 2015 5,159,652 queries </td></tr>
+<tr><td>Tue 21 Jul 2015 5,233,517 queries </td></tr>
+<tr><td>Mon 20 Jul 2015 5,420,296 queries </td></tr>
+<tr><td>Sun 19 Jul 2015 5,042,148 queries </td></tr>
+<tr><td>Sat 18 Jul 2015 4,495,299 queries </td></tr>
+<tr><td>Fri 17 Jul 2015 4,911,756 queries </td></tr>
+<tr><td>Thu 16 Jul 2015 5,094,252 queries </td></tr>
+<tr><td>Wed 15 Jul 2015 5,189,020 queries </td></tr>
+<tr><td>Tue 14 Jul 2015 5,459,825 queries </td></tr>
+<tr><td>Mon 13 Jul 2015 5,570,906 queries </td></tr>
+<tr><td>Sun 12 Jul 2015 4,916,893 queries </td></tr>
+<tr><td>Sat 11 Jul 2015 4,450,455 queries </td></tr>
+<tr><td>Fri 10 Jul 2015 4,955,333 queries </td></tr>
+<tr><td>Thu  9 Jul 2015 5,274,897 queries </td></tr>
+<tr><td>Wed  8 Jul 2015 5,368,124 queries </td></tr>
+<tr><td>Tue  7 Jul 2015 5,353,717 queries </td></tr>
+<tr><td>Mon  6 Jul 2015 5,454,918 queries </td></tr>
+<tr><td>Sun  5 Jul 2015 4,853,042 queries </td></tr>
+<tr><td>Sat  4 Jul 2015 4,332,338 queries </td></tr>
+<tr><td>Fri  3 Jul 2015 4,838,795 queries </td></tr>
+<tr><td>Thu  2 Jul 2015 5,013,701 queries </td></tr>
+<tr><td>Wed  1 Jul 2015 5,116,620 queries </td></tr>
+</table></td>
+</tr>
+</table></pre>
+
+</body>
+</html>

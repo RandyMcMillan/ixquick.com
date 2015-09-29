@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+    <!--[if lt IE 7 ]> <html class='ie6 ie'> <![endif]-->                                                                         
+    <!--[if IE 7 ]> <html class='ie7 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 8 ]> <html class='ie8 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if IE 9 ]> <html class='ie9 ie'> <![endif]-->                                                                                                                                                      
+    <!--[if (gt IE 9)|!(IE)]><!-->                                                                                                                                                                          
+    <html>                                                                                                                                                                                                  
+    <!--<![endif]-->
+     <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">     
+    <meta name="viewport" content="width=device-width,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title> NARZ&#281;DZIA - Aplikacja mobilna </title>
+    
+<link rel="icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../ix-favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../graphics/favicon/ix-apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../graphics/favicon/ix-apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../graphics/favicon/ix-apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../graphics/favicon/ix-apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../graphics/favicon/ix-apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../graphics/favicon/ix-apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../graphics/favicon/ix-apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../graphics/favicon/ix-apple-touch-icon-152x152.png">
+<link rel="icon" sizes="196x196" href="../graphics/favicon/ix-favicon-196x196.png" type="images/png">
+<link rel="icon" sizes="160x160" href="../graphics/favicon/ix-favicon-160x160.png" type="images/png">
+<link rel="icon" sizes="96x96" href="../graphics/favicon/ix-favicon-96x96.png" type="images/png">
+<link rel="icon" sizes="16x16" href="../graphics/favicon/ix-favicon-16x16.png" type="images/png">
+<link rel="icon" sizes="32x32" href="../graphics/favicon/ix-favicon-32x32.png" type="images/png">
+<link href="../graphics/favicon/ix-favicon-16x16.png" type="images/png" rel="shortcut icon">
+<meta name="msapplication-TileColor" content="#6589c7">
+<meta name="msapplication-TileColor" content="/graphics/favicon/ix-mstile-144x144.png">
+
+    
+    <link href='../css/retina_about_pages-v=5.css' type='text/css' media="all"  rel='StyleSheet' />
+    <!--[if lt IE 9]><link href='../css/lt_ie9-v=5.css' type='text/css' media="all"  rel='StyleSheet' /><![endif]-->
+    
+    <script language='javascript' type='text/javascript' src='../js/retina_about_pages-v=5.js'></script>            
+    <!--[if lt IE 9]><script language='javascript' type='text/javascript' src='../js/less_than_ie9-v=5.js'></script><![endif]-->
+    <script>function setFocus() { var pageUrl = window.location.href; if (!pageUrl.match(/jump_to/)) { document.getElementById("query_top").focus(); } }</script>
+    
+	<script>
+   	jQuery(window).load(function() {
+		jQuery('.accordionButton').click(function(e){
+			e.preventDefault();
+            var div_display = jQuery(this).next('.accordionContent').css('display');
+            if (div_display == 'block') {
+                jQuery(this).next('.accordionContent').slideUp();
+            } else {
+                jQuery('div.accordionContent').slideUp();
+                jQuery(this).next('.accordionContent').slideToggle();
+            }
+    	});
+    });
+
+jQuery(window).load(function () {
+    jQuery('div[id^=tOoLtIp]').each(function() {
+        var obj = jQuery(this);
+        jQuery(this).addClass('sb-tooltip');
+        jQuery(this).find('*').removeAttr('bgcolor color face style');
+    });
+});
+
+function verifyChecked (form_obj) { 
+    var formname = form_obj.name; 
+    var orig_query = document[formname].query.value; 
+    if (orig_query == "") { 
+        return false; 
+    } 
+    form_obj.submit(); 
+
+    return false; 
+}
+      
+    </script>
+	
+    <script type='text/javascript'>
+    
+        $(document).ready(function() {
+
+            if((BrowserDetect.OS.indexOf("BB10") != -1) && (navigator.userAgent.indexOf("Mobile Safari") != -1)) MY_BROWSER = "Browser";
+            if ( ((MY_BROWSER == 'Chrome') || (MY_BROWSER == 'Chromium')) && (MY_BROWSER_VERSION > 31) ) {
+
+            actionUrl = document.blah1.action;
+            document.blah1.action = actionUrl.replace(/\/search$/, '/metasearch.pl'); }
+ });
+        jQuery(window).load(function(){
+            var additional_parm = '';
+        
+            var pref_args = prepare_propagation_arguments();
+            additional_parm = pref_args;
+            
+            cpt_js_prgtr(additional_parm);
+        });
+        function cpt_js_prgtr(additional_parm) {
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                pl     = /\+/g,
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { try {return decodeURIComponent(s.replace(pl, " "));} catch(e){} },
+                query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query)) {
+                    urlParams[decode(match[1])] = decode(match[2]);
+                }
+            })();
+            var params = new Array ('vf', 'vft', 'fm', 'fmt', 'op');
+    
+            params[params.length] = 'prf';
+            params[params.length] = 'prfh';
+        
+            var cpt_prms = additional_parm;
+            var cpt_h = '';
+            var cpt_prms_no_hmb = '';
+            jQuery.each(params, function(index, elem) {
+                if (urlParams[elem] != undefined && /^[a-zA-Z0-9]+$/.test(urlParams[elem])) {
+                    cpt_h += '<input value="'+urlParams[elem]+'" name="'+elem+'" type="hidden">';
+                    if (cpt_prms === '') {
+                        cpt_prms += elem+'='+urlParams[elem]+'&';
+                    } else {
+                        cpt_prms += '&'+elem+'='+urlParams[elem]+'&';
+                    }   
+                    if(elem != 'hmb') {
+                        cpt_prms_no_hmb += elem+'='+urlParams[elem]+'&';
+                    }
+                }
+            });
+            
+        cpt_prms +="hmb=1";
+        cpt_h += '<input value="1" name="hmb" type="hidden">';
+        
+            if (cpt_prms) {
+                if (jQuery('.cpt_prgtr').length) {
+                    jQuery('.cpt_prgtr').each(function() {
+                        var search_box_params = jQuery(this).html();
+                        var pttrn = new RegExp('name=('+params.join('|')+')');
+                        if(!(pttrn.test(search_box_params))) {
+                            jQuery(this).prepend(cpt_h);
+                        }
+                    });
+                }
+            }           
+          
+            var base_url = "http://ixquick.com";
+            base_url = base_url.replace('<!--KEEPTEL-->','');
+            if (base_url != '') {
+                base_url = base_url.match(/^https?:\/\/[^/]+/)[0];
+            }
+            base_url_regexp = '^('+base_url+'.+?|\\/\\w.+?)(#.*)?$';
+            base_url_regexp = base_url_regexp.replace('http://', 'https?://');
+            var jump_to_tag_regexp = new RegExp(base_url_regexp, 'g');
+	    
+            jQuery("a").each(function() {
+                if (jQuery(this).hasClass('no-cpt-prgpt')) {
+                    return;
+                } else {
+                    var old_inner_content = jQuery(this).html();
+                    var href = jQuery(this).attr("href");
+                    var pttrn = new RegExp('('+params.join('|')+')=');
+                    if(href != undefined && !(pttrn.test(href)) && href.match(jump_to_tag_regexp)) {
+                        var append_char = (href.match(/\?/)) ? "&" : "?";
+                        var jump_to_tag = '';
+                        var p_matches;
+                        if (p_matches = jump_to_tag_regexp.exec(href)) {
+                            href = p_matches[1];
+                            jump_to_tag  = p_matches[p_matches.length - 1];
+                        }
+                        if (!jump_to_tag) {
+                            jump_to_tag = '';
+                        }
+						if (cpt_prms || jump_to_tag) { 
+                            if(jQuery('.home-wrapper').length > 0 && jQuery(this).closest('#settings_lang_div').length && !window.location.href.match(/hmb=1/)){
+                                href += append_char + cpt_prms_no_hmb + jump_to_tag;
+                            }
+                            else{
+							    href += append_char + cpt_prms + jump_to_tag;
+                            }
+							jQuery(this).attr("href", href);
+						}
+                    }
+                    jQuery(this).html(old_inner_content);
+                }
+            });
+        }
+    
+    
+    
+    function highlight () {                                                                                                                                                                                       
+        var question_count = 28;                                                                                                                                                                                
+        var url = location.href;                                                                                                                                                                                
+                                                                                                                                                                                                              
+        for (var i=1 ;i <= question_count ;i++)                                                                                                                                                                   
+        {                                                                                                                                                                                                       
+            var answer_id = 'q'+i+'ab'; 
+            if(document.getElementById(answer_id) != null) {                                                                                                                                                  
+                document.getElementById(answer_id).style.backgroundColor = '#FFFFFF';                                                                                                                            
+            }                                                                                                                                                                                                   
+        }                                                                                                                                                                                                        
+        if ( (url.indexOf('privacy') != -1) && (document.getElementById('qgoogle_cookieab'))) {                                                                                                                  
+            document.getElementById('qgoogle_cookieab').style.backgroundColor = '#FFFFFF' ;                                                                                                                       
+        }                                                                                                                                                                                                        
+                                                                                                                                                                                                               
+        var ie = (document.all)? true: false;                                                                                                                                                                 
+        if (url.indexOf('#') != -1) {                                                                                                                                                                         
+            var offset = url.indexOf('#');                                                                                                                                                                       
+            var tagname = url.substring(offset + 1);                                                                                                                                                            
+                                                                                                                                                                                                              
+            if (tagname != 'field') {                                                                                                                                                                            
+                if (tagname == 'lowestprice') {                                                                                                                                                                  
+                    tagname = 'phone';                                                                                                                                                                          
+                }                                                                                                                                                                                               
+                if (tagname == 'google_cookie') {                                                                                                                                                               
+                    tagname = 'q' + tagname;                                                                                                                                                                     
+                }                                                                                                                                                                                                
+                tagname += 'ab';                                                     
+                if (document.getElementById(tagname)) {                                                                                                                                                         
+                    document.getElementById(tagname).style.backgroundColor = '#EFF3FF'
+                }
+        //Added to color the question part as white on the privacy q-a page.
+/*
+            if(url.indexOf('protect-privacy') != -1) {
+                var question = url.substring(offset + 1) + 'q';
+                if (document.getElementById(question)) {
+                    document.getElementById(question).style.backgroundColor ='#FFFFFF';
+                }
+            }
+*/
+            } else {
+                for (var i=1; i < 10; i++) {
+                    var fieldname = tagname + i;
+                    if (document.getElementById(fieldname)) {
+                        document.getElementById(fieldname).style.backgroundColor = '#EFF3FF';
+                    } else {
+                        break;
+                    }
+                }
+            }
+        }
+        setTimeout('highlight()',200);
+    }
+    </script>
+    </head>
+
+    <body  onLoad='highlight();'>
+    
+    
+    <div id="wrapper" class="">
+    <div class="navbar navbar-default nav-effect" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+    <a class="navbar-brand ixquick-navbar-brand" tabindex="0" href="index-.html" target="_top"><img src="../graphics/no_tm_ixquick_retina_results_page_logo.png" width="144" height="41" /></a>
+    <a class="menu_anchor" href="../do/preferences.pl-language=polski&language_ui=polski.html" tabindex="0" onClick="return slide_menu_action(event);"><div class="settings_cont inner-pages"><span id="menu-icon-id">Ustawienia</span></div></a>
+    
+    
+	<div id='results_header'>
+	<form action="/do/search" class="cpt_prgtr" autocomplete="off" method="POST" name="blah1" id="search_form" onSubmit="return verifyChecked(this);"  target="_top" >
+
+	<div id='search'>
+	<table cellspacing="0" cellpadding="0" border="0" class="search_container">
+	<tbody><tr>
+	<td id='input_p'><!--[if IE 7]><div style="position:relative; width:300px; height:0;"></div><![endif]-->
+	<div class='search-field'>
+	<div class="text-fields">
+    <div>
+    <span class="clear_search"></span>
+    <span class='no_text' style="display: none;">tutaj wpisz wyszukiwane s&#322;owa kluczowe</span>
+    <input type="hidden" value="polski" name="language">
+    <input type="hidden" name="nj" id="nj" value="1" />
+	<input type='text' autocomplete='off' name='query' id='query_top' value="" queryterm="" onChange="checkContent();" onKeyDown="checkContent();" onkeyup="if(!checkNullKeyPressed(event)){}checkContent();">
+	</div>
+    </div>
+    
+    <span class='small-go-btn' title='Ixquick WWW Szukaj'><input type="submit" value="PRZEJD&#377;" id="submit1"></span>
+    
+    </div>
+	</td>
+    
+    
+    
+	<td></td>
+	<td><noscript></noscript></td>
+	</tr>
+	<tr>
+    <script> 
+    update_form_method('search_form');
+    jQuery('#nj').attr('value', '0');
+    
+	</script>
+        </tr>	
+	</tbody>
+	</table>
+	</div>
+	</form>
+    
+</div>
+</div>
+</div>
+
+<style> ul.slide-menu *:focus,a#menu-icon-id:focus{outline:none;} </style><div class="slide-wrapper" id="menu-id" unselectable="on"><ul class="slide-menu"><li><a href="protect-privacy-.html" class="single right-arrow">Prywatno&#347;&#263;</a></li><li><a href="../do/preferences.pl-_language=polski&language_ui=polski&nj=0.html" class="single right-arrow">Ustawienia</a></li><li><a>Spo&#179;eczno&#156;&#230;</a><ul class="slide-sub-menu"><li><a href="https://www.facebook.com/ixquick">Facebook</a></li><li><a href="https://twitter.com/#!/ixquick">Twitter</a></li><li><a href='https://blog.startpage.com'>Blog</a></li></ul></li><li><a href="aboutixquick/index-.html" class="single right-arrow">Informacje o nas</a></li><li class="no-mobile"><a>Dodaj Ixquick</a><ul class="slide-sub-menu"><li><a href="download-ixquick-plugin-.html" id="my-browser-name">Dodaj do przegl&#261;darki</a></li><li><a href="make-ixquick-your-homepage-.html">Strona g&#322;&#243;wna</a></li><li><a href="mobile-app-qa-.html">Urz&#261;dzenie przeno&#347;ne</a></li><li><a href="download-ixquick-toolbar-.html">Pasek narz&#281;dzi</a></li></ul></li><li class="list-box-opener"><a class="single open-box">J&#281;zyk</a><div class="menu-list-box" style="right: 219px;"id="settings_lang_div">
+<table cellspacing='0' cellpadding='0' border='0' width='100%'>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('dansk', 'dan', 'ixquick.com'); return retina_set_language('dansk', 'dan','ixquick.com');" href='../dan/index-.html'>Dansk</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('deutsch', 'deu', 'ixquick.com'); return retina_set_language('deutsch', 'deu','ixquick.com');" href='../deu/index-.html'>Deutsch</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english', 'eng', 'ixquick.com'); return retina_set_language('english', 'eng','ixquick.com');" href='../eng/index-.html'>English</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('english_uk', 'uk', 'ixquick.com'); return retina_set_language('english_uk', 'uk','ixquick.com');" href='../uk/index-.html'>English UK</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('espanol', 'esp', 'ixquick.com'); return retina_set_language('espanol', 'esp','ixquick.com');" href='../esp/index-.html'>Espa&ntilde;ol</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('francais', 'fra', 'ixquick.com'); return retina_set_language('francais', 'fra','ixquick.com');" href='../fra/index-.html'>Fran&ccedil;ais</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('italiano', 'ita', 'ixquick.com'); return retina_set_language('italiano', 'ita','ixquick.com');" href='../ita/index-.html'>Italiano</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nederlands', 'ned', 'ixquick.com'); return retina_set_language('nederlands', 'ned','ixquick.com');" href='../ned/index-.html'>Nederlands</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('norsk', 'nor', 'ixquick.com'); return retina_set_language('norsk', 'nor','ixquick.com');" href='../nor/index-.html'>Norsk</a></td>
+<td><strong>Polski</strong></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('portugues', 'por', 'ixquick.com'); return retina_set_language('portugues', 'por','ixquick.com');" href='../por/index-.html'>Portugu&ecirc;s</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('suomi', 'suo', 'ixquick.com'); return retina_set_language('suomi', 'suo','ixquick.com');" href='../suo/index-.html'>Suomi</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('svenska', 'sve', 'ixquick.com'); return retina_set_language('svenska', 'sve','ixquick.com');" href='../sve/index-.html'>Svenska</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('turkce', 'tur', 'ixquick.com'); return retina_set_language('turkce', 'tur','ixquick.com');" href='../tur/index-.html'>T&uuml;rk&ccedil;e</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('jiantizhongwen', 'jia', 'ixquick.com'); return retina_set_language('jiantizhongwen', 'jia','ixquick.com');" href='../jia/index-.html'>&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('nihongo', 'nih', 'ixquick.com'); return retina_set_language('nihongo', 'nih','ixquick.com');" href='../nih/index-.html'>&#26085;&#26412;&#35486;</a></td>
+</tr>
+<tr>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('fantizhengwen', 'fan', 'ixquick.com'); return retina_set_language('fantizhengwen', 'fan','ixquick.com');" href='../fan/index-.html'>&#32321;&#39636;&#20013;&#25991;</a></td>
+<td><a class="blue_link addsettings" onclick="prepareCookieUpdateParams('hangul', 'han', 'ixquick.com'); return retina_set_language('hangul', 'han','ixquick.com');" href='../han/index-.html'>&#54620;&#44544;</a></td>
+</tr>
+</table>
+
+</div></li><li><a href="spread-the-word-.html" class="single right-arrow">Podziel si&#281;</a></li><li class="list-box-opener"><a class="single open-box">Motyw</a><div class="menu-list-box theme-box" style="right: 219px;"id="settings_themes" style="white-space:nowrap;"><table class="slide-sub-menu" cellspacing="0" cellpadding="0"><tr><td><a onClick="change_theme('air', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='air-new'>Powietrze</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='night-new'>Noc</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='white-new'>Bia&#322;y</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateThemeClass('air-theme');updateDesignType(1, 'ixquick.com')" name='black-new'>Czarna</a></td></tr><tr><td><a onClick="change_theme('air', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='air-retro'>Powietrze (Classic)</a></td></tr><tr><td><a onClick="change_theme('night', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='night-retro'>Noc (Classic)</a></td></tr><tr><td><a onClick="change_theme('bubbles', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='bubbles-retro'>Oszustwo (Classic)</a></td></tr><tr><td><a onClick="change_theme('day', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='day-retro'>Brzask (Classic)</a></td></tr><tr><td><a onClick="change_theme('white', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='white-retro'>Bia&#322;y (Classic)</a></td></tr><tr><td><a onClick="change_theme('black', 'ixquick.com');updateDesignType(0, 'ixquick.com');refreshCurrentPage()" name='black-retro'>Czarna (Classic)</a></td></tr></table></div></li></ul></div>
+<!--[if IE 9]><style>.ac_results{ width: 476px!important;}</style> <![endif]-->
+<script type="text/javascript">
+    if (typeof getAutoqueryService === 'function') {
+        getAutoqueryService('/do', 'polski', 'query_top', 'jquery.autocomplete.js', '');
+    }
+</script>
+
+
+    <div id="wrapper-inner" class="" style="">
+    <div class="row">
+      <div class="col-lg-12">
+        <div id='inner_content'>
+          <table border="0" cellspacing="0" cellpadding="0" width="100%" class="bodyContent">
+            <tr>
+              <td class="left_column_td" nowrap="nowrap" valign="top">
+                <!--td class="left_column_td" nowrap="nowrap" style="padding-left:30px;"-->
+                <div class="leftContent" style="">
+    
+    <div class="sidebar">
+<div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>PRYWATNO&#346;&#262;</span></a></div><div class="accordionContent"><ul><li><a href="protect-privacy.html" >Jak Ci&#281; chronimy</a></li><li><a href="protect-privacy-qa.html" >Pytania i odpowiedzi</a></li><li><a href="privacy-policy.html" >Nasza polityka ochrony danych osobowych</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="../do/preferences.pl-language_ui=polski.html">USTAWIENIA</a></li><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="company-faq.html">FAQ</a></li><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>SPO&#179;ECZNO&#156;&#230;</span></a></div><div class="accordionContent"><ul><li><a href="https://www.facebook.com/ixquick" >Facebook</a></li><li><a href="https://twitter.com/#!/ixquick" >Twitter</a></li><li><a href="https://blog.startpage.com" >Blog</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>INFORMACJE</span></a></div><div class="accordionContent"><ul><li><a href="what-makes-ixquick-special.html" >Czym si&#281; r&#243;&#380;nimy</a></li><li><a href="company-background.html" >Nasza historia</a></li><li><a href="company-management-bio.html" >Nasi ludzie</a></li><li><a href="company.html" >Firma</a></li><li><a href="press-center.html" >Centrum prasowe</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><div class="accordionButton"><a href="javascript:void(0);" onclick="return false;"><span>DODAJ IXQUICK</span></a></div><div class="accordionContent" style="display: block;" ><ul><li><a href="download-ixquick-plugin.html" id="sidebar_browser_name">Dodaj do przegl&#261;darki</a></li><li><a href="make-ixquick-your-homepage.html" >Strona g&#322;&#243;wna</a></li><li class="selected"><a  href="mobile-app-qa.html">Urz&#261;dzenie przeno&#347;ne</a><span class="menubg_right"></span></li><li><a href="download-ixquick-toolbar.html" >Pasek narz&#281;dzi</a></li></ul></div><script> $('#sidebar_browser_name').html(MY_BROWSER);</script><script>$('.sidebar .accordionContent').css('display', function(){ if($(this).find('li.selected').length){ return 'block'; } return 'none';})</script><li><a style="color: #0952A1 !important; cursor:pointer; text-decoration:none;clear: both; padding-top:4px!important;padding-bottom: 4px!important;padding-left:9px!important;" href="spread-the-word.html">PODZIEL SI&#281;</a></li></div><br><br><br><br><br><br>
+    </div></div></td>
+    <td>
+    <div class="rightContent" id="content">
+    <h1>aplikacja mobilna</h1><br><h2>Aplikacja Ixquick Search dla system&#243;w iOS i Android jest ju&#380; dost&#281;pna!</h2><br><div style="text-align:center;"><img src="../graphics/ix_search_for_iphone.png"></div><br><h3 class="pad_30">Aplikacja Ixquick Search na iPhone'a, iPoda Touch, iPada i wszystkie urz&#261;dzenia z systemem Android zapewnia ca&#322;kowit&#261; prywatno&#347;&#263;, jakiej oczekujesz od Ixquicka &#150; oraz dodatkowe funkcje specjalne gwarantuj&#261;ce ochron&#281; podczas przegl&#261;dania stron na urz&#261;dzeniu przeno&#347;nym.<br/><br/></h3><h3 class="pad_30">Zintegrowana z aplikacj&#261; Ixquick Search przegl&#261;darka odrzuca wszelkie &#347;ledz&#261;ce pliki cookie, ukrywa przed odwiedzanymi stronami wyszukiwane frazy, a nawet tworzy &#132;agenta u&#380;ytkownika&#148;, aby strony internetowe nie mog&#322;y zidentyfikowa&#263; rzeczywistego u&#380;ytkownika.<br/><br/></h3><h3 class="pad_30">Co wi&#281;cej, Ixquick Search usuwa wyniki wyszukiwania i strony internetowe po up&#322;ywie okre&#347;lonego czasu... lub po stukni&#281;ciu przycisku g&#322;&#243;wnego (Home). U&#380;ytkownik jest chroniony przed dost&#281;pem os&#243;b trzecich do urz&#261;dzenia i historii wyszukiwania.<br/><br/></h3><h3 class="pad_30"><a class="blue_link" href="http://itunes.com/app/ixquicksearch" target="_blank">Kliknij tutaj, aby pobra&#263; aplikacj&#281; Ixquick Search na iPhone'a ze sklepu App Store.</a></h3><br><div style='text-align:center; pad_t30'><img src="../graphics/app_ix_android.png"><br/><br/></div><h3 class="pad_30"><a class="blue_link" href="https://play.google.com/store/apps/details?id=com.ixquick.mobile" target="_blank">Kliknij tutaj, aby pobra&#263; aplikacj&#281; Ixquick Search dla systemu Android ze sklepu Google Play.</a><br><br><a class="blue_link" href="http://amzn.com/B00JG1E0FU" target="_blank">Kliknij tutaj, aby pobra&#263; aplikacj&#281; Ixquick Search dla systemu Android ze sklepu Amazon App Store. </a><br/><br/><strong>U&#380;ytkownicy systemu Android mog&#261; tak&#380;e pobra&#263; aplikacj&#281; Ixquick Private Search bezpo&#347;rednio od nas bez korzystania ze sklepu Google Play.</strong><br><br>Zainstaluj bezpo&#347;rednio z urz&#261;dzenia z systemem Android:<br><br>1. Ustaw swoje urz&#261;dzenie tak, aby zezwala&#322;o na instalacj&#281; aplikacji spoza sklepu Google Play. W systemie Android w wersji 4.3 opcja ta znajduje si&#281; w menu &#132;Settings&#148; (Ustawienia) -> &#132;Security&#148; (Zabezpieczenia) &#150; nale&#380;y zaznaczy&#263;&#132;Unknown Sources&#148; (Nieznane &#378;r&#243;d&#322;a). Konkretne czynno&#347;ci mog&#261; si&#281; r&#243;&#380;ni&#263; w zale&#380;no&#347;ci od urz&#261;dzenia. W razie potrzeby zapoznaj si&#281; z dokumentacj&#261; lub stron&#261; wsparcia producenta danego urz&#261;dzenia z systemem Android, aby wykona&#263; t&#281; czynno&#347;&#263;.<br><br>2. Pobierz i zainstaluj aplikacj&#281; Ixquick Private Search, pobieraj&#261;c poni&#380;szy plik pakietu aplikacji Android Application Package (.apk). Aby uzyska&#263; szczeg&#243;&#322;owe instrukcje dotycz&#261;ce pobierania oprogramowania, zapoznaj si&#281; z dokumentacj&#261; swojego urz&#261;dzenia. Stukni&#281;cie pliku Ixquick w folderze Downloads (Pobrane pliki) powinno jednak spowodowa&#263; rozpocz&#281;cie procesu. <br><br><a class="blue_link" href="../app/android/ixquick.apk" target="_blank">Kliknij tutaj, aby pobra&#263; aplikacj&#281; Ixquick Private Search dla systemu Android</a></h3><br><br><br/><br/><h2 style="padding-bottom:0px">Pytania i odpowiedzi</h2><table cellspacing="0" cellpadding="0"><tr><td height="12"></td></tr></table><style>li {line-height:20px;}</style><h3><ul class="q_and_a"><li><a href="mobile-app-qa.html#q1" class="blue_link">Co sprawia, &#380;e aplikacja mobilna Startpage zapewnia tak&#261; ochron&#281; prywatno&#347;ci?</a></li><li><a href="mobile-app-qa.html#q3" class="blue_link">Po chwilowym zawieszeniu dzia&#322;ania aplikacji i powrocie do niej znikn&#281;&#322;y moje wyniki wyszukiwania i strony internetowe. Dlaczego?</a></li><li><a href="mobile-app-qa.html#q4" class="blue_link">Dlaczego aplikacja dzia&#322;a wolniej, kiedy korzystam z funkcji Proxy? </a></li><li><a href="mobile-app-qa.html#q5" class="blue_link">Dlaczego niekt&#243;re strony internetowe wygl&#261;daj&#261; inaczej, kiedy uruchomiona jest funkcja Proxy? </a></li><li><a href="mobile-app-qa.html#q6" class="blue_link">Czy mog&#281; zmieni&#263; wygl&#261;d wynik&#243;w?</a></li><li><a href="mobile-app-qa.html#q7" class="blue_link">Czy mog&#281; filtrowa&#263; wyniki wed&#322;ug daty? </a></li><li><a href="mobile-app-qa.html#q8" class="blue_link">Kiedy przegl&#261;dam Internet za pomoc&#261; aplikacji Ixquick, jak mog&#281; przeprowadzi&#263; nowe wyszukiwanie? </a></li><li><a href="mobile-app-qa.html#q9" class="blue_link">Mam problem z aplikacj&#261;. Jak mog&#281; skontaktowa&#263; si&#281; z dzia&#322;em obs&#322;ugi w sprawie uzyskania pomocy? </a></li></ul></h3><br><br><br><hr class="hor_line"><a name="q1"></a><h3 class="cont pad_t10"><strong>Pyt.: Co sprawia, &#380;e aplikacja mobilna Startpage zapewnia tak&#261; ochron&#281; prywatno&#347;ci?</strong></h3><br><h3 class="pad_20"><table cellspacing="0" cellpadding="0"><tr><td align="justify" id="q1ab" style="">Aplikacja Ixquick Search ma takie same funkcje ochrony prywatno&#347;ci, jak wyszukiwarka Ixquick &#150; najbardziej prywatna wyszukiwarka na &#347;wiecie.
+                        <ul><li>Ka&#380;de wyszukiwanie jest szyfrowane</li>
+                            <li>Nie rejestrujemy wizyt ani wyszukiwa&#324; u&#380;ytkownik&#243;w</li>
+                            <li>Nigdy nie przekazujemy innym stronom informacji na temat wyszukiwa&#324; u&#380;ytkownik&#243;w </li><li>Funkcja Ixquick Proxy sprawia, &#380;e u&#380;ytkownik jest niewidoczny dla stron, kt&#243;re odwiedza</li></ul>Co wi&#281;cej, dodali&#347;my funkcje chroni&#261;ce prywatno&#347;&#263; u&#380;ytkownika podczas wyszukiwania i przegl&#261;dania stron na urz&#261;dzeniu przeno&#347;nym: 
+                        <ul><li>Wszystkie &#347;ledz&#261;ce pliki cookie s&#261; odrzucane </li>
+                            <li>Zapewniamy stronom internetowym fa&#322;szywego &#132;agenta u&#380;ytkownika&#148;, aby nie mog&#322;y stworzy&#263; profilu urz&#261;dzenia przeno&#347;nego u&#380;ytkownika</li>
+                            <li>Usuwamy wyszukiwania i strony internetowe po pewnym czasie lub kiedy u&#380;ytkownik zawiesi dzia&#322;anie aplikacji, tak aby nikt inny ich nie zobaczy&#322;</li></ul></td></tr></table></h3><hr class="hor_line"><a name="q3"></a><h3 class="cont pad_t20"><strong>Pyt.: Po chwilowym zawieszeniu dzia&#322;ania aplikacji i powrocie do niej znikn&#281;&#322;y moje wyniki wyszukiwania i strony internetowe. Dlaczego?</strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q3ab" style="">Kiedy u&#380;ytkownik wychodzi z aplikacji Ixquick Search, wyniki wyszukiwania i strony internetowe znikaj&#261;, aby nikt inny ich nie zobaczy&#322; &#150; podobnie jak po up&#322;ywie pewnego czasu. W aplikacji Ixquick samo wci&#347;ni&#281;cie przycisku g&#322;&#243;wnego (Home) chroni prywatno&#347;&#263; u&#380;ytkownika przed intruzami.<br><br>Podobnie jak w przypadku czyszczenia wynik&#243;w po up&#322;ywie ustawionego czasu, u&#380;ytkownik zobaczy komunikat z informacj&#261;, &#380;e strona, kt&#243;r&#261; przegl&#261;da&#322; zosta&#322;a usuni&#281;ta. T&#281; funkcj&#281; r&#243;wnie&#380; mo&#380;na wy&#322;&#261;czy&#263; w menu &#132;Settings&#148; (Ustawienia). (ikona ko&#322;a z&#281;batego u do&#322;u po prawej stronie) </td></tr></tbody></table></h3><hr class="hor_line"><a name="q4"></a><h3 class="cont pad_t20"><strong>Pyt.: Dlaczego aplikacja dzia&#322;a wolniej, kiedy korzystam z funkcji Proxy? </strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q4ab" style="">Tak jak w przypadku us&#322;ugi Proxy na stronie ixquick.com, funkcja Proxy w aplikacji Ixquixk Search kopiuje ka&#380;d&#261; stron&#281;, kt&#243;r&#261; odwiedza u&#380;ytkownik na nasze w&#322;asne serwery chroni&#261;ce prywatno&#347;&#263; u&#380;ytkownika, kt&#243;ry przegl&#261;da stron&#281; za naszym po&#347;rednictwem. Dzi&#281;ki temu zachowuje najwy&#380;szy poziom prywatno&#347;ci, gdy&#380; nigdy nie wchodzi w kontakt z dan&#261; stron&#261; internetow&#261;.<br><br>Poniewa&#380; kopiowanie ka&#380;dej strony na nasz serwer, a nast&#281;pnie wy&#347;wietlenie jej zabiera dodatkowy czas, z funkcj&#261; Proxy przegl&#261;danie stron jest nieco wolniejsze.</td></tr></tbody></table></h3><hr class="hor_line"><a name="q5"></a><h3 class="cont pad_t20"><strong>Pyt.: Dlaczego niekt&#243;re strony internetowe wygl&#261;daj&#261; inaczej, kiedy uruchomiona jest funkcja Proxy? </strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q5ab" style="">Niekt&#243;re strony internetowe maj&#261; wersje mobilne zoptymalizowane dla mniejszych ekran&#243;w. Lecz kiedy u&#380;ytkownik korzysta z ochrony prywatno&#347;ci za pomoc&#261; funkcji Proxy, strony te nie s&#261; w stanie stwierdzi&#263;, &#380;e korzysta z urz&#261;dzenia przeno&#347;nego! Dlatego te&#380; przy w&#322;&#261;czonej funkcji Proxy u&#380;ytkownik zobaczy zwyk&#322;&#261;, klasyczn&#261; wersj&#281; strony.<br><br>Funkcja Proxy blokuje r&#243;wnie&#380; obs&#322;ug&#281; Javascript, elementu niekt&#243;rych stron internetowych, kt&#243;ry mo&#380;e przesy&#322;a&#263; prywatne informacje. Blokowanie obs&#322;ugi Javascript r&#243;wnie&#380; mo&#380;e sprawia&#263;, &#380;e strona b&#281;dzie wygl&#261;da&#322;a inaczej. </td></tr></tbody></table></h3><hr class="hor_line"><a name="q6"></a><h3 class="cont pad_t20"><strong>Pyt.: Czy mog&#281; zmieni&#263; wygl&#261;d wynik&#243;w?</strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q6ab" style="">Na stronie &#132;Settings&#148; (Ustawienia) (stuknij ikon&#281; ko&#322;a z&#281;batego po prawej stronie zielonego paska u do&#322;u ekranu), u&#380;ytkownik mo&#380;e powi&#281;kszy&#263; lub zmniejszy&#263; tekst na stronie z wynikami oraz wybra&#263; opcj&#281; wy&#347;wietlania 10, 20 lub 50 wynik&#243;w na stron&#281;. </td></tr></tbody></table></h3><hr class="hor_line"><a name="q7"></a><h3 class="cont pad_t20"><strong>Pyt.: Czy mog&#281; filtrowa&#263; wyniki wed&#322;ug daty? </strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q7ab" style="">U&#380;ytkownik mo&#380;e zaw&#281;zi&#263; wyniki wyszukiwania do ostatnich 24 godzin, tygodnia, miesi&#261;ca lub roku, u&#380;ywaj&#261;c menu rozwijanego, kt&#243;re pojawia si&#281; w g&#243;rnym prawym rogu strony z wynikami. </td></tr></tbody></table></h3><hr class="hor_line"><a name="q8"></a><h3 class="cont pad_t20"><strong>Pyt.: Kiedy przegl&#261;dam Internet za pomoc&#261; aplikacji Ixquick, jak mog&#281; przeprowadzi&#263; nowe wyszukiwanie? </strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q8ab" style="">Wystarczy stukn&#261;&#263; pasek wyszukiwania u g&#243;ry ekranu i wpisa&#263; szukan&#261; fraz&#281;. Mo&#380;na u&#380;y&#263; szarego symbolu &#132;x&#148; w k&#243;&#322;ku, aby usun&#261;&#263; poprzednio wyszukiwany tekst. </td></tr></tbody></table></h3><hr class="hor_line"><a name="q9"></a><h3 class="cont pad_t20"><strong>Pyt.: Mam problem z aplikacj&#261;. Jak mog&#281; skontaktowa&#263; si&#281; z dzia&#322;em obs&#322;ugi w sprawie uzyskania pomocy? </strong></h3><h3 class="pad_30"><table cellpadding="0" cellspacing="0"><tbody><tr><td align="justify" id="q9ab" style="">Wystarczy napisa&#263; do nas e-mail z opisem problemu i czynno&#347;ci wykonywanych w chwili, kiedy problem si&#281; pojawi&#322; na adres: app@ixquick.com. Oczywi&#347;cie nie chcemy zna&#263; tre&#347;ci prywatnych wyszukiwa&#324; u&#380;ytkownika!</td></tr></tbody></table></h3><hr class="hor_line"></div></div>
+    </div></div>
+    <div class="clear"></div>
+    </td>
+    </tr>
+</tbody>
+</table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    
+	<div class="footer" id="footer">
+ 	<div class="copyright">
+  	&copy; 2015 Ixquick
+ 	</div>
+		
+ 	<div class="right_links"><a id="startmail" href="https://startmail.com/" style="text-decoration: none;">
+    <!--<span class="icon icon-small"><span class="icon-mail"></span></span>&nbsp;-->
+  	<span style="text-decoration: underline;">StartMail</span></a>
+  	<a id="privacy_policy" href="privacy-policy-.html">Zasady Ochrony Prywatno&#347;ci</a>
+ 	</div>
+    <div class='imgavt'> </div>
+    </div>
+    <script type="text/javascript" charset="utf-8"> $(function() { $('body').hide().show(); });</script>
+    </body>
+    </html>
